@@ -4,7 +4,7 @@
 import { motion, Variants } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Phone, Mail, MapPin, Clock, ArrowRight, Star, Calendar } from 'lucide-react';
+import { Phone, Mail, MapPin, ArrowRight, Calendar } from 'lucide-react';
 import Link from 'next/link';
 
 const containerVariants: Variants = {

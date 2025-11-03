@@ -2,13 +2,15 @@
 'use client';
 import { useEffect } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
+import { Suspense } from 'react';
 
 // Type definitions for PerformanceEntry with processingStart
 interface PerformanceEventTiming extends PerformanceEntry {
     processingStart: number;
 }
 
-export function PerformanceTracker() {
+// Inner component that uses useSearchParams
+function PerformanceTrackerContent() {
     const pathname = usePathname();
     const searchParams = useSearchParams();
 
@@ -87,4 +89,13 @@ export function PerformanceTracker() {
     }, [pathname, searchParams]);
 
     return null;
+}
+
+// Main component with Suspense boundary
+export function PerformanceTracker() {
+    return (
+        <Suspense fallback={null}>
+            <PerformanceTrackerContent />
+        </Suspense>
+    );
 }
