@@ -5,8 +5,14 @@ const nextConfig: NextConfig = {
     optimizeCss: true,
   },
   images: {
-    formats: ['image/avif', 'image/webp'],
-    domains: ['taylorslawncare21.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'taylorslawncare21.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
   },
   compress: true,
   poweredByHeader: false,
