@@ -25,9 +25,13 @@ export const metadata: Metadata = {
     template: "%s | Taylor's Lawn Care"
   },
   description: "25+ years experience in drainage solutions, landscaping, French drains, sod, sprinkler systems, and fencing. 98% recommended on Facebook. Free estimates! Emergency drainage help available.",
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.png',
+  },
   keywords: [
     "lawn care", "landscaping", "drainage solutions", "French drains", "sprinkler systems",
-    "fencing", "Paragould", "Jonesboro", "Northeast Arkansas", "sod installation", 
+    "fencing", "Paragould", "Jonesboro", "Northeast Arkansas", "sod installation",
     "tree trimming", "holiday lighting", "emergency drainage", "landscape design",
     "yard drainage", "lawn maintenance", "outdoor lighting", "hardscaping"
   ].join(", "),
@@ -52,7 +56,7 @@ export const metadata: Metadata = {
     description: "25+ years experience in drainage solutions, landscaping, French drains, and outdoor services. 98% recommended. Free estimates!",
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/hero-new.jpg',
         width: 1200,
         height: 630,
         alt: "Taylor's Lawn Care & Landscaping - Professional Outdoor Services",
@@ -63,7 +67,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Taylor's Lawn Care & Landscaping | Drainage Experts",
     description: "25+ years experience in drainage solutions & landscaping. 98% recommended. Free estimates!",
-    images: ['/og-image.jpg'],
+    images: ['/hero-new.jpg'],
   },
   robots: {
     index: true,
@@ -100,7 +104,7 @@ const jsonLd = {
     longitude: -90.497
   },
   areaServed: [
-    "Paragould AR", "Jonesboro AR", "Brookland AR", "Monette AR", 
+    "Paragould AR", "Jonesboro AR", "Brookland AR", "Monette AR",
     "Bono AR", "Harrisburg AR", "Trumann AR", "Marmaduke AR",
     "Greene County AR", "Craighead County AR", "Poinsett County AR"
   ],
