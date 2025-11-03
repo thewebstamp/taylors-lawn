@@ -21,7 +21,7 @@ const poetsenOne = Poetsen_One({
 
 export const metadata: Metadata = {
   title: {
-    default: "Taylor's Lawn Care & Landscaping | Northeast Arkansas Drainage Experts",
+    default: "Taylor's Lawn Care & Landscaping | Northeast Arkansas Landscaping & Drainage Experts",
     template: "%s | Taylor's Lawn Care"
   },
   description: "25+ years experience in drainage solutions, landscaping, French drains, sod, sprinkler systems, and fencing. 98% recommended on Facebook. Free estimates! Emergency drainage help available.",
