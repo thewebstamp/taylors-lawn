@@ -37,7 +37,7 @@ export default function ContactPage() {
       icon: MapPin,
       title: 'Service Area',
       value: 'Northeast Arkansas',
-      link: null,
+      link: 'https://maps.google.com/maps?q=Northeast+Arkansas',
       description: 'Paragould, Jonesboro & surrounding areas'
     },
     {

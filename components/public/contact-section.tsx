@@ -54,7 +54,7 @@ export function ContactSection() {
       icon: MapPin,
       title: 'Service Area',
       value: 'Northeast Arkansas',
-      link: 'https://maps.google.com',
+      link: 'https://maps.google.com/maps?q=Northeast+Arkansas',
       description: 'Paragould, Jonesboro, Brookland & more'
     }
   ];
