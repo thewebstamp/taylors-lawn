@@ -176,7 +176,7 @@ export function HeroSection() {
                   <span className="font-semibold text-white text-lg">10% OFF</span> for Veterans, Military & First Responders
                 </div>
                 <div className="text-gray-100 text-md font-normal">
-                  <span className="font-semibold text-white text-lg">15% OFF</span> for Widows & Seniors
+                  <span className="font-semibold text-white text-lg">15% OFF</span> for Widows
                 </div>
               </div>
             </motion.div>
