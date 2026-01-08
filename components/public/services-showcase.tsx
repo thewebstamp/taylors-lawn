@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // components/services-showcase.tsx
 'use client';
 
@@ -48,6 +49,13 @@ export function ServicesShowcase() {
       title: 'Landscaping & Sod',
       description: 'Complete landscape design, sod installation, garden beds, and outdoor living spaces',
       features: [['Custom Designs'], ['Premium Materials']]
+    },
+    {
+      img: "/hero.jpg",
+      icon: '🌱',
+      title: 'Professional Lawn Care',
+      description: 'lawn maintenance including fertilization and weed control for a healthy, vibrant yard',
+      features: [['Fertilization & Weed Control'], ['Seasonal Aeration']]
     },
     {
       img: "/sprinkler.jpg",
@@ -126,7 +134,7 @@ export function ServicesShowcase() {
             whileHover={{ scale: 1.05 }}
           >
             <Calendar className="h-4 w-4" />
-            <span className="text-sm font-semibold">FALL & WINTER BOOKING OPEN</span>
+            <span className="text-sm font-semibold">WINTER & SPRING BOOKING OPEN</span>
           </motion.div>
 
           <h2 className="text-[28px] md:text-4xl lg:text-[2.4rem] font-bold text-gray-900 mb-5">

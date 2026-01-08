@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // components/contact-section.tsx
 'use client';
 
@@ -92,7 +93,7 @@ export function ContactSection() {
             <span className="block text-green-600">Your Property?</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Get your free, no-obligation quote today. We'll get back to you <strong>ASAP!</strong>
+            Get your free, no-obligation quote today. We&apos;ll get back to you <strong>ASAP!</strong>
           </p>
         </motion.div>
 
@@ -159,7 +160,7 @@ export function ContactSection() {
               </h3>
 
               <p className="text-lg opacity-90 mb-2">
-                Tell us about your project and we'll provide:
+                Tell us about your project and we&apos;ll provide:
               </p>
 
               <div className="space-y-3 mb-8 text-left max-w-sm mx-auto">

@@ -161,7 +161,7 @@ export function TrustSection() {
                   <span className="text-sm font-semibold">REAL CUSTOMER STORIES</span>
                 </motion.div>
                 <h3 className="text-[28px] md:text-4xl lg:text-[2.4rem] font-bold mb-3">
-                  <span className="text-green-300">Don't Just Take Our Word For It</span>
+                  <span className="text-green-300">Don&apos;t Just Take Our Word For It</span>
                 </h3>
                 <p className="text-xl font-light opacity-90">
                   Hear from homeowners who trusted us with their property transformations

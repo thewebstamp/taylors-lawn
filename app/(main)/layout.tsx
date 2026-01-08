@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // app/(main)/layout.tsx
 'use client';
 
@@ -97,7 +98,7 @@ export default function MainLayout({
               <Link href="/" className="flex items-center space-x-4 group">
                 <div className={`transition-colors duration-300 ${isScrolled ? 'text-forest-800' : 'text-gray-100'}`}>
                   <div className="font-display text-[20px] lg:text-[22px] font-bold leading-tight tracking-tight">
-                    Taylor's Lawn Care
+                    Taylor&apos;s Lawn Care
                   </div>
                   <div className="text-sm opacity-90 font-sans tracking-wide">
                     & Landscaping LLC
@@ -213,7 +214,7 @@ export default function MainLayout({
                       <Sparkles className="h-5 w-5 text-white" />
                     </div>
                     <div className="text-white">
-                      <div className="font-display text-xl font-bold">Taylor's Lawn Care</div>
+                      <div className="font-display text-xl font-bold">Taylor&apos;s Lawn Care</div>
                       <div className="text-sm opacity-80">& Landscaping LLC</div>
                     </div>
                   </div>

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // components/faq-section.tsx
 'use client';
 
@@ -174,7 +175,7 @@ export function FAQSection() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ delay: 0.8, duration: 0.6 }}
         >
-          <p className="text-gray-600 mb-4 text-xl">Still have questions? We're here to help!</p>
+          <p className="text-gray-600 mb-4 text-xl">Still have questions? We&apos;re here to help!</p>
           <motion.a
             href="tel:870-530-4289"
             onClick={trackPhoneCall}

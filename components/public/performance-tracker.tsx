@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // app/components/performance-tracker.tsx
 'use client';
 import { useEffect } from 'react';

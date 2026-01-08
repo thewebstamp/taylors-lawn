@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // components/footer.tsx
 'use client';
 
@@ -76,7 +77,7 @@ export function Footer() {
                   />
                 </div>
                 <p className="text-gray-300 mb-6 leading-relaxed text-lg text-center lg:text-left">
-                  Northeast Arkansas's most trusted landscaping and drainage experts with 25+ years of experience transforming properties.
+                  Northeast Arkansas&apos;s most trusted landscaping and drainage experts with 25+ years of experience transforming properties.
                 </p>
 
                 {/* Trust Badges */}
@@ -202,7 +203,7 @@ export function Footer() {
           >
             <div className="text-center md:text-left mb-4 md:mb-0">
               <p className="text-gray-400 text-lg">
-                © {currentYear} Taylor's Lawn Care & Landscaping LLC. All rights reserved.
+                © {currentYear} Taylor&apos;s Lawn Care & Landscaping LLC. All rights reserved.
               </p>
               <p className="text-gray-500 text-sm mt-1">
                 Proudly serving Northeast Arkansas for over 25 years

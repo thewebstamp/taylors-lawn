@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // components/portfolio-showcase.tsx
 'use client';
 
@@ -92,7 +93,7 @@ export function PortfolioShowcase() {
             <span className="block text-green-600">Northeast Arkansas</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Real projects, real results - see how we've transformed properties across Paragould, Jonesboro, and beyond
+            Real projects, real results - see how we&apos;ve transformed properties across Paragould, Jonesboro, and beyond
           </p>
         </motion.div>
 

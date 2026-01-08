@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // app/(main)/contact/page.tsx
 'use client';
 import { motion } from 'framer-motion';
@@ -232,8 +233,8 @@ export default function ContactPage() {
               transition={{ delay: 0.8, duration: 0.6 }}
               className="text-xl text-white/80 mb-10 max-w-2xl mx-auto leading-relaxed"
             >
-              Thank you for contacting <span className="font-semibold text-green-300">Taylor's Lawn Care</span>.
-              We'll get back to you within <span className="font-bold text-white">2 hours</span> with your free quote.
+              Thank you for contacting <span className="font-semibold text-green-300">Taylor&apos;s Lawn Care</span>.
+              We&apos;ll get back to you within <span className="font-bold text-white">2 hours</span> with your free quote.
             </motion.p>
 
             {/* Action Buttons */}
@@ -295,7 +296,7 @@ export default function ContactPage() {
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-white/60 text-sm">
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                  <span>We're reviewing your project details</span>
+                  <span>We&apos;re reviewing your project details</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
@@ -344,7 +345,7 @@ export default function ContactPage() {
             </h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Ready to transform your property? Contact us for a free, no-obligation estimate.
-              We'll get back to you ASAP!
+              We&apos;ll get back to you ASAP!
             </p>
           </motion.div>
         </div>
@@ -386,7 +387,7 @@ export default function ContactPage() {
                       <h4 className={`font-bold text-lg mb-1 ${item.highlight ? 'text-white' : 'text-gray-900'}`}>
                         <span className={`${item.highlight ? 'text-gray-100' : 'text-gray-900'}`}>{item.title}</span>
                       </h4>
-                      <p className={`font-semibold text-lg mb-1 ${item.highlight ? 'text-white' : 'text-green-600'
+                      <p className={`font-semibold text-[20px] mb-1 ${item.highlight ? 'text-white' : 'text-green-600'
                         }`}>
                         {item.value}
                       </p>
@@ -642,7 +643,7 @@ export default function ContactPage() {
             transition={{ delay: 0.8, duration: 0.6 }}
           >
             <p className="text-gray-600 mb-4 text-lg">
-              Don't see your community listed?
+              Don&apos;t see your community listed?
             </p>
             <motion.a
               href="tel:870-530-4289"

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // app/(main)/services/page.tsx
 'use client';
 import { motion } from 'framer-motion';
@@ -21,6 +22,13 @@ export default function ServicesPage() {
       title: 'Landscaping & Sod',
       description: 'Complete landscape design, sod installation, garden beds, and outdoor living spaces',
       features: ['Custom Designs', 'Premium Materials', '25+ Years Experience', 'Heavy Equipment Operation']
+    },
+    {
+      img: "/hero.jpg",
+      icon: '🌱',
+      title: 'Lawn Care',
+      description: 'Complete lawn maintenance including fertilization, weed control, aeration, and seasonal care for a healthy, vibrant yard year-round.',
+      features: ['Aeration & Overseeding', 'Fertilization Programs', 'Weed & Pest Control']
     },
     {
       img: "/sprinkler.jpg",
@@ -135,7 +143,7 @@ export default function ServicesPage() {
               whileHover={{ scale: 1.05 }}
             >
               <Calendar className="h-4 w-4" />
-              <span className="text-sm font-semibold">FALL & WINTER BOOKING OPEN</span>
+              <span className="text-sm font-semibold">WINTER & SPRING BOOKING OPEN</span>
             </motion.div>
 
             <h1 className="text-[28px] md:text-4xl lg:text-[2.4rem] font-bold text-gray-900 mb-6">
@@ -271,7 +279,7 @@ export default function ServicesPage() {
               </span>
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Our promises aren't just words - they're the foundation of everything we do
+              Our promises aren&apos;t just words - they&apos;re the foundation of everything we do
             </p>
           </motion.div>
 
@@ -398,7 +406,7 @@ export default function ServicesPage() {
             viewport={{ once: true }}
             transition={{ delay: 0.6, duration: 0.6 }}
           >
-            <p className="text-gray-600 mb-3">Experience the Taylor's Lawn Care difference</p>
+            <p className="text-gray-600 mb-3">Experience the Taylor&apos;s Lawn Care difference</p>
             <motion.div
               className="inline-flex items-center gap-6 text-sm text-gray-500"
               whileHover={{ gap: 8 }}

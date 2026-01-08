@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // components/hero-section.tsx
 'use client';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -37,8 +38,11 @@ export function HeroSection() {
 
     return Array.from({ length: 20 }, (_, i) => ({
       id: i,
+      // eslint-disable-next-line react-hooks/purity
       left: Math.random() * 100,
+      // eslint-disable-next-line react-hooks/purity
       duration: 1 + Math.random() * 2,
+      // eslint-disable-next-line react-hooks/purity
       delay: Math.random() * 2,
     }));
   }, [isMounted]);
@@ -52,7 +56,7 @@ export function HeroSection() {
   }, []);
 
   return (
-    <section className="relative min-h-screen max-w-7xl flex items-center justify-between overflow-hidden bg-gray-900 pt-25 lg:pt-30 pb-20">
+    <section className="relative min-h-screen max-w-8xl flex items-center justify-between overflow-hidden bg-gray-900 pt-25 lg:pt-30 pb-20">
       {/* Background Image with Subtle Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -123,7 +127,7 @@ export function HeroSection() {
         />
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center lg:text-left">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center lg:text-left">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
           {/* Left Content */}
@@ -141,49 +145,49 @@ export function HeroSection() {
               transition={{ delay: 0.2, type: "spring" }}
             >
               <Star className="h-4 w-4 text-yellow-400 fill-current" />
-              <span className="text-[12px] font-semibold">#1&nbsp;IN&nbsp;NORTHEAST&nbsp;ARKANSAS</span>
+              <span className="text-[12px] md:text-[13px] lg:text-[14px] font-semibold">#1&nbsp;IN&nbsp;NORTHEAST&nbsp;ARKANSAS</span>
             </motion.div>
 
             {/* Powerful Headline */}
             <motion.h1
-              className="text-[28px] md:text-4xl lg:text-[2.4rem] font-bold leading-tight mb-5"
+              className="text-[29px] md:text-4xl lg:text-[3.2rem] font-bold leading-tight mb-5"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.8 }}
             >
-              <span className="text-green-400">No More Fall & Winter Landscape Worries—Guaranteed</span>
+              <span className="text-green-400">Lawncare, Landscaping & Drainage Solutions You Can Trust</span>
             </motion.h1>
 
             {/* Compelling Subheadline */}
             <motion.p
-              className="text-[17px] font-light md:text-xl text-gray-200 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0"
+              className="text-[17.5px] font-light md:text-xl lg:text-[22px] text-gray-200 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.7 }}
             >
-              From <span className="text-yellow-500 font-semibold">waterlogged yards</span> and <span className="text-yellow-500 font-semibold">fallen leaves</span> to <span className="text-yellow-500 font-semibold">winter damage</span> and <span className="text-yellow-500 font-semibold">holiday stress</span>, we solve what keeps Northeast Arkansas homeowners up at night.
+              <span className="text-yellow-500 font-semibold">Professional</span>, <span className="text-yellow-500 font-semibold">Reliable</span>, and <span className="text-yellow-500 font-semibold">Local</span> - Keeping your yard healthy and beautiful year-round.
             </motion.p>
 
             {/* Compact Discount Banner */}
             <motion.div
-              className="bg-linear-to-r from-green-600/20 to-blue-600/20 backdrop-blur-sm border border-green-400/30 rounded-xl p-4 mb-8 max-w-md mx-auto lg:mx-0"
+              className="bg-linear-to-r from-green-600/20 to-blue-600/20 backdrop-blur-sm border border-green-400/30 rounded-xl p-4 mb-8 mx-auto lg:mx-0"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7, duration: 0.6 }}
             >
               <div className="text-center">
-                <div className="text-gray-100 text-md font-normal">
-                  <span className="font-semibold text-white text-lg">10% OFF</span> for Veterans, Military & First Responders
+                <div className="text-gray-100 text-md lg:text-[20px] font-normal">
+                  <span className="font-semibold text-white text-lg lg:text-[22px]">10% OFF</span> for Veterans, Military & First Responders
                 </div>
                 <div className="text-gray-100 text-md font-normal">
-                  <span className="font-semibold text-white text-lg">15% OFF</span> for Widows
+                  <span className="font-semibold text-white text-lg lg:text-[22px]">15% OFF</span> for Widows
                 </div>
               </div>
             </motion.div>
 
             {/* Refined CTA Buttons */}
             <motion.div
-              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start text-xl lg:text-2xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.9, duration: 0.6 }}
@@ -247,9 +251,8 @@ export function HeroSection() {
                 transition={{ delay: 1, type: "spring" }}
               >
                 <div className="text-center">
-                  <div className="font-bold text-sm">SEASON SPECIAL</div>
-                  <div className="text-xs font-semibold">Book Now</div>
-                  <div className="text-xs mt-1">Get Best Rates</div>
+                  <div className="font-bold text-sm">Book Now!</div>
+                  <div className="text-xs font-semibold">Get Best Rates</div>
                 </div>
               </motion.div>
 
@@ -273,7 +276,7 @@ export function HeroSection() {
               animate={{ opacity: 1 }}
               transition={{ delay: 1.2, duration: 0.6 }}
             >
-              {['Drainage Solutions', 'Holiday Lighting', 'Lawn Care', 'Landscaping'].map((service, index) => (
+              {['Drainage Solutions', 'Lawn Care', 'Landscaping'].map((service, index) => (
                 <motion.span
                   key={service}
                   className="bg-white/10 backdrop-blur-sm text-white text-xs px-3 py-1 rounded-full border border-white/20"

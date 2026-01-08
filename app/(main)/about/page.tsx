@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // app/(main)/about/page.tsx
 'use client';
 import { motion } from 'framer-motion';
@@ -91,7 +92,7 @@ export default function AboutPage() {
               Building Trust Through Excellence
             </h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              For over 25 years, we've been transforming Northeast Arkansas properties with integrity,
+              For over 25 years, we&apos;ve been transforming Northeast Arkansas properties with integrity,
               craftsmanship, and unwavering commitment to our community.
             </p>
           </motion.div>
@@ -196,11 +197,11 @@ export default function AboutPage() {
               <div className="space-y-6 text-xl text-gray-700">
                 <p className="leading-relaxed">
                   Founded by <span className="font-semibold text-gray-900">Billy Taylor</span>,
-                  Taylor's Lawn Care & Landscaping began as a local venture with a clear mission:
+                  Taylor&apos;s Lawn Care & Landscaping began as a local venture with a clear mission:
                   deliver exceptional outdoor services with unmatched honesty and workmanship.
                 </p>
                 <p className="leading-relaxed">
-                  Through decades of dedicated service, we've grown into Northeast Arkansas's premier
+                  Through decades of dedicated service, we&apos;ve grown into Northeast Arkansas&apos;s premier
                   outdoor solutions team, specializing in complex drainage systems, landscape transformations,
                   and comprehensive property care backed by 25+ years of heavy equipment expertise.
                 </p>
