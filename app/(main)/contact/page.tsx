@@ -417,124 +417,138 @@ export default function ContactPage() {
               </motion.div>
             </motion.div>
 
-            {/* Contact Form */}
+            {/* SMS Contact Section */}
             <motion.div
-              id='form'
+              id='sms-contact'
               initial={{ opacity: 1, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.6, delay: 0.2 }}
               className="bg-white rounded-2xl shadow-2xl border border-green-200 overflow-hidden"
             >
-              <form onSubmit={handleSubmit} className="p-8">
-                <div className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <motion.div whileHover={{ y: -2 }} className="space-y-2">
-                      <label className="block text-[17px] font-semibold text-gray-700">Name *</label>
-                      <input
-                        type="text"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                        className="text-[16px] w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
-                        placeholder="Your full name"
-                      />
-                    </motion.div>
-                    <motion.div whileHover={{ y: -2 }} className="space-y-2">
-                      <label className="block text-[17px] font-semibold text-gray-700">Phone *</label>
-                      <input
-                        type="tel"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        required
-                        className="text-[16px] w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
-                        placeholder="(870) 123-4567"
-                      />
-                    </motion.div>
+              <div className="p-8">
+                <div className="space-y-8">
+                  {/* SMS Section */}
+                  <motion.div
+                    className="text-center"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.1 }}
+                  >
+                    <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
+                      <svg className="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M2 3h20a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm0 2v12h20V5H2zm8 10h4v2h-4v-2z" />
+                      </svg>
+                    </div>
+
+                    <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                      Text Us for Faster Response
+                    </h3>
+
+                    <p className="text-gray-600 mb-6 text-lg">
+                      Get instant answers by sending us a text message. We typically respond within minutes!
+                    </p>
+
+                    <motion.a
+                      href="sms:+18705304289"
+                      className="inline-flex items-center justify-center gap-3 bg-linear-to-r from-green-600 to-forest-600 hover:from-green-700 hover:to-forest-700 text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-300 group relative overflow-hidden"
+                      whileHover={{ scale: 1.02, y: -2 }}
+                      whileTap={{ scale: 0.98 }}
+                      onClick={() => {
+                        if (typeof window !== 'undefined' && (window as any).gtag) {
+                          (window as any).gtag('event', 'sms_click', {
+                            event_category: 'contact',
+                            event_label: 'sms_contact_button',
+                          });
+                        }
+                      }}
+                    >
+                      <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                      </svg>
+                      <span className="relative z-10">
+                        CLICK TO SEND SMS
+                      </span>
+                      <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
+                    </motion.a>
+
+                    <p className="mt-4 text-gray-500 text-sm">
+                      Tap the button above to open your messaging app
+                    </p>
+                  </motion.div>
+
+                  {/* Divider */}
+                  <div className="relative">
+                    <div className="absolute inset-0 flex items-center">
+                      <div className="w-full border-t border-gray-200"></div>
+                    </div>
+                    <div className="relative flex justify-center text-sm">
+                      <span className="px-4 bg-white text-gray-500">OR CONTACT US VIA</span>
+                    </div>
                   </div>
 
-                  <motion.div whileHover={{ y: -2 }} className="space-y-2">
-                    <label className="block text-[17px] font-semibold text-gray-700">Email</label>
-                    <input
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
-                      placeholder="your@email.com"
-                    />
-                  </motion.div>
-
-                  <motion.div whileHover={{ y: -2 }} className="space-y-2">
-                    <label className="block text-[17px] font-semibold text-gray-700">Service Needed *</label>
-                    <select
-                      name="service"
-                      value={formData.service}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
+                  {/* Alternative Contact Methods */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <motion.a
+                      href="tel:870-530-4289"
+                      onClick={trackPhoneCall}
+                      className="group bg-green-50 hover:bg-green-100 border border-green-200 rounded-xl p-4 text-center transition-all duration-300"
+                      whileHover={{ y: -3 }}
+                      whileTap={{ scale: 0.98 }}
                     >
-                      <option value="">Select a service</option>
-                      <option value="Drainage Solutions">Drainage Solutions</option>
-                      <option value="Landscaping & Sod">Landscaping & Sod</option>
-                      <option value="Sprinkler Systems">Sprinkler Systems</option>
-                      <option value="Privacy Fencing">Privacy Fencing</option>
-                      <option value="Tree Services">Tree & Brush Cleanup</option>
-                      <option value="Holiday Lighting">Holiday Lighting</option>
-                      <option value="Snow Removal">Snow & Ice Management</option>
-                      <option value="Other">Other Service</option>
-                    </select>
-                  </motion.div>
+                      <div className="flex flex-col items-center gap-2">
+                        <Phone className="h-6 w-6 text-green-600 group-hover:text-green-700" />
+                        <span className="font-semibold text-gray-900">Call Now</span>
+                        <span className="text-green-600 font-bold text-lg">(870) 530-4289</span>
+                      </div>
+                    </motion.a>
 
-                  <motion.div whileHover={{ y: -2 }} className="space-y-2">
-                    <label className="block text-[17px] font-semibold text-gray-700">Project Details</label>
-                    <textarea
-                      rows={4}
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
-                      placeholder="Tell us about your project, timeline, and any specific requirements..."
-                    />
-                  </motion.div>
+                    <motion.a
+                      href="mailto:taylorslawncare21@gmail.com"
+                      className="group bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-xl p-4 text-center transition-all duration-300"
+                      whileHover={{ y: -3 }}
+                      whileTap={{ scale: 0.98 }}
+                    >
+                      <div className="flex flex-col items-center gap-2">
+                        <Mail className="h-6 w-6 text-blue-600 group-hover:text-blue-700" />
+                        <span className="font-semibold text-gray-900">Send Email</span>
+                        <span className="text-blue-600 text-sm">taylorslawncare21@gmail.com</span>
+                      </div>
+                    </motion.a>
+                  </div>
 
-                  <motion.button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="w-full bg-linear-to-r from-green-600 to-forest-600 hover:bg-green-700 text-white font-semibold py-4 px-6 rounded-lg text-[16px] transition-all duration-300 flex items-center justify-center gap-3 group relative overflow-hidden"
-                    whileHover={{ scale: 1.02, y: -2 }}
-                    whileTap={{ scale: 0.98 }}
+                  {/* Benefits */}
+                  <motion.div
+                    className="bg-gray-50 rounded-xl p-6 border border-gray-200"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.3 }}
                   >
-                    {isSubmitting ? (
-                      <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                    ) : (
-                      <Send className="h-5 w-5" />
-                    )}
-                    <span className="relative z-10">
-                      {isSubmitting ? 'SENDING...' : 'GET FREE QUOTE'}
-                    </span>
-                    <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
-                  </motion.button>
-
-                  {submitStatus === 'error' && (
-                    <motion.div
-                      className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg mb-6"
-                      initial={{ opacity: 0, y: -10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                    >
-                      <p className="flex items-center gap-2">
-                        <span>⚠️ There was an error sending your message. Please call us directly at (870) 530-4289</span>
-                      </p>
-                    </motion.div>
-                  )}
-
-                  <p className="text-center text-gray-500 text-sm">
-                    We respect your privacy. Your information will never be shared.
-                  </p>
+                    <h4 className="font-bold text-gray-900 text-lg mb-4 flex items-center gap-2">
+                      <CheckCircle className="h-5 w-5 text-green-600" />
+                      Why Texting is Better
+                    </h4>
+                    <ul className="space-y-3">
+                      <li className="flex items-start gap-3">
+                        <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                        <span className="text-gray-600">Instant response during business hours</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                        <span className="text-gray-600">Send photos of your project for quick quotes</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                        <span className="text-gray-600">No waiting on hold or phone menus</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                        <span className="text-gray-600">Easy to reference past conversations</span>
+                      </li>
+                    </ul>
+                  </motion.div>
                 </div>
-              </form>
+              </div>
             </motion.div>
           </div>
         </div>
