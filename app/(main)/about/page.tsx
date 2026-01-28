@@ -88,10 +88,10 @@ export default function AboutPage() {
               <span className="text-sm font-semibold">#1 IN NORTHEAST ARKANSAS</span>
             </motion.div>
 
-            <h1 className="text-[28px] md:text-4xl lg:text-[2.4rem] font-bold text-gray-900 mb-6">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
               Building Trust Through Excellence
             </h1>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-700 max-w-7xl mx-auto">
               For over 25 years, we&apos;ve been transforming Northeast Arkansas properties with integrity,
               craftsmanship, and unwavering commitment to our community.
             </p>
@@ -110,7 +110,7 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 md:px-8 lg:px-12 relative z-10">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <motion.div
@@ -141,7 +141,7 @@ export default function AboutPage() {
                 >
                   {stat.value}
                 </motion.div>
-                <div className="text-gray-600 font-semibold text-sm uppercase tracking-wider">
+                <div className="text-gray-600 font-semibold text-sm lg:text-base uppercase tracking-wider">
                   {stat.label}
                 </div>
               </motion.div>
@@ -152,7 +152,7 @@ export default function AboutPage() {
 
       {/* Story Section */}
       <section className="py-20 relative overflow-hidden">
-        <div className="max-w-5xl mx-auto px-4 md:px-7">
+        <div className="container mx-auto px-4 md:px-8 lg:px-12">
           <div className="text-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -187,14 +187,14 @@ export default function AboutPage() {
                 <span className="text-sm font-semibold">OUR JOURNEY</span>
               </motion.div>
 
-              <h2 className="text-[28px] md:text-4xl lg:text-[2.4rem] font-bold text-gray-900 mb-8">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-8">
                 Our Story of
                 <span className="block bg-linear-to-r from-green-600 to-forest-400 bg-clip-text text-transparent">
                   Growth & Service
                 </span>
               </h2>
 
-              <div className="space-y-6 text-xl text-gray-700">
+              <div className="space-y-6 text-xl md:text-[22px] lg:text-[25px] text-gray-700">
                 <p className="leading-relaxed">
                   Founded by <span className="font-semibold text-gray-900">Billy Taylor</span>,
                   Taylor&apos;s Lawn Care & Landscaping began as a local venture with a clear mission:
@@ -242,7 +242,7 @@ export default function AboutPage() {
           <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-px h-32 bg-linear-to-t from-blue-500/50 to-transparent"></div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 md:px-8 lg:px-12 relative z-10">
           {/* Header */}
           <motion.div
             className="text-center mb-20"
@@ -268,19 +268,19 @@ export default function AboutPage() {
               </div>
             </motion.div>
 
-            <h2 className="text-[28px] md:text-4xl lg:text-[2.4rem] font-bold text-gray-900 mb-5">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-5">
               Core Values That
               <span className="block bg-linear-to-r from-green-600 to-forest-600 bg-clip-text text-transparent">
                 Define Our Excellence
               </span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-4xl mx-auto">
               The principles that guide every decision, every project, and every relationship we build
             </p>
           </motion.div>
 
           {/* Values Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto">
             {values.map((value, index) => (
               <motion.div
                 key={value.title}
@@ -331,7 +331,7 @@ export default function AboutPage() {
                           {value.icon}
                         </motion.div>
                         <div>
-                          <h3 className="text-2xl font-bold text-gray-900 group-hover:text-gray-800 transition-colors">
+                          <h3 className="text-2xl lg:text-[27px] font-bold text-gray-900 group-hover:text-gray-800 transition-colors">
                             {value.title}
                           </h3>
                           <div className="flex items-center gap-1 mt-1">
@@ -361,7 +361,7 @@ export default function AboutPage() {
 
                     {/* Description */}
                     <motion.p
-                      className="text-gray-600 text-lg leading-relaxed group-hover:text-gray-700 transition-colors"
+                      className="text-gray-600 text-lg lg:text-[22px] leading-relaxed group-hover:text-gray-700 transition-colors"
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
                       transition={{ delay: index * 0.1 + 0.4 }}
@@ -424,7 +424,7 @@ export default function AboutPage() {
 
           {/* Bottom CTA */}
           <motion.div
-            className="text-center mt-12 pt-8 border-t border-gray-200"
+            className="text-base lg:text-[18px] text-center mt-12 pt-8 border-t border-gray-200"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -432,7 +432,7 @@ export default function AboutPage() {
           >
             <p className="text-gray-600 mb-3">These values guide every project we undertake</p>
             <motion.div
-              className="inline-flex items-center gap-6 text-sm text-gray-500"
+              className="inline-flex items-center gap-6 text-sm lg:text-base text-gray-500"
               whileHover={{ gap: 8 }}
               transition={{ type: "spring", stiffness: 400 }}
             >
@@ -487,7 +487,7 @@ export default function AboutPage() {
           <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-px h-32 bg-linear-to-t from-blue-500/30 to-transparent"></div>
         </div>
 
-        <div className="max-w-6xl mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 md:px-8 lg:px-12 relative z-10">
           <motion.div
             className="relative"
             initial={{ opacity: 0, y: 30 }}
@@ -517,20 +517,20 @@ export default function AboutPage() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.2 }}
                   >
-                    <h2 className="text-[28px] md:text-4xl lg:text-[2.4rem] font-bold text-center lg:text-left text-gray-900 mb-6">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center lg:text-left text-gray-900 mb-6">
                       Experience
                       <span className="block bg-linear-to-r from-green-600 to-forest-600 bg-clip-text text-transparent">
                         True Excellence
                       </span>
                     </h2>
 
-                    <p className="text-xl text-gray-600 text-center lg:text-left mb-5 leading-relaxed">
+                    <p className="text-xl lg:text-[23px] text-gray-600 text-center lg:text-left mb-5 leading-relaxed">
                       Join the hundreds of Arkansas homeowners who trust us to transform their outdoor spaces with precision, care, and 25+ years of expertise.
                     </p>
 
                     {/* Trust Indicators */}
                     <motion.div
-                      className="flex items-center justify-center lg:justify-start gap-6 text-sm text-gray-500"
+                      className="flex items-center justify-center lg:justify-start gap-6 text-sm lg:text-base text-gray-500"
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: true }}
@@ -576,7 +576,7 @@ export default function AboutPage() {
                           <Phone className="h-6 w-6" />
                         </div>
                         <div className="text-left">
-                          <div className="font-bold text-lg">Call Now</div>
+                          <div className="font-bold text-lg lg:text-xl">Call Now</div>
                         </div>
                       </div>
 
@@ -613,7 +613,7 @@ export default function AboutPage() {
                             <span className="text-lg">📝</span>
                           </div>
                           <div className="text-left">
-                            <div className="font-bold text-lg">Get Free Quote</div>
+                            <div className="font-bold text-lg lg:text-xl">Get Free Quote</div>
                           </div>
                         </div>
 
@@ -636,12 +636,12 @@ export default function AboutPage() {
                       viewport={{ once: true }}
                       transition={{ delay: 0.6 }}
                     >
-                      <div className="flex items-center gap-2 text-sm text-gray-500">
+                      <div className="flex items-center gap-2 text-sm lg:text-base text-gray-500">
                         <MapPin className="h-4 w-4 text-green-600" />
                         <span>Local & Family Owned</span>
                       </div>
                       <div className="w-px h-4 bg-gray-300"></div>
-                      <div className="flex items-center gap-2 text-sm text-gray-500">
+                      <div className="flex items-center gap-2 text-sm lg:text-base text-gray-500">
                         <Shield className="h-4 w-4 text-blue-600" />
                         <span>Licensed & Insured</span>
                       </div>

@@ -93,7 +93,7 @@ export function FAQSection() {
       {/* Subtle Border Accent */}
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-linear-to-r from-transparent via-green-400 to-transparent"></div>
 
-      <div className="max-w-4xl mx-auto px-4 relative z-10">
+      <div className="max-w-6xl mx-auto px-4 md:px-8 lg:px-12 relative z-10">
         <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: 30 }}
@@ -107,10 +107,10 @@ export function FAQSection() {
             <span className="text-sm font-semibold">COMMON QUESTIONS</span>
           </motion.div>
 
-          <h2 className="text-[28px] md:text-4xl lg:text-[2.4rem] font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             Frequently Asked Questions
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-4xl mx-auto">
             Everything you need to know about our landscaping services in Northeast Arkansas
           </p>
         </motion.div>
@@ -138,7 +138,7 @@ export function FAQSection() {
                 whileHover={{ backgroundColor: "rgba(240, 253, 244, 1)" }}
                 whileTap={{ scale: 0.995 }}
               >
-                <span className="text-lg font-semibold text-gray-900 group-hover:text-green-700 transition-colors">
+                <span className="text-lg lg:text-[22px] font-semibold text-gray-900 group-hover:text-green-700 transition-colors">
                   {faq.question}
                 </span>
                 <motion.div
@@ -159,7 +159,7 @@ export function FAQSection() {
                     className="overflow-hidden"
                   >
                     <div className="px-6 py-4 bg-green-50/50 border-t border-green-100">
-                      <p className="text-gray-700 text-[19px] leading-relaxed">{faq.answer}</p>
+                      <p className="text-gray-700 text-[19px] lg:text-[21px] leading-relaxed">{faq.answer}</p>
                     </div>
                   </motion.div>
                 )}
@@ -175,11 +175,11 @@ export function FAQSection() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ delay: 0.8, duration: 0.6 }}
         >
-          <p className="text-gray-600 mb-4 text-xl">Still have questions? We&apos;re here to help!</p>
+          <p className="text-gray-600 mb-4 text-xl lg:text-[23px]">Still have questions? We&apos;re here to help!</p>
           <motion.a
             href="tel:870-530-4289"
             onClick={trackPhoneCall}
-            className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold text-xl"
+            className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold text-xl md:text-[22px] lg:text-[25px]"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >

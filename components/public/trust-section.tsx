@@ -57,7 +57,7 @@ export function TrustSection() {
   return (
     <section ref={ref} className="py-16 bg-white relative overflow-hidden text-center lg:text-left">
       <motion.div
-        className="max-w-7xl mx-auto px-4 relative z-10"
+        className="container mx-auto px-4 md:px-8px lg:px-12px relative z-10"
         variants={containerVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
@@ -101,11 +101,11 @@ export function TrustSection() {
                 <Star className="h-4 w-4 fill-current" />
                 <span className="text-sm font-semibold">TRUSTED BY 100+ HOMEOWNERS</span>
               </div>
-              <h2 className="text-[28px] md:text-4xl lg:text-[2.4rem] font-bold text-gray-900 mb-4">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
                 Proven Results You
                 <span className="block text-green-600">Can Count On</span>
               </h2>
-              <p className="text-gray-600 text-xl">
+              <p className="text-gray-600 text-xl md:text-[22px] lg:text-[24px]">
                 25+ years of transforming properties across Arkansas with reliable, professional service that exceeds expectations every time.
               </p>
             </motion.div>
@@ -163,7 +163,7 @@ export function TrustSection() {
                 <h3 className="text-[28px] md:text-4xl lg:text-[2.4rem] font-bold mb-3">
                   <span className="text-green-300">Don&apos;t Just Take Our Word For It</span>
                 </h3>
-                <p className="text-xl font-light opacity-90">
+                <p className="text-xl md:text-[22px] lg:text-[24px] font-light opacity-90">
                   Hear from homeowners who trusted us with their property transformations
                 </p>
               </div>
@@ -171,8 +171,8 @@ export function TrustSection() {
           </div>
 
           {/* Overlay Review Cards */}
-          <div className="relative -mt-24 px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="relative -mt-20 lg:-mt-15 px-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-8xl mx-auto">
               {reviews.map((review, index) => (
                 <motion.div
                   key={review.name}
@@ -198,7 +198,7 @@ export function TrustSection() {
                     </div>
 
                     {/* Review Text */}
-                    <p className="text-gray-700 leading-relaxed mb-6 line-clamp-5 text-[16.5px]">
+                    <p className="text-gray-700 leading-relaxed mb-6 line-clamp-5 text-[16.5px] md:text-[17.5px] lg:text-[20px]">
                       {review.text}
                     </p>
                   </div>
@@ -206,17 +206,17 @@ export function TrustSection() {
                   <div>
                     {/* Reviewer Info */}
                     <div className="mb-4">
-                      <h4 className="font-bold text-gray-900 text-lg">{review.name}</h4>
-                      <p className="text-green-600 font-medium text-sm">{review.service}</p>
+                      <h4 className="font-bold text-gray-900 text-lg md:text-[20px] lg:text-[22px]">{review.name}</h4>
+                      <p className="text-green-600 font-medium text-sm md:text-base">{review.service}</p>
                     </div>
 
                     {/* Footer - Uniform across all cards */}
                     <div className="flex items-center justify-between pt-4 border-t border-gray-100">
                       <div className="flex items-center gap-2 text-blue-600">
                         <Facebook className="h-4 w-4" />
-                        <span className="text-sm font-medium">Facebook</span>
+                        <span className="text-sm md:text-base font-medium">Facebook</span>
                       </div>
-                      <div className="text-green-600 font-semibold text-sm">
+                      <div className="text-green-600 font-semibold text-sm md:text-base">
                         Verified
                       </div>
                     </div>

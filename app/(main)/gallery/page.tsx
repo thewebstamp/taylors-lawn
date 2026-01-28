@@ -153,11 +153,6 @@ export default function GalleryPage() {
     document.body.style.overflow = 'unset';
   };
 
-  // Handle keyboard events
-  const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === 'Escape') closeProject();
-  };
-
   const pathname = usePathname();
 
   useEffect(() => {
@@ -171,7 +166,7 @@ export default function GalleryPage() {
   }, [pathname]);
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-white to-green-50/30" onKeyDown={handleKeyDown} tabIndex={0}>
+    <div className="min-h-screen bg-linear-to-br from-white to-green-50/30">
       <section className="relative pt-25 lg:pt-30 pb-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
@@ -194,14 +189,14 @@ export default function GalleryPage() {
             <span className="text-sm font-semibold">QUALITY CRAFTMANSHIP</span>
           </motion.div>
           <motion.h1
-            className="text-[28px] md:text-4xl lg:text-[2.4rem] font-bold mb-6"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
           >
             A Glimpse Into Our Portfolio
           </motion.h1>
           <motion.p
-            className="text-xl md:text-2xl max-w-3xl mx-auto"
+            className="text-xl md:text-[22px] lg:text-[25px] max-w-4xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
@@ -214,7 +209,7 @@ export default function GalleryPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
           >
-            <div className="flex  text-forest-900 items-center gap-6 text-sm opacity-90">
+            <div className="flex  text-forest-900 items-center gap-6 text-sm md:text-base opacity-90">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
                 <span>25+ Years Experience</span>
@@ -234,7 +229,7 @@ export default function GalleryPage() {
 
       {/* Filter Section */}
       <section id='portfolio' className="py-3 bg-white sticky top-20 z-30 shadow-sm">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="container mx-auto px-4 md:px-8 lg:px-12">
           <motion.div
             className="flex flex-wrap gap-2 justify-center"
             initial={{ opacity: 0, y: 20 }}
@@ -243,6 +238,7 @@ export default function GalleryPage() {
             {categories.map((category) => (
               <button
                 key={category.id}
+                type="button"
                 onClick={() => setActiveFilter(category.id)}
                 className={`text-[16px] flex items-center gap-2 px-6 py-1 rounded-full font-semibold transition-all ${activeFilter === category.id
                   ? 'bg-green-600 text-white shadow-lg shadow-green-600/25'
@@ -259,7 +255,7 @@ export default function GalleryPage() {
 
       {/* Gallery Grid */}
       <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="container mx-auto px-4 md:px-8 lg:px-12">
           <motion.div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
             layout
@@ -357,97 +353,101 @@ export default function GalleryPage() {
       </AnimatePresence>
 
       {/* CTA Section */}
-      <section className="py-20 bg-linear-to-br from-white to-gray-50/50 relative overflow-hidden">
-        {/* Floating Elements */}
-        <motion.div
-          className="absolute -top-4 -left-4 w-16 h-16 bg-green-400 rounded-full opacity-20"
-          animate={{
-            scale: [1, 1.5, 1],
-            opacity: [0.2, 0.4, 0.2]
-          }}
-          transition={{ duration: 3, repeat: Infinity }}
-        />
-        <motion.div
-          className="absolute -bottom-4 -right-4 w-12 h-12 bg-blue-400 rounded-full opacity-20"
-          animate={{
-            scale: [1, 1.8, 1],
-            opacity: [0.2, 0.5, 0.2]
-          }}
-          transition={{ duration: 4, repeat: Infinity, delay: 1 }}
-        />
+<section className="py-20 bg-linear-to-br from-white to-gray-50/50 relative overflow-hidden">
+  {/* Floating Elements - ADD pointer-events-none */}
+  <motion.div
+    className="absolute -top-4 -left-4 w-16 h-16 bg-green-400 rounded-full opacity-20 pointer-events-none"
+    animate={{
+      scale: [1, 1.5, 1],
+      opacity: [0.2, 0.4, 0.2]
+    }}
+    transition={{ duration: 3, repeat: Infinity }}
+  />
+  <motion.div
+    className="absolute -bottom-4 -right-4 w-12 h-12 bg-blue-400 rounded-full opacity-20 pointer-events-none"
+    animate={{
+      scale: [1, 1.8, 1],
+      opacity: [0.2, 0.5, 0.2]
+    }}
+    transition={{ duration: 4, repeat: Infinity, delay: 1 }}
+  />
 
-        {/* Sophisticated Background Pattern */}
-        <div className="absolute inset-0">
-          {/* Geometric Grid */}
-          <div className="absolute inset-0 opacity-5">
-            <div className="absolute inset-0"
-              style={{
-                backgroundImage: `
-               linear-gradient(90deg, #16a34a 1px, transparent 1px),
-               linear-gradient(180deg, #16a34a 1px, transparent 1px)
-             `,
-                backgroundSize: '80px 80px',
-              }}>
-            </div>
-          </div>
+  {/* Sophisticated Background Pattern - ADD pointer-events-none to parent */}
+  <div className="absolute inset-0 pointer-events-none">
+    {/* Geometric Grid */}
+    <div className="absolute inset-0 opacity-5 pointer-events-none">
+      <div className="absolute inset-0 pointer-events-none"
+        style={{
+          backgroundImage: `
+           linear-gradient(90deg, #16a34a 1px, transparent 1px),
+           linear-gradient(180deg, #16a34a 1px, transparent 1px)
+         `,
+          backgroundSize: '80px 80px',
+        }}>
+      </div>
+    </div>
 
-          {/* Floating Gradient Orbs */}
-          <div className="absolute top-10 -left-20 w-80 h-80 bg-linear-to-r from-green-400 to-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-5 animate-float"></div>
-          <div className="absolute bottom-10 -right-20 w-96 h-96 bg-linear-to-r from-blue-400 to-green-400 rounded-full mix-blend-multiply filter blur-3xl opacity-5 animate-float" style={{ animationDelay: '2s' }}></div>
+    {/* Floating Gradient Orbs */}
+    <div className="absolute top-10 -left-20 w-80 h-80 bg-linear-to-r from-green-400 to-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-5 animate-float pointer-events-none"></div>
+    <div className="absolute bottom-10 -right-20 w-96 h-96 bg-linear-to-r from-blue-400 to-green-400 rounded-full mix-blend-multiply filter blur-3xl opacity-5 animate-float pointer-events-none" style={{ animationDelay: '2s' }}></div>
 
-          {/* Accent Lines */}
-          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-px h-32 bg-linear-to-b from-green-500/50 to-transparent"></div>
-          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-px h-32 bg-linear-to-t from-blue-500/50 to-transparent"></div>
-        </div>
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <motion.h2
-            className="text-[28px] md:text-4xl lg:text-[2.4rem] font-bold mb-6"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            Ready to Transform Your Property?
-          </motion.h2>
-          <motion.p
-            className="text-gray-900 text-xl mb-8 max-w-2xl mx-auto"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-          >
-            Let us create stunning results for your home or business, just like we&apos;ve done for countless satisfied customers across Northeast Arkansas.
-          </motion.p>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.4 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
-          >
-            <Link
-              href="/contact"
-              className="inline-block bg-gray-900 text-gray-200 font-bold py-4 px-8 rounded-lg text-lg hover:bg-gray-100 transition-colors shadow-lg hover:shadow-xl"
-            >
-              💬 GET FREE ESTIMATE
-            </Link>
-            <Link
-              href="/services"
-              className="inline-block border-2 border-gray-900 text-gray-900 font-bold py-4 px-8 rounded-lg text-lg hover:bg-white/10 transition-colors"
-            >
-              View All Services
-            </Link>
-          </motion.div>
-          <motion.p
-            className="mt-6 text-forest-900"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.6 }}
-          >
-            📍 Serving Northeast Arkansas • 25+ Years Experience • 1-Year Guarantee
-          </motion.p>
-        </div>
-      </section>
+    {/* Accent Lines */}
+    <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-px h-32 bg-linear-to-b from-green-500/50 to-transparent pointer-events-none"></div>
+    <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-px h-32 bg-linear-to-t from-blue-500/50 to-transparent pointer-events-none"></div>
+  </div>
+  
+  {/* Content Container - ADD relative and maybe z-10 */}
+  <div className="mx-auto px-4 text-center relative z-10">
+    <motion.h2
+      className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 select-text"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+    >
+      Ready to Transform Your Property?
+    </motion.h2>
+    <motion.p
+      className="text-gray-900 text-xl md:text-[22px] lg:text-[25px] mb-8 max-w-4xl mx-auto px-4 md:px-8 lg:px-12 select-text" 
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ delay: 0.2 }}
+    >
+      Let us create stunning results for your home or business, just like we&apos;ve done for countless satisfied customers across Northeast Arkansas.
+    </motion.p>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: 0.4 }}
+      className="flex flex-col sm:flex-row gap-4 justify-center"
+    >
+      <Link
+        href="/contact"
+        onClick={() => { console.log("Contact button clicked") }}
+        className="inline-block bg-gray-900 text-gray-200 font-bold py-4 px-8 rounded-lg text-lg lg:text-xl hover:bg-gray-100 hover:text-gray-900 transition-colors shadow-lg hover:shadow-xl select-none"
+      >
+        💬 GET FREE ESTIMATE
+      </Link>
+      <Link
+        href="/services"
+        onClick={() => { console.log("Services button clicked") }}
+        className="inline-block border-2 border-gray-900 text-gray-900 font-bold py-4 px-8 rounded-lg text-lg lg:text-xl hover:bg-gray-900 hover:text-white transition-colors select-none"
+      >
+        View All Services
+      </Link>
+    </motion.div>
+    <motion.p
+      className="mt-6 text-forest-900 select-text"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ delay: 0.6 }}
+    >
+      📍 Serving Northeast Arkansas • 25+ Years Experience • 1-Year Guarantee
+    </motion.p>
+  </div>
+</section>
     </div>
   );
 }

@@ -121,7 +121,7 @@ export function ServicesShowcase() {
 
   return (
     <section id="services" ref={ref} className="py-16 bg-linear-to-b from-white/50 to-gray-50/30">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="container mx-auto px-4 md:px-8 lg:px-12">
         {/* Header Section */}
         <motion.div
           className="text-center mb-13"
@@ -137,11 +137,11 @@ export function ServicesShowcase() {
             <span className="text-sm font-semibold">WINTER & SPRING BOOKING OPEN</span>
           </motion.div>
 
-          <h2 className="text-[28px] md:text-4xl lg:text-[2.4rem] font-bold text-gray-900 mb-5">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-5">
             Solve Your Seasonal
-            <span className="block text-green-600">Landscape Challenges</span>
+            <span className="block text-green-600">Landscape and Drainage Challenges</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-5xl mx-auto">
             Trusted by Northeast Arkansas homeowners for 25+ years— delivering professional results that stand the test of time and seasons.
           </p>
         </motion.div>
@@ -180,7 +180,7 @@ export function ServicesShowcase() {
 
                 {/* Service Title Overlay */}
                 <div className="absolute bottom-4 left-4 right-4">
-                  <h3 className="text-xl font-bold mb-2 text-center lg:text-left">
+                  <h3 className="text-[21px] lg:text-2xl font-bold mb-2 text-center lg:text-left">
                     <span className='text-gray-200 tracking-[0.5px]'>{service.title}</span>
                   </h3>
                 </div>
@@ -189,7 +189,7 @@ export function ServicesShowcase() {
               {/* Service Content */}
               <div className="p-6 flex flex-col justify-between min-h-[260px]">
                 <div>
-                  <p className="text-gray-600 text-[17px] leading-relaxed mb-4">
+                  <p className="text-black font-light text-[19.5px] lg:text-[22px] leading-relaxed mb-4">
                     {service.description}
                   </p>
 
@@ -198,7 +198,7 @@ export function ServicesShowcase() {
                     {service.features.map((row, rowIndex) => (
                       <div key={rowIndex} className="flex flex-col">
                         {row.map((feature, featureIndex) => (
-                          <div key={featureIndex} className="flex items-start gap-1 text-[16px] text-gray-700 min-h-5">
+                          <div key={featureIndex} className="flex items-start gap-1 text-lg lg:text-xl text-gray-700 min-h-5">
                             <div className="w-1.5 h-1.5 bg-green-500 rounded-full mt-1.5 shrink-0"></div>
                             <span className="leading-tight">{feature}</span>
                           </div>
@@ -212,7 +212,7 @@ export function ServicesShowcase() {
                 <motion.a
                   href="tel:870-530-4289"
                   onClick={trackPhoneCall}
-                  className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 group/btn"
+                  className="w-full bg-green-600 hover:bg-green-700 text-lg lg:text-xl text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 group/btn"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
@@ -239,14 +239,14 @@ export function ServicesShowcase() {
           </div>
 
           <div className="relative z-10">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
               <span className='text-gray-50'>Tired of Seasonal Landscape Headaches?</span>
             </h3>
-            <p className="text-xl font-light md:text-xl mb-6 opacity-90 max-w-2xl mx-auto">
+            <p className="text-xl font-light md:text-[22px] lg:text-[24px] mb-6 opacity-90 max-w-2xl mx-auto">
               Get your free, no-obligation estimate today and see why Arkansas homeowners trust us
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-lg">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-lg md:text-xl lg:text-[23px]">
               <motion.a
                 href="tel:870-530-4289"
                 onClick={trackPhoneCall}
@@ -274,7 +274,7 @@ export function ServicesShowcase() {
             </div>
 
             <motion.div
-              className="flex items-center justify-center gap-2 mt-6 text-white/80 text-sm"
+              className="flex items-center justify-center gap-2 mt-6 text-white/80 text-sm md:text-base"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1.2 }}

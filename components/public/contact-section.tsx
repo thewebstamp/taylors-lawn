@@ -73,7 +73,7 @@ export function ContactSection() {
 
   return (
     <section id="contact" ref={ref} className="py-16 bg-linear-to-br from-white to-green-50/30">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="container mx-auto px-4 md:px-8 lg:px-12">
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
@@ -88,16 +88,16 @@ export function ContactSection() {
             <span className="text-sm font-semibold">FALL BOOKING ONGOING</span>
           </motion.div>
 
-          <h2 className="text-[28px] md:text-4xl lg:text-[2.4rem] font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Ready to Transform
             <span className="block text-green-600">Your Property?</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 mx-auto">
             Get your free, no-obligation quote today. We&apos;ll get back to you <strong>ASAP!</strong>
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mx-auto">
           {/* Contact Information */}
           <motion.div
             variants={containerVariants}
@@ -109,6 +109,7 @@ export function ContactSection() {
                 <motion.a
                   key={item.title}
                   href={item.link || '#'}
+                  // eslint-disable-next-line @typescript-eslint/no-unused-expressions
                   onClick={() => { item.onClick && trackPhoneCall() }}
                   className={`flex items-start gap-6 p-6 rounded-2xl border transition-all duration-300 group cursor-pointer ${item.highlight
                     ? 'bg-green-600 text-white border-green-600 shadow-lg hover:shadow-xl hover:bg-green-700'
@@ -125,14 +126,14 @@ export function ContactSection() {
                     <item.icon className={`h-6 w-6 ${item.highlight ? 'text-white' : 'text-white'}`} />
                   </div>
                   <div className="grow">
-                    <h4 className={`font-bold text-lg mb-1 ${item.highlight ? 'text-white' : 'text-gray-900'}`}>
+                    <h4 className={`font-bold text-lg lg:text-[23px] mb-1 ${item.highlight ? 'text-white' : 'text-gray-900'}`}>
                       <span className={`${item.highlight ? 'text-gray-100' : 'text-gray-900'}`}>{item.title}</span>
                     </h4>
-                    <p className={`font-semibold text-lg mb-1 ${item.highlight ? 'text-white' : 'text-green-600'
+                    <p className={`font-semibold text-lg lg:text-[23px] mb-1 ${item.highlight ? 'text-white' : 'text-green-600'
                       }`}>
                       {item.value}
                     </p>
-                    <p className={`text-[16.5px] ${item.highlight ? 'text-white/90' : 'text-gray-600'}`}>
+                    <p className={`text-[16.5px] lg:text-[18.5px] ${item.highlight ? 'text-white/90' : 'text-gray-600'}`}>
                       {item.description}
                     </p>
                   </div>
@@ -155,11 +156,11 @@ export function ContactSection() {
             </div>
 
             <div className="relative z-10 p-8 h-full flex flex-col justify-center text-white text-center">
-              <h3 className="text-[25px] font-bold mb-4">
+              <h3 className="text-[25px] lg:text-[28px] font-bold mb-4">
                 FREE QUOTE • NO OBLIGATION
               </h3>
 
-              <p className="text-lg opacity-90 mb-2">
+              <p className="text-lg lg:text-[22px] opacity-90 mb-2">
                 Tell us about your project and we&apos;ll provide:
               </p>
 
@@ -178,7 +179,7 @@ export function ContactSection() {
                     transition={{ delay: 0.6 + index * 0.1 }}
                   >
                     <div className="w-2 h-2 bg-green-300 rounded-full shrink-0"></div>
-                    <span className="text-white/90 text-[17px]">{benefit}</span>
+                    <span className="text-white/90 text-[17px] lg:text-[20px]">{benefit}</span>
                   </motion.div>
                 ))}
               </div>
@@ -191,7 +192,7 @@ export function ContactSection() {
                 >
                   <Link
                     href="/contact"
-                    className="w-full bg-white text-green-600 font-semibold py-3 px-6 rounded-lg text-lg transition-all duration-300 flex items-center justify-center gap-3 group/cta hover:bg-gray-50"
+                    className="w-full bg-white text-green-600 font-semibold py-3 px-6 rounded-lg text-lg lg:text-[22px] transition-all duration-300 flex items-center justify-center gap-3 group/cta hover:bg-gray-50"
                   >
                     <span>Get Free Quote</span>
                     <ArrowRight className="h-5 w-5 group-hover/cta:translate-x-1 transition-transform" />
@@ -212,7 +213,7 @@ export function ContactSection() {
                 <motion.a
                   href="tel:870-530-4289"
                   onClick={trackPhoneCall}
-                  className="w-full bg-transparent border-2 border-white text-white font-semibold py-3 px-6 rounded-lg text-lg transition-all duration-300 flex items-center justify-center gap-3 group/call hover:bg-white/10"
+                  className="w-full bg-transparent border-2 border-white text-white font-semibold py-3 px-6 rounded-lg text-lg lg:text-[22px] transition-all duration-300 flex items-center justify-center gap-3 group/call hover:bg-white/10"
                   initial={{ opacity: 0, y: 20 }}
                   animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                   transition={{ delay: 1.1 }}

@@ -72,7 +72,7 @@ export function PortfolioShowcase() {
 
   return (
     <section ref={ref} className="py-16 bg-linear-to-b from-white to-gray-50/50">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="container mx-auto px-4 md:px-8 lg:px-12">
         {/* Header Section */}
         <motion.div
           className="text-center mb-16"
@@ -88,11 +88,11 @@ export function PortfolioShowcase() {
             <span className="text-sm font-semibold">PROVEN RESULTS</span>
           </motion.div>
 
-          <h2 className="text-[28px] md:text-4xl lg:text-[2.4rem] font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             See Our Work in
             <span className="block text-green-600">Northeast Arkansas</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-4xl mx-auto">
             Real projects, real results - see how we&apos;ve transformed properties across Paragould, Jonesboro, and beyond
           </p>
         </motion.div>
@@ -138,10 +138,10 @@ export function PortfolioShowcase() {
 
                 {/* Project Info Overlay */}
                 <div className="absolute bottom-4 left-4 right-4">
-                  <h3 className="text-xl font-bold text-white mb-2">
-                    <span className='text-gray-50'>{item.title}</span>
+                  <h3 className="text-xl lg:text-[22px] font-bold mb-2">
+                    <span className='text-gray-200'>{item.title}</span>
                   </h3>
-                  <div className="flex items-center gap-2 text-white/80 text-sm">
+                  <div className="flex items-center gap-2 text-white/80 text-sm lg:text-base">
                     <MapPin className="h-3 w-3" />
                     <span>{item.location}</span>
                   </div>
@@ -158,11 +158,11 @@ export function PortfolioShowcase() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ delay: 1.2, duration: 0.6 }}
         >
-          <p className="text-gray-600 text-xl mb-6 max-w-2xl mx-auto">
+          <p className="text-gray-600 text-xl md:text-[22px] lg:text-[24px] mb-6 max-w-2xl mx-auto">
             See more of our work and get inspired for your own project
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-lg">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-lg md:text-xl lg:text-[23px]">
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -171,7 +171,7 @@ export function PortfolioShowcase() {
                 href="/gallery#portfolio"
                 className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 flex items-center gap-3 group/cta"
               >
-                <span>More Completed Projects</span>
+                <span>See More Projects</span>
                 <ExternalLink className="h-4 w-4 group-hover/cta:translate-x-1 transition-transform" />
               </Link>
             </motion.div>

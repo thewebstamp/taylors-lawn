@@ -118,7 +118,7 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-linear-to-br from-white to-green-50/30">
       {/* Hero Section - Adjusted to start from top */}
-      <section className="relative pt-25 lg:pt-30 pb-20 overflow-hidden"> {/* Changed from pt-20 to pt-32 */}
+      <section className="relative pt-25 lg:pt-30 pb-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
             src="/hero.jpg"
@@ -131,7 +131,7 @@ export default function ServicesPage() {
           <div className="absolute inset-0 bg-linear-to-b from-blue-600/60 to-green-600/70" />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
           <motion.div
             className="text-center"
             initial={{ opacity: 0, y: 30 }}
@@ -146,10 +146,10 @@ export default function ServicesPage() {
               <span className="text-sm font-semibold">WINTER & SPRING BOOKING OPEN</span>
             </motion.div>
 
-            <h1 className="text-[28px] md:text-4xl lg:text-[2.4rem] font-bold text-gray-900 mb-6">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
               Professional&nbsp; Services
             </h1>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto"> {/* Changed to gray-700 for better contrast */}
+            <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-700 max-w-5xl mx-auto"> {/* Changed to gray-700 for better contrast */}
               Complete outdoor solutions for residential and commercial properties across Northeast Arkansas.
               25+ years of trusted service.
             </p>
@@ -159,7 +159,7 @@ export default function ServicesPage() {
 
       {/* Services Grid */}
       <section className="py-10 pb-20 lg:py-20 bg-linear-to-b from-white to-gray-50/30">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="container mx-auto px-4 md:px-8 lg:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <motion.div
@@ -190,7 +190,7 @@ export default function ServicesPage() {
 
                   {/* Service Title */}
                   <div className="absolute bottom-4 left-4 right-4">
-                    <h3 className="text-xl font-bold text-white mb-2">
+                    <h3 className="text-[21px] lg:text-2xl font-bold text-white mb-2">
                       <span className="text-gray-100">{service.title}</span>
                     </h3>
                   </div>
@@ -198,7 +198,7 @@ export default function ServicesPage() {
 
                 {/* Service Content */}
                 <div className="p-6">
-                  <p className="text-gray-600 text-[17px] leading-relaxed mb-4 text-center md:text-left">
+                  <p className="text-black text-[19.5px] lg:text-[22px] font-light leading-relaxed mb-4 text-center md:text-left">
                     {service.description}
                   </p>
 
@@ -207,7 +207,7 @@ export default function ServicesPage() {
                     {service.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-center gap-3 text-gray-700">
                         <div className="w-1.5 h-1.5 bg-green-500 rounded-full shrink-0"></div>
-                        <span className="text-[16px]">{feature}</span>
+                        <span className="text-lg lg:text-xl">{feature}</span>
                       </div>
                     ))}
                   </div>
@@ -221,7 +221,7 @@ export default function ServicesPage() {
                     whileTap={{ scale: 0.98 }}
                   >
                     <Phone className="h-4 w-4" />
-                    <span>Get Free Quote</span>
+                    <span className='text-lg lg:text-xl'>Get Free Quote</span>
                     <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
                   </motion.a>
                 </div>
@@ -251,7 +251,7 @@ export default function ServicesPage() {
           <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-px h-32 bg-linear-to-t from-blue-500 to-transparent"></div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 md:px-8 lg:px-12 relative z-10">
           <motion.div
             className="text-center mb-15"
             initial={{ opacity: 0, y: 30 }}
@@ -272,18 +272,18 @@ export default function ServicesPage() {
               <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
             </motion.div>
 
-            <h2 className="text-[28px] md:text-4xl lg:text-[2.4rem] font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
               Your&nbsp; Satisfaction,&nbsp;
               <span className="block bg-linear-to-r from-green-600 to-green-600 bg-clip-text text-transparent">
                 Guaranteed
               </span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-4xl mx-auto">
               Our promises aren&apos;t just words - they&apos;re the foundation of everything we do
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mx-auto">
             {guarantees.map((guarantee, index) => (
               <motion.div
                 key={guarantee.title}
@@ -348,10 +348,10 @@ export default function ServicesPage() {
 
                   {/* Content */}
                   <div className="relative">
-                    <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-gray-800 transition-colors">
+                    <h3 className="text-xl lg:text-[22px] font-bold text-gray-900 mb-3 group-hover:text-gray-800 transition-colors">
                       {guarantee.title}
                     </h3>
-                    <p className="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors">
+                    <p className="text-gray-600 text-lg lg:text-xl leading-relaxed group-hover:text-gray-700 transition-colors">
                       {guarantee.description}
                     </p>
                   </div>
@@ -406,9 +406,9 @@ export default function ServicesPage() {
             viewport={{ once: true }}
             transition={{ delay: 0.6, duration: 0.6 }}
           >
-            <p className="text-gray-600 mb-3">Experience the Taylor&apos;s Lawn Care difference</p>
+            <p className="text-gray-600 mb-3 text-base lg:text-[18px]">Experience the Taylor&apos;s Lawn Care difference</p>
             <motion.div
-              className="inline-flex items-center gap-6 text-sm text-gray-500"
+              className="inline-flex items-center gap-6 text-sm md:text-base text-gray-500"
               whileHover={{ gap: 8 }}
               transition={{ type: "spring", stiffness: 400 }}
             >
