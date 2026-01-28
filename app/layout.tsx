@@ -4,6 +4,9 @@ import { SpeedInsights } from '@vercel/speed-insights/react';
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
 import { Josefin_Sans, Poetsen_One } from 'next/font/google';
 import './globals.css';
+import { PerformanceTracker } from '@/components/public/performance-tracker';
+import { Footer } from '@/components/public/footer';
+import { Navigation } from '@/components/public/navigation';
 
 // Optimized font loading with next/font
 const josefinSans = Josefin_Sans({
@@ -163,7 +166,20 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased">
-        {children}
+        <div className="min-h-screen bg-earth-50">
+          {/* Navigation Component (Client Component) */}
+          <Navigation />
+
+          {/* Main Content */}
+          <main className="relative">
+            {children}
+          </main>
+
+          {/* Footer */}
+          <Footer />
+
+          <PerformanceTracker />
+        </div>
         <Analytics />
         <SpeedInsights />
         {process.env.NEXT_PUBLIC_GA_ID && (

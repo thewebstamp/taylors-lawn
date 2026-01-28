@@ -41,70 +41,80 @@ export function ServicesShowcase() {
       icon: '💧',
       title: 'Drainage Solutions',
       description: 'French drains, surface drainage, downspout drainage. Over 3,000 feet installed this season!',
-      features: [['Emergency Service'], ['Free Inspection']]
+      features: [['Emergency Service'], ['Free Inspection']],
+      slug: "drainage-solution"
     },
     {
       img: "/sod.jpg",
       icon: '🌿',
       title: 'Landscaping & Sod',
       description: 'Complete landscape design, sod installation, garden beds, and outdoor living spaces',
-      features: [['Custom Designs'], ['Premium Materials']]
+      features: [['Custom Designs'], ['Premium Materials']],
+      slug: "landscaping-sod"
     },
     {
       img: "/hero.jpg",
       icon: '🌱',
       title: 'Professional Lawn Care',
       description: 'lawn maintenance including fertilization and weed control for a healthy, vibrant yard',
-      features: [['Fertilization & Weed Control'], ['Seasonal Aeration']]
+      features: [['Fertilization & Weed Control'], ['Seasonal Aeration']],
+      slug: "lawn-care"
     },
     {
       img: "/sprinkler.jpg",
       icon: '🚿',
       title: 'Sprinkler Systems',
       description: 'Professional irrigation system installation and repair for healthy lawns',
-      features: [['Smart Systems'], ['Maintenance Plans']]
+      features: [['Smart Systems'], ['Maintenance Plans']],
+      slug: "sprinkler-systems"
     },
     {
       img: "/dirt.jpg",
       icon: '🚜',
       title: 'Dirt Work & Grading',
       description: '25+ years heavy equipment experience for precise grading and site preparation',
-      features: [['Commercial Grade'], ['Expert Operation']]
+      features: [['Commercial Grade'], ['Expert Operation']],
+      slug: "dirt-work-grading"
     },
     {
       img: "/tree.jpg",
       icon: '🌲',
       title: 'Tree & Brush Cleanup',
       description: 'Small tree trimming, brush removal, and lot clearing with professional equipment',
-      features: [['Safety First'], ['Thorough Cleanup']]
+      features: [['Safety First'], ['Thorough Cleanup']],
+      slug: "tree-brush-cleanup"
     },
     {
       img: "/fence.jpg",
       icon: '🏠',
       title: 'Privacy Fencing',
       description: 'Quality fencing installation with 1-year guarantee on workmanship',
-      features: [['Quality Materials'], ['Expert Installation']]
+      features: [['Quality Materials'], ['Expert Installation']],
+      slug: "privacy-fencing"
     },
     {
       img: "/stone.jpg",
       icon: '🧱',
       title: 'Rock Work & Hardscaping',
       description: 'Retaining walls, stone features, and hardscape to boost curb appeal',
-      features: [['Quality Craftsmanship'], ['Durable Materials']]
+      features: [['Quality Craftsmanship'], ['Durable Materials']],
+      slug: "rock-work-hardscaping"
     },
     {
       img: "/holiday.jpg",
       icon: '🎄',
       title: 'Holiday Lighting',
       description: 'Professional holiday light installation starting at $2.50/ft',
-      features: [['Professional Design'], ['Install & Removal']]
+      features: [['Professional Design'], ['Install & Removal']],
+      slug: "holiday-lighting"
     },
     {
       img: "/clean.jpg",
       icon: '🍂',
       title: 'Seasonal Cleanup',
       description: 'Fall cleanups, leaf removal, and winter preparation services',
-      features: [['Thorough Service'], ['Seasonal Expertise']]
+      features: [['Thorough Service'], ['Seasonal Expertise']],
+      slug: "seasonal-cleanup"
     }
   ];
 
@@ -209,17 +219,27 @@ export function ServicesShowcase() {
                 </div>
 
                 {/* CTA Button */}
-                <motion.a
-                  href="tel:870-530-4289"
-                  onClick={trackPhoneCall}
-                  className="w-full bg-green-600 hover:bg-green-700 text-lg lg:text-xl text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 group/btn"
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                >
-                  <Phone className="h-4 w-4" />
-                  <span>Get Free Quote</span>
-                  <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
-                </motion.a>
+                <div className='w-full flex flex-col gap-2'>
+                  <motion.a
+                    href="tel:870-530-4289"
+                    onClick={trackPhoneCall}
+                    className="w-full bg-green-600 hover:bg-green-700 text-lg lg:text-xl text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 group/btn"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    <Phone className="h-4 w-4" />
+                    <span>Get Free Quote</span>
+                    <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
+                  </motion.a>
+
+                  <Link
+                    href={`/services/${service.slug}`}
+                    className="w-full bg-gray-800 hover:bg-gray-950 text-lg lg:text-xl text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 group/btn"
+                  >
+                    <span>Learn More</span>
+                    <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
+                  </Link>
+                </div>
               </div>
             </motion.div>
           ))}

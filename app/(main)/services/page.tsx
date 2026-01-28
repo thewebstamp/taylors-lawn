@@ -4,6 +4,7 @@
 import { motion } from 'framer-motion';
 import { CheckCircle, Star, Clock, Shield, Phone, ArrowRight, Calendar } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 export default function ServicesPage() {
@@ -14,70 +15,80 @@ export default function ServicesPage() {
       title: 'Drainage Solutions',
       description: 'French drains, surface drainage, downspout drainage. Over 3,000 feet installed this season!',
       features: ['Emergency Service', 'Free Inspection', 'Expert Installation', '25+ Years Experience'],
-      highlight: true
+      highlight: true,
+      slug: "drainage-solution"
     },
     {
       img: "/sod.jpg",
       icon: '🌿',
       title: 'Landscaping & Sod',
       description: 'Complete landscape design, sod installation, garden beds, and outdoor living spaces',
-      features: ['Custom Designs', 'Premium Materials', '25+ Years Experience', 'Heavy Equipment Operation']
+      features: ['Custom Designs', 'Premium Materials', '25+ Years Experience', 'Heavy Equipment Operation'],
+      slug: "landscaping-sod"
     },
     {
       img: "/hero.jpg",
       icon: '🌱',
       title: 'Lawn Care',
       description: 'Complete lawn maintenance including fertilization, weed control, aeration, and seasonal care for a healthy, vibrant yard year-round.',
-      features: ['Aeration & Overseeding', 'Fertilization Programs', 'Weed & Pest Control']
+      features: ['Aeration & Overseeding', 'Fertilization Programs', 'Weed & Pest Control'],
+      slug: "lawn-care"
     },
     {
       img: "/sprinkler.jpg",
       icon: '🚿',
       title: 'Sprinkler Systems',
       description: 'Professional irrigation system installation and repair for healthy lawns',
-      features: ['Smart Systems', 'Maintenance Plans', 'Expert Installation', 'Water Efficiency']
+      features: ['Smart Systems', 'Maintenance Plans', 'Expert Installation', 'Water Efficiency'],
+      slug: "sprinkler-systems"
     },
     {
       img: "/dirt.jpg",
       icon: '🚜',
       title: 'Dirt Work & Grading',
       description: '25+ years heavy equipment experience for precise grading and site preparation',
-      features: ['Commercial Grade', 'Proper Drainage', 'Heavy Equipment', 'Quick Turnaround']
+      features: ['Commercial Grade', 'Proper Drainage', 'Heavy Equipment', 'Quick Turnaround'],
+      slug: "dirt-work-grading"
     },
     {
       img: "/tree.jpg",
       icon: '🌲',
       title: 'Tree & Brush Cleanup',
       description: 'Small tree trimming, brush removal, and professional lot clearing services',
-      features: ['Safety First', 'Thorough Cleanup', 'Debris Removal', 'Professional Equipment']
+      features: ['Safety First', 'Thorough Cleanup', 'Debris Removal', 'Professional Equipment'],
+      slug: "tree-brush-cleanup"
     },
     {
       img: "/fence.jpg",
       icon: '🏠',
       title: 'Privacy Fencing',
       description: 'Quality fencing installation with 1-year guarantee on workmanship',
-      features: ['Quality Materials', 'Expert Installation', '1-Year Guarantee', 'Custom Options']
+      features: ['Quality Materials', 'Expert Installation', '1-Year Guarantee', 'Custom Options'],
+      slug: "privacy-fencing"
     },
     {
       img: "/stone.jpg",
       icon: '🧱',
       title: 'Rock Work & Hardscaping',
       description: 'Retaining walls, stone features, and hardscape to boost curb appeal',
-      features: ['Quality Craftsmanship', 'Durable Materials', 'Expert Installation', '25+ Years Experience']
+      features: ['Quality Craftsmanship', 'Durable Materials', 'Expert Installation', '25+ Years Experience'],
+      slug: "rock-work-hardscaping"
     },
     {
       img: "/holiday.jpg",
       icon: '🎄',
       title: 'Holiday Lighting',
       description: 'Professional holiday light installation starting at $2.50/ft',
-      features: ['Professional Design', 'Install & Removal', 'LED Technology', 'Seasonal Service']
+      features: ['Professional Design', 'Install & Removal', 'LED Technology', 'Seasonal Service'],
+      slug: "holiday-lighting"
     },
     {
       img: "/clean.jpg",
       icon: '🍂',
       title: 'Seasonal Cleanup',
       description: 'Fall cleanups, leaf removal, and winter preparation services',
-      features: ['Thorough Service', 'Seasonal Expertise', 'Debris Removal', 'Quick Response']
+      features: ['Thorough Service', 'Seasonal Expertise', 'Debris Removal', 'Quick Response'],
+      slug: "seasonal-cleanup"
     }
   ];
 
@@ -213,17 +224,27 @@ export default function ServicesPage() {
                   </div>
 
                   {/* CTA Button */}
-                  <motion.a
-                    href="tel:870-530-4289"
-                    onClick={trackPhoneCall}
-                    className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 group/btn"
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    <Phone className="h-4 w-4" />
-                    <span className='text-lg lg:text-xl'>Get Free Quote</span>
-                    <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
-                  </motion.a>
+                  <div className="full flex flex-col gap-2">
+                    <motion.a
+                      href="tel:870-530-4289"
+                      onClick={trackPhoneCall}
+                      className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 group/btn"
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                    >
+                      <Phone className="h-4 w-4" />
+                      <span className='text-lg lg:text-xl'>Get Free Quote</span>
+                      <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
+                    </motion.a>
+
+                    <Link
+                      href={`/services/${service.slug}`}
+                      className="w-full bg-gray-800 hover:bg-gray-950 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 group/btn">
+                      <Phone className="h-4 w-4" />
+                      <span className='text-lg lg:text-xl'>Learn More</span>
+                      <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
+                    </Link>
+                  </div>
                 </div>
               </motion.div>
             ))}
