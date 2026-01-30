@@ -66,6 +66,82 @@ export default function HolidayLightingPage() {
 
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Service",
+                        "name": "Holiday & Christmas Lighting Installation",
+                        "url": "https://taylorslawncare21.com/services/holiday-lighting",
+                        "description":
+                            "Professional holiday and Christmas lighting installation for homes and businesses in Northeast Arkansas. Full-service design, installation, maintenance, and removal.",
+                        "provider": {
+                            "@type": "LocalBusiness",
+                            "name": "Taylor's Lawn Care & Landscaping, LLC",
+                            "url": "https://taylorslawncare21.com",
+                            "telephone": "870-530-4289"
+                        },
+                        "areaServed": [
+                            { "@type": "City", "name": "Paragould" },
+                            { "@type": "City", "name": "Jonesboro" },
+                            { "@type": "City", "name": "Brookland" },
+                            { "@type": "City", "name": "Monette" },
+                            { "@type": "AdministrativeArea", "name": "Northeast Arkansas" }
+                        ],
+                        "hasOfferCatalog": {
+                            "@type": "OfferCatalog",
+                            "name": "Holiday Lighting Services",
+                            "itemListElement": [
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Roof Line Holiday Lighting"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Tree & Shrub Lighting"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Custom Light Displays"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Commercial Holiday Lighting"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Full-Service Holiday Lighting Package"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Timed & Smart Holiday Lighting"
+                                    }
+                                }
+                            ]
+                        }
+                    }),
+                }}
+            />
+
+
             <div className="min-h-screen bg-linear-to-br from-white to-red-50/30">
                 {/* Hero Section */}
                 <section className="relative py-20 lg:py-25 overflow-hidden min-h-screen flex justify-center items-center bg-linear-to-b from-red-900 to-green-700">

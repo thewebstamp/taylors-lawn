@@ -87,6 +87,42 @@ export default function DrainageSolutionsPage() {
 
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Service",
+                        "name": "Drainage Solutions",
+                        "url": "https://taylorslawncare21.com/services/drainage-solution",
+                        "description":
+                            "Professional drainage solutions including French drains, yard grading, and emergency flood relief in Northeast Arkansas.",
+                        "provider": {
+                            "@type": "LocalBusiness",
+                            "name": "Taylor's Lawn Care & Landscaping, LLC",
+                            "url": "https://taylorslawncare21.com",
+                            "telephone": "870-530-4289"
+                        },
+                        "areaServed": [
+                            { "@type": "City", "name": "Paragould" },
+                            { "@type": "City", "name": "Jonesboro" },
+                            { "@type": "AdministrativeArea", "name": "Northeast Arkansas" }
+                        ],
+                        "hasOfferCatalog": {
+                            "@type": "OfferCatalog",
+                            "name": "Drainage Services",
+                            "itemListElement": [
+                                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "French Drain Installation" } },
+                                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Surface Drainage Systems" } },
+                                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Emergency Flood Relief" } },
+                                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Yard Grading & Regrading" } }
+                            ]
+                        }
+                    }),
+                }}
+            />
+
+
             <div className="min-h-screen bg-linear-to-br from-white to-blue-50/30">
                 {/* Hero Section - Updated with new headline */}
                 <section className="relative py-20 lg:py-25 overflow-hidden min-h-screen flex justify-center items-center bg-linear-to-b from-blue-900 to-green-900">

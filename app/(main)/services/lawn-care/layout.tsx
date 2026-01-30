@@ -9,7 +9,7 @@ export const metadata: Metadata = {
         "professional lawn care", "lawn treatment", "Northeast Arkansas lawn care"
     ].join(", "),
     alternates: {
-        canonical: '/services/professional-lawn-care',
+        canonical: '/services/lawn-care',
     },
     openGraph: {
         type: 'website',

@@ -65,6 +65,82 @@ export default function PrivacyFencingPage() {
 
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Service",
+                        "name": "Privacy Fence Installation & Repair Services",
+                        "url": "https://taylorslawncare21.com/services/privacy-fencing",
+                        "description":
+                            "Professional privacy fencing services in Northeast Arkansas including wood and vinyl fence installation, custom gates, fence repair, and complete fence replacement.",
+                        "provider": {
+                            "@type": "LocalBusiness",
+                            "name": "Taylor's Lawn Care & Landscaping, LLC",
+                            "url": "https://taylorslawncare21.com",
+                            "telephone": "870-530-4289"
+                        },
+                        "areaServed": [
+                            { "@type": "City", "name": "Paragould" },
+                            { "@type": "City", "name": "Jonesboro" },
+                            { "@type": "City", "name": "Brookland" },
+                            { "@type": "City", "name": "Monette" },
+                            { "@type": "AdministrativeArea", "name": "Northeast Arkansas" }
+                        ],
+                        "hasOfferCatalog": {
+                            "@type": "OfferCatalog",
+                            "name": "Privacy Fencing Services",
+                            "itemListElement": [
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Wood Privacy Fence Installation"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Vinyl Privacy Fence Installation"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Custom Gate Installation"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Fence Repair & Maintenance"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Complete Fence Replacement"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Pool & Security Fencing"
+                                    }
+                                }
+                            ]
+                        }
+                    }),
+                }}
+            />
+
+
             <div className="min-h-screen bg-linear-to-br from-white to-purple-50/30">
                 {/* Hero Section */}
                 <section className="relative py-20 lg:py-25 overflow-hidden min-h-screen flex justify-center items-center bg-linear-to-b from-purple-900 to-purple-700">

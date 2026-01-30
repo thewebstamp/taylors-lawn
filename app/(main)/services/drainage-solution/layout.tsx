@@ -9,7 +9,7 @@ export const metadata: Metadata = {
         "Jonesboro drainage", "Northeast Arkansas drainage", "flood prevention"
     ].join(", "),
     alternates: {
-        canonical: '/services/drainage-solutions',
+        canonical: '/services/drainage-solution',
     },
     openGraph: {
         type: 'website',

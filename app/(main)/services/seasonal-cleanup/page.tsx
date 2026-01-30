@@ -66,6 +66,45 @@ export default function SeasonalCleanupPage() {
 
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Service",
+                        "name": "Seasonal Cleanup Services",
+                        "url": "https://taylorslawncare21.com/services/seasonal-cleanup",
+                        "description": "Professional seasonal cleanup services in Northeast Arkansas including fall leaf cleanup, spring yard cleanup, gutter cleaning, property debris removal, winter preparation, and complete year-round seasonal packages.",
+                        "provider": {
+                            "@type": "LocalBusiness",
+                            "name": "Taylor's Lawn Care & Landscaping, LLC",
+                            "url": "https://taylorslawncare21.com",
+                            "telephone": "870-530-4289"
+                        },
+                        "areaServed": areasServed.map(area => {
+                            if (area.includes('County')) {
+                                return { "@type": "AdministrativeArea", "name": area };
+                            } else {
+                                return { "@type": "City", "name": area };
+                            }
+                        }),
+                        "hasOfferCatalog": {
+                            "@type": "OfferCatalog",
+                            "name": "Seasonal Cleanup Services",
+                            "itemListElement": services.map(service => ({
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": service.title,
+                                    "description": service.description
+                                }
+                            }))
+                        }
+                    }),
+                }}
+            />
+
+
             <div className="min-h-screen bg-linear-to-br from-white to-amber-50/30">
                 {/* Hero Section */}
                 <section className="relative py-20 lg:py-25 overflow-hidden min-h-screen flex justify-center items-center bg-linear-to-b from-amber-900 to-amber-700">

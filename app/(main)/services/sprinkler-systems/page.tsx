@@ -66,6 +66,45 @@ export default function SprinklerSystemsPage() {
 
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Service",
+                        "name": "Sprinkler Systems & Irrigation Services",
+                        "url": "https://taylorslawncare21.com/services/sprinkler-systems",
+                        "description": "Professional sprinkler system services in Northeast Arkansas including new system installation, smart irrigation, system repair, maintenance and winterization, zone upgrades, and drip irrigation solutions.",
+                        "provider": {
+                            "@type": "LocalBusiness",
+                            "name": "Taylor's Lawn Care & Landscaping, LLC",
+                            "url": "https://taylorslawncare21.com",
+                            "telephone": "870-530-4289"
+                        },
+                        "areaServed": areasServed.map(area => {
+                            if (area.includes('County')) {
+                                return { "@type": "AdministrativeArea", "name": area };
+                            } else {
+                                return { "@type": "City", "name": area };
+                            }
+                        }),
+                        "hasOfferCatalog": {
+                            "@type": "OfferCatalog",
+                            "name": "Sprinkler Systems Services",
+                            "itemListElement": services.map(service => ({
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": service.title,
+                                    "description": service.description
+                                }
+                            }))
+                        }
+                    }),
+                }}
+            />
+
+
             <div className="min-h-screen bg-linear-to-br from-white to-blue-50/30">
                 {/* Hero Section */}
                 <section className="relative py-20 lg:py-25 overflow-hidden min-h-screen flex justify-center items-center bg-linear-to-b from-blue-900 to-blue-700">

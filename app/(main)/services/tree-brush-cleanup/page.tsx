@@ -66,6 +66,45 @@ export default function TreeBrushCleanupPage() {
 
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Service",
+                        "name": "Tree & Brush Cleanup Services",
+                        "url": "https://taylorslawncare21.com/services/tree-brush-cleanup",
+                        "description": "Professional tree and brush cleanup services in Northeast Arkansas including tree trimming, brush removal, small tree removal, lot clearing, storm damage cleanup, and hazardous tree assessment.",
+                        "provider": {
+                            "@type": "LocalBusiness",
+                            "name": "Taylor's Lawn Care & Landscaping, LLC",
+                            "url": "https://taylorslawncare21.com",
+                            "telephone": "870-530-4289"
+                        },
+                        "areaServed": areasServed.map(area => {
+                            if (area.includes('County')) {
+                                return { "@type": "AdministrativeArea", "name": area };
+                            } else {
+                                return { "@type": "City", "name": area };
+                            }
+                        }),
+                        "hasOfferCatalog": {
+                            "@type": "OfferCatalog",
+                            "name": "Tree & Brush Cleanup Services",
+                            "itemListElement": services.map(service => ({
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": service.title,
+                                    "description": service.description
+                                }
+                            }))
+                        }
+                    }),
+                }}
+            />
+
+
             <div className="min-h-screen bg-linear-to-br from-white to-emerald-50/30">
                 {/* Hero Section */}
                 <section className="relative py-20 lg:py-25 overflow-hidden min-h-screen flex justify-center items-center bg-linear-to-b from-emerald-900 to-emerald-700">

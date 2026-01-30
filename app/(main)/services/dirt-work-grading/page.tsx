@@ -65,6 +65,40 @@ export default function DirtWorkGradingPage() {
 
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Service",
+                        "name": "Dirt Work & Grading",
+                        "description": "Professional dirt work and grading services in Northeast Arkansas with over 25 years of experience.",
+                        "provider": {
+                            "@type": "LandscapingBusiness",
+                            "name": "Taylor's Lawn Care & Landscaping LLC",
+                            "url": "https://taylorslawncare21.com/services/dirt-work-grading",
+                            "telephone": "+1-870-530-4289"
+                        },
+                        "areaServed": {
+                            "@type": "AdministrativeArea",
+                            "name": "Northeast Arkansas"
+                        },
+                        "hasOfferCatalog": {
+                            "@type": "OfferCatalog",
+                            "name": "Dirt Work & Grading Services",
+                            "itemListElement": [
+                                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Precision Grading" } },
+                                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Site Preparation" } },
+                                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Excavation Services" } },
+                                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Yard Regrading" } },
+                                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway Preparation" } },
+                                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Heavy Equipment Operation" } }
+                            ]
+                        }
+                    })
+                }}
+            />
+
             <div className="min-h-screen bg-linear-to-br from-white to-amber-50/30">
                 {/* Hero Section */}
                 <section className="relative py-20 lg:py-25 overflow-hidden min-h-screen flex justify-center items-center bg-linear-to-b from-amber-900 to-amber-700">

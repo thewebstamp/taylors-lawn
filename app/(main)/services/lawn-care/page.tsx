@@ -65,6 +65,82 @@ export default function ProfessionalLawnCarePage() {
 
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Service",
+                        "name": "Professional Lawn Care Services",
+                        "url": "https://taylorslawncare21.com/services/lawn-care",
+                        "description":
+                            "Professional lawn care services in Northeast Arkansas including fertilization, weed control, aeration, mowing, and complete year-round lawn maintenance programs.",
+                        "provider": {
+                            "@type": "LocalBusiness",
+                            "name": "Taylor's Lawn Care & Landscaping, LLC",
+                            "url": "https://taylorslawncare21.com",
+                            "telephone": "870-530-4289"
+                        },
+                        "areaServed": [
+                            { "@type": "City", "name": "Paragould" },
+                            { "@type": "City", "name": "Jonesboro" },
+                            { "@type": "City", "name": "Brookland" },
+                            { "@type": "City", "name": "Monette" },
+                            { "@type": "AdministrativeArea", "name": "Northeast Arkansas" }
+                        ],
+                        "hasOfferCatalog": {
+                            "@type": "OfferCatalog",
+                            "name": "Professional Lawn Care Services",
+                            "itemListElement": [
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Lawn Fertilization"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Weed Control"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Seasonal Lawn Aeration"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Lawn Mowing & Maintenance"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Disease & Pest Control"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Complete Lawn Care Program"
+                                    }
+                                }
+                            ]
+                        }
+                    }),
+                }}
+            />
+
+
             <div className="min-h-screen bg-linear-to-br from-white to-green-50/30">
                 {/* Hero Section */}
                 <section className="relative py-20 lg:py-25 overflow-hidden min-h-screen flex justify-center items-center bg-linear-to-b from-green-800 to-green-600">

@@ -65,6 +65,82 @@ export default function LandscapingSodPage() {
 
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Service",
+                        "name": "Landscaping & Sod Installation Services",
+                        "url": "https://taylorslawncare21.com/services/landscaping-sod",
+                        "description":
+                            "Professional landscaping and sod installation services in Northeast Arkansas. Custom landscape design, sod installation, garden beds, and complete outdoor renovations with 25+ years of experience.",
+                        "provider": {
+                            "@type": "LocalBusiness",
+                            "name": "Taylor's Lawn Care & Landscaping, LLC",
+                            "url": "https://taylorslawncare21.com",
+                            "telephone": "870-530-4289"
+                        },
+                        "areaServed": [
+                            { "@type": "City", "name": "Paragould" },
+                            { "@type": "City", "name": "Jonesboro" },
+                            { "@type": "City", "name": "Brookland" },
+                            { "@type": "City", "name": "Monette" },
+                            { "@type": "AdministrativeArea", "name": "Northeast Arkansas" }
+                        ],
+                        "hasOfferCatalog": {
+                            "@type": "OfferCatalog",
+                            "name": "Landscaping & Sod Services",
+                            "itemListElement": [
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Sod Installation"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Landscape Design"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Garden Beds & Planting"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Outdoor Living Spaces"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Seasonal Color Installations"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Complete Landscape Renovation"
+                                    }
+                                }
+                            ]
+                        }
+                    }),
+                }}
+            />
+
+
             <div className="min-h-screen bg-linear-to-br from-white to-green-50/30">
                 {/* Hero Section */}
                 <section className="relative py-20 lg:py-25 overflow-hidden min-h-screen flex justify-center items-center bg-linear-to-b from-green-900 to-green-700">

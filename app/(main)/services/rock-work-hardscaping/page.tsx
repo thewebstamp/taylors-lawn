@@ -65,6 +65,45 @@ export default function RockWorkHardscapingPage() {
 
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Service",
+                        "name": "Rock Work & Hardscaping Services",
+                        "url": "https://taylorslawncare21.com/services/rock-work-hardscaping",
+                        "description": "Professional hardscaping and rock work services in Northeast Arkansas including retaining walls, stone pathways, rock gardens, stone borders, boulder placement, and complete hardscape design.",
+                        "provider": {
+                            "@type": "LocalBusiness",
+                            "name": "Taylor's Lawn Care & Landscaping, LLC",
+                            "url": "https://taylorslawncare21.com",
+                            "telephone": "870-530-4289"
+                        },
+                        "areaServed": areasServed.map(area => {
+                            if (area.includes('County')) {
+                                return { "@type": "AdministrativeArea", "name": area };
+                            } else {
+                                return { "@type": "City", "name": area };
+                            }
+                        }),
+                        "hasOfferCatalog": {
+                            "@type": "OfferCatalog",
+                            "name": "Rock Work & Hardscaping Services",
+                            "itemListElement": services.map(service => ({
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": service.title,
+                                    "description": service.description
+                                }
+                            }))
+                        }
+                    }),
+                }}
+            />
+
+
             <div className="min-h-screen bg-linear-to-br from-white to-orange-50/30">
                 {/* Hero Section */}
                 <section className="relative py-20 lg:py-25 overflow-hidden min-h-screen flex justify-center items-center bg-linear-to-b from-orange-900 to-orange-700">
