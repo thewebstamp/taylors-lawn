@@ -128,13 +128,6 @@ const jsonLd = {
     '@type': 'Person',
     name: 'Billy Taylor'
   },
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.9',
-    reviewCount: '158',
-    bestRating: '5',
-    worstRating: '1'
-  },
   sameAs: [
     'https://www.facebook.com/TLCLAWN21'
   ]
