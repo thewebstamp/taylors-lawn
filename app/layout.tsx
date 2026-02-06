@@ -47,9 +47,6 @@ export const metadata: Metadata = {
     telephone: true,
   },
   metadataBase: new URL('https://taylorslawncare21.com'),
-  alternates: {
-    canonical: '/',
-  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
