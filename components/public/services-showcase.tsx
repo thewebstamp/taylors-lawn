@@ -56,8 +56,10 @@ export function ServicesShowcase() {
       img: "/hero.jpg",
       icon: '🌱',
       title: 'Professional Lawn Care',
-      description: 'lawn maintenance including fertilization and weed control for a healthy, vibrant yard',
-      features: [['Fertilization & Weed Control'], ['Seasonal Aeration']],
+      description: 'Mowing, weed eating, edging, blowing off all surfaces, fertilization, and weed control.',
+      features: [
+        ['Mowing & Edging', 'Weed Control']
+      ],
       slug: "lawn-care"
     },
     {
@@ -131,7 +133,7 @@ export function ServicesShowcase() {
 
   return (
     <section id="services" ref={ref} className="py-16 bg-linear-to-b from-white/50 to-gray-50/30">
-      <div className="container mx-auto px-4 md:px-8 lg:px-12">
+      <div className="container mx-auto px-4 md:px-8 lg:px-22">
         {/* Header Section */}
         <motion.div
           className="text-center mb-13"

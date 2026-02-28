@@ -110,7 +110,7 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div className="container mx-auto px-4 md:px-8 lg:px-12 relative z-10">
+        <div className="container mx-auto px-4 md:px-8 lg:px-22 relative z-10">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <motion.div
@@ -152,7 +152,7 @@ export default function AboutPage() {
 
       {/* Story Section */}
       <section className="py-20 relative overflow-hidden">
-        <div className="container mx-auto px-4 md:px-8 lg:px-12">
+        <div className="container mx-auto px-4 md:px-8 lg:px-22">
           <div className="text-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -242,7 +242,7 @@ export default function AboutPage() {
           <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-px h-32 bg-linear-to-t from-blue-500/50 to-transparent"></div>
         </div>
 
-        <div className="container mx-auto px-4 md:px-8 lg:px-12 relative z-10">
+        <div className="container mx-auto px-4 md:px-8 lg:px-22 relative z-10">
           {/* Header */}
           <motion.div
             className="text-center mb-20"
@@ -487,7 +487,7 @@ export default function AboutPage() {
           <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-px h-32 bg-linear-to-t from-blue-500/30 to-transparent"></div>
         </div>
 
-        <div className="container mx-auto px-4 md:px-8 lg:px-12 relative z-10">
+        <div className="container mx-auto px-4 md:px-8 lg:px-22 relative z-10">
           <motion.div
             className="relative"
             initial={{ opacity: 0, y: 30 }}

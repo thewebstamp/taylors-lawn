@@ -39,9 +39,9 @@ export default function ProfessionalLawnCarePage() {
         },
         {
             title: 'Lawn Mowing & Maintenance',
-            description: 'Professional mowing services with proper techniques for healthy grass growth.',
+            description: 'Professional mowing, edging, weed eating, and blowing services all year-round.',
             icon: Leaf,
-            features: ['Proper height cutting', 'Sharp blade maintenance', 'Pattern variation', 'Cleanup included'],
+            features: ['Mowing & Edging', 'Weed Eating', 'Blowing Surfaces', 'Cleanup Included'],
         },
         {
             title: 'Disease & Pest Control',
@@ -51,9 +51,9 @@ export default function ProfessionalLawnCarePage() {
         },
         {
             title: 'Complete Lawn Program',
-            description: 'Year-round comprehensive care package for maximum lawn health.',
+            description: 'mowing, edging, weed control, fertilization, aeration, and blowing for a pristine lawn.',
             icon: Layers,
-            features: ['8-step program', 'All services included', 'Priority scheduling', 'Best value'],
+            features: ['All Services Included', 'Priority Scheduling', 'Best Value', 'Full Maintenance'],
         }
     ];
 
@@ -74,7 +74,7 @@ export default function ProfessionalLawnCarePage() {
                         "name": "Professional Lawn Care Services",
                         "url": "https://taylorslawncare21.com/services/lawn-care",
                         "description":
-                            "Professional lawn care services in Northeast Arkansas including fertilization, weed control, aeration, mowing, and complete year-round lawn maintenance programs.",
+                            "Professional lawn care services in Northeast Arkansas including fertilization, weed control, aeration, mowing, edging, weed eating, and complete year-round lawn maintenance programs.",
                         "provider": {
                             "@type": "LocalBusiness",
                             "name": "Taylor's Lawn Care & Landscaping, LLC",
@@ -143,8 +143,8 @@ export default function ProfessionalLawnCarePage() {
 
             <div className="min-h-screen bg-linear-to-br from-white to-green-50/30">
                 {/* Hero Section */}
-                <section className="relative py-20 lg:py-25 overflow-hidden min-h-screen flex justify-center items-center bg-linear-to-b from-green-800 to-green-600">
-                    <div className="container mx-auto px-4 md:px-8 lg:px-12">
+                <section className="relative py-20 lg:pt-25 overflow-hidden min-h-screen flex justify-center items-center bg-linear-to-b from-green-800 to-green-600">
+                    <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
                             {/* Content Column */}
                             <motion.div
@@ -268,7 +268,7 @@ export default function ProfessionalLawnCarePage() {
 
                 {/* Common Lawn Problems Section */}
                 <section className="py-20 bg-white">
-                    <div className="container mx-auto px-4 md:px-8 lg:px-12">
+                    <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <motion.div
                             className="text-center mb-16"
                             initial={{ opacity: 0, y: 30 }}
@@ -368,7 +368,7 @@ export default function ProfessionalLawnCarePage() {
 
                 {/* Services Offered Section */}
                 <section className="py-20 bg-linear-to-b from-green-50/50 to-white">
-                    <div className="container mx-auto px-4 md:px-8 lg:px-12">
+                    <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <motion.div
                             className="text-center mb-16"
                             initial={{ opacity: 0, y: 30 }}
@@ -442,7 +442,7 @@ export default function ProfessionalLawnCarePage() {
 
                 {/* Why Choose Us Section */}
                 <section className="py-20 bg-linear-to-br from-green-50/50 to-blue-50/50">
-                    <div className="container mx-auto px-4 md:px-8 lg:px-12">
+                    <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                             Our Lawn Care Excellence
                         </h2>
@@ -492,7 +492,7 @@ export default function ProfessionalLawnCarePage() {
 
                 {/* CTA Banner */}
                 <section className="py-20 bg-linear-to-r from-green-600/10 to-yellow-600/10">
-                    <div className="container mx-auto px-4 md:px-6 lg:px-8">
+                    <div className="container mx-auto px-4 md:px-6 lg:px-22">
                         <motion.div
                             className="bg-linear-to-r from-green-600 to-yellow-600 rounded-3xl shadow-2xl overflow-hidden"
                             initial={{ opacity: 0, y: 30 }}

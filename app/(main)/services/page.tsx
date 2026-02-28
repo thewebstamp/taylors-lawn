@@ -30,8 +30,8 @@ export default function ServicesPage() {
       img: "/hero.jpg",
       icon: '🌱',
       title: 'Lawn Care',
-      description: 'Complete lawn maintenance including fertilization, weed control, aeration, and seasonal care for a healthy, vibrant yard year-round.',
-      features: ['Aeration & Overseeding', 'Fertilization Programs', 'Weed & Pest Control'],
+      description: 'Mowing, weed eating, edging, blowing, fertilization, and seasonal care year-round.',
+      features: ['Mowing & Edging', 'Weed Eating', 'Blowing Surfaces'],
       slug: "lawn-care"
     },
     {
@@ -142,7 +142,7 @@ export default function ServicesPage() {
           <div className="absolute inset-0 bg-linear-to-b from-blue-600/60 to-green-600/70" />
         </div>
 
-        <div className="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
+        <div className="container mx-auto px-4 md:px-6 lg:px-22 relative z-10">
           <motion.div
             className="text-center"
             initial={{ opacity: 0, y: 30 }}
@@ -170,7 +170,7 @@ export default function ServicesPage() {
 
       {/* Services Grid */}
       <section className="py-10 pb-20 lg:py-20 bg-linear-to-b from-white to-gray-50/30">
-        <div className="container mx-auto px-4 md:px-8 lg:px-12">
+        <div className="container mx-auto px-4 md:px-8 lg:px-22">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <motion.div
@@ -272,7 +272,7 @@ export default function ServicesPage() {
           <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-px h-32 bg-linear-to-t from-blue-500 to-transparent"></div>
         </div>
 
-        <div className="container mx-auto px-4 md:px-8 lg:px-12 relative z-10">
+        <div className="container mx-auto px-4 md:px-8 lg:px-22 relative z-10">
           <motion.div
             className="text-center mb-15"
             initial={{ opacity: 0, y: 30 }}

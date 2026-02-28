@@ -57,7 +57,7 @@ export function TrustSection() {
   return (
     <section ref={ref} className="py-16 bg-white relative overflow-hidden text-center lg:text-left">
       <motion.div
-        className="container mx-auto px-4 md:px-8px lg:px-12px relative z-10"
+        className="container mx-auto px-4 md:px-8 lg:px-22 relative z-10"
         variants={containerVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}

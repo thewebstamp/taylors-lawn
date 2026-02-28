@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
-import { Briefcase, Home, Images, Mail, Menu, Phone, Sparkles, User, X } from 'lucide-react';
+import { Briefcase, Home, Images, Mail, Menu, Phone, Sparkles, User, X, ChevronDown } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
@@ -16,7 +16,21 @@ const navigation = [
     {
         name: 'Services',
         href: '/services',
-        icon: Briefcase
+        icon: Briefcase,
+        hasDropdown: true,
+        dropdownItems: [
+            { name: 'All Services', href: '/services' },
+            { name: 'Lawn Care', href: '/services/lawn-care' },
+            { name: 'Landscaping & Sod', href: '/services/landscaping-sod' },
+            { name: 'Drainage Solution', href: '/services/drainage-solution' },
+            { name: 'Seasonal Cleanup', href: '/services/seasonal-cleanup' },
+            { name: 'Sprinkler Systems', href: '/services/sprinkler-systems' },
+            { name: 'Tree & Brush Cleanup', href: '/services/tree-brush-cleanup' },
+            { name: 'Privacy Fencing', href: '/services/privacy-fencing' },
+            { name: 'Dirt Work & Grading', href: '/services/dirt-work-grading' },
+            { name: 'Hardscaping', href: '/services/rock-work-hardscaping' },
+            { name: 'Holiday Lighting', href: '/services/holiday-lighting' },
+        ]
     },
     {
         name: 'Gallery',
@@ -38,6 +52,7 @@ const navigation = [
 export function Navigation() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
     const pathname = usePathname();
 
     useEffect(() => {
@@ -48,6 +63,18 @@ export function Navigation() {
         window.addEventListener('scroll', handleScroll, { passive: true });
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+    // Close dropdown when clicking outside
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (activeDropdown && !(event.target as Element).closest('.dropdown-container')) {
+                setActiveDropdown(null);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => document.removeEventListener('mousedown', handleClickOutside);
+    }, [activeDropdown]);
 
     const isActive = (href: string) => {
         if (href === '/') return pathname === '/';
@@ -63,6 +90,10 @@ export function Navigation() {
                 });
             }
         }
+    };
+
+    const handleDropdownToggle = (itemName: string) => {
+        setActiveDropdown(activeDropdown === itemName ? null : itemName);
     };
 
     return (
@@ -81,7 +112,7 @@ export function Navigation() {
             >
                 <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center py-3">
-                        {/* Enhanced Logo - FIXED: Using Link */}
+                        {/* Enhanced Logo */}
                         <motion.div
                             className="flex items-center"
                             whileHover={{ scale: 1.05 }}
@@ -99,12 +130,92 @@ export function Navigation() {
                             </Link>
                         </motion.div>
 
-                        {/* Desktop Navigation - Enhanced - FIXED: Using Link */}
+                        {/* Desktop Navigation */}
                         <div className="hidden lg:flex items-center">
                             {/* Navigation Items Container */}
                             <div className="flex items-center space-x-1">
                                 {navigation.map((item, i) => {
                                     const active = isActive(item.href);
+
+                                    if (item.hasDropdown) {
+                                        return (
+                                            <div
+                                                key={i}
+                                                className="relative dropdown-container"
+                                                onMouseEnter={() => setActiveDropdown(item.name)}
+                                                onMouseLeave={() => setActiveDropdown(null)}
+                                            >
+                                                <motion.div
+                                                    className="relative"
+                                                    whileHover="hover"
+                                                    initial="initial"
+                                                >
+                                                    <button
+                                                        onClick={() => handleDropdownToggle(item.name)}
+                                                        className={`relative z-10 flex items-center gap-2 px-4 text-[17px] py-3 rounded-xl font-sans font-bold transition-all duration-300 focus-ring ${active || activeDropdown === item.name
+                                                                ? 'text-forest-600 bg-forest-50 shadow-md shadow-forest-500/10'
+                                                                : isScrolled
+                                                                    ? 'text-forest-700 hover:text-forest-600 hover:bg-forest-50/50'
+                                                                    : 'text-white hover:text-forest-200 hover:bg-white/10'
+                                                            }`}
+                                                    >
+                                                        <item.icon className={`h-4 w-4 transition-colors ${active ? 'text-forest-500' : ''}`} />
+                                                        {item.name}
+                                                        <ChevronDown className={`h-4 w-4 transition-transform duration-300 ${activeDropdown === item.name ? 'rotate-180' : ''
+                                                            }`} />
+
+                                                        {active && (
+                                                            <motion.div
+                                                                className="absolute bottom-1 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-forest-500 rounded-full"
+                                                                layoutId="activeIndicator"
+                                                                transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                                                            />
+                                                        )}
+                                                    </button>
+
+                                                    {/* Dropdown Menu */}
+                                                    <AnimatePresence>
+                                                        {activeDropdown === item.name && (
+                                                            <motion.div
+                                                                className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-2xl shadow-forest-500/10 border border-forest-100 overflow-hidden z-50"
+                                                                initial={{ opacity: 0, y: -10 }}
+                                                                animate={{ opacity: 1, y: 0 }}
+                                                                exit={{ opacity: 0, y: -10 }}
+                                                                transition={{ duration: 0.2 }}
+                                                            >
+                                                                <div className="py-2">
+                                                                    {item.dropdownItems?.map((dropdownItem, idx) => (
+                                                                        <Link
+                                                                            key={idx}
+                                                                            href={dropdownItem.href}
+                                                                            className={`block px-4 py-2.5 text-sm font-sans transition-all duration-200 ${pathname === dropdownItem.href
+                                                                                    ? 'bg-forest-50 text-forest-600 font-semibold'
+                                                                                    : 'text-forest-700 hover:bg-forest-50 hover:text-forest-600 hover:pl-6'
+                                                                                }`}
+                                                                            onClick={() => setActiveDropdown(null)}
+                                                                        >
+                                                                            {dropdownItem.name}
+                                                                        </Link>
+                                                                    ))}
+                                                                </div>
+                                                            </motion.div>
+                                                        )}
+                                                    </AnimatePresence>
+
+                                                    {/* Hover effect */}
+                                                    <motion.div
+                                                        className="absolute inset-0 rounded-xl bg-linear-to-r from-forest-500/10 to-sky-500/10 opacity-0 pointer-events-none"
+                                                        variants={{
+                                                            initial: { opacity: 0 },
+                                                            hover: { opacity: 1 }
+                                                        }}
+                                                        transition={{ duration: 0.2 }}
+                                                    />
+                                                </motion.div>
+                                            </div>
+                                        );
+                                    }
+
                                     return (
                                         <motion.div
                                             key={i}
@@ -133,7 +244,7 @@ export function Navigation() {
                                                 )}
                                             </Link>
 
-                                            {/* Hover effect - FIXED: Lower z-index and pointer-events-none */}
+                                            {/* Hover effect */}
                                             <motion.div
                                                 className="absolute inset-0 rounded-xl bg-linear-to-r from-forest-500/10 to-sky-500/10 opacity-0 pointer-events-none"
                                                 variants={{
@@ -147,7 +258,7 @@ export function Navigation() {
                                 })}
                             </div>
 
-                            {/* Enhanced CTA Button - Keep as <a> for tel: links - NOW SEPARATED */}
+                            {/* Enhanced CTA Button */}
                             <motion.div
                                 className="relative ml-4"
                                 whileHover="hover"
@@ -172,7 +283,7 @@ export function Navigation() {
                             </motion.div>
                         </div>
 
-                        {/* Enhanced Mobile menu button */}
+                        {/* Mobile menu button */}
                         <motion.button
                             className={`lg:hidden p-3 rounded-xl transition-colors duration-300 focus-ring ${isScrolled
                                 ? 'text-forest-700 bg-forest-50 hover:bg-forest-100'
@@ -188,11 +299,11 @@ export function Navigation() {
                     </div>
                 </div>
 
-                {/* Enhanced Mobile Navigation - Full Screen - FIXED: Using Link */}
+                {/* Mobile Navigation */}
                 <AnimatePresence>
                     {mobileMenuOpen && (
                         <motion.div
-                            className="lg:hidden fixed inset-0 z-40 bg-forest-900 h-screen"
+                            className="lg:hidden fixed inset-0 z-40 bg-forest-900 h-screen overflow-y-auto"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
@@ -221,17 +332,59 @@ export function Navigation() {
                                     </motion.button>
                                 </div>
 
-                                {/* Navigation Items - FIXED: Using Link */}
-                                <div className="flex-1 flex flex-col justify-center px-6 space-y-4 bg-forest-900">
+                                {/* Navigation Items */}
+                                <div className="flex-1 flex flex-col px-6 py-8 space-y-2 bg-forest-900">
                                     {navigation.map((item, index) => {
                                         const active = isActive(item.href);
+
+                                        if (item.hasDropdown) {
+                                            return (
+                                                <div key={item.name} className="space-y-2">
+                                                    <Link
+                                                        href={item.href}
+                                                        className={`flex items-center gap-4 p-4 rounded-2xl text-lg font-semibold transition-all duration-300 ${active
+                                                                ? 'bg-white/20 text-white shadow-lg shadow-forest-500/20 border border-forest-400/30'
+                                                                : 'text-white/90 hover:text-white hover:bg-forest-800/80 border border-transparent hover:border-forest-700/50'
+                                                            }`}
+                                                        onClick={() => setMobileMenuOpen(false)}
+                                                    >
+                                                        <item.icon className={`h-5 w-5 ${active ? 'text-forest-300' : 'text-forest-400'}`} />
+                                                        {item.name}
+                                                        {active && (
+                                                            <motion.div
+                                                                className="ml-auto w-2 h-2 bg-forest-300 rounded-full"
+                                                                layoutId="mobileActiveIndicator"
+                                                            />
+                                                        )}
+                                                    </Link>
+
+                                                    {/* Mobile Dropdown Items */}
+                                                    <div className="ml-4 pl-4 border-l-2 border-forest-700 space-y-1">
+                                                        {item.dropdownItems?.map((dropdownItem, idx) => (
+                                                            <Link
+                                                                key={idx}
+                                                                href={dropdownItem.href}
+                                                                className={`block p-3 rounded-xl text-base transition-all duration-200 ${pathname === dropdownItem.href
+                                                                        ? 'bg-white/20 text-white font-semibold'
+                                                                        : 'text-forest-200 hover:text-white hover:bg-forest-800/80'
+                                                                    }`}
+                                                                onClick={() => setMobileMenuOpen(false)}
+                                                            >
+                                                                {dropdownItem.name}
+                                                            </Link>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                            );
+                                        }
+
                                         return (
                                             <Link
                                                 key={item.name}
                                                 href={item.href}
                                                 className={`flex items-center gap-4 p-4 rounded-2xl text-lg font-semibold transition-all duration-300 ${active
-                                                    ? 'bg-white/20 text-white shadow-lg shadow-forest-500/20 border border-forest-400/30'
-                                                    : 'text-white/90 hover:text-white hover:bg-forest-800/80 border border-transparent hover:border-forest-700/50'
+                                                        ? 'bg-white/20 text-white shadow-lg shadow-forest-500/20 border border-forest-400/30'
+                                                        : 'text-white/90 hover:text-white hover:bg-forest-800/80 border border-transparent hover:border-forest-700/50'
                                                     }`}
                                                 onClick={() => setMobileMenuOpen(false)}
                                             >
@@ -248,7 +401,7 @@ export function Navigation() {
                                     })}
                                 </div>
 
-                                {/* Mobile CTA - Keep as <a> for tel: links */}
+                                {/* Mobile CTA */}
                                 <div className="p-6 border-t border-forest-700/50 bg-forest-900">
                                     <a
                                         href="tel:870-530-4289"

@@ -106,8 +106,8 @@ export default function RockWorkHardscapingPage() {
 
             <div className="min-h-screen bg-linear-to-br from-white to-orange-50/30">
                 {/* Hero Section */}
-                <section className="relative py-20 lg:py-25 overflow-hidden min-h-screen flex justify-center items-center bg-linear-to-b from-orange-900 to-orange-700">
-                    <div className="container mx-auto px-4 md:px-8 lg:px-12">
+                <section className="relative py-20 lg:pt-25 overflow-hidden min-h-screen flex justify-center items-center bg-linear-to-b from-orange-900 to-orange-700">
+                    <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
                             {/* Content Column */}
                             <motion.div
@@ -231,7 +231,7 @@ export default function RockWorkHardscapingPage() {
 
                 {/* Common Hardscape Problems Section */}
                 <section className="py-20 bg-white">
-                    <div className="container mx-auto px-4 md:px-8 lg:px-12">
+                    <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <motion.div
                             className="text-center mb-16"
                             initial={{ opacity: 0, y: 30 }}
@@ -331,7 +331,7 @@ export default function RockWorkHardscapingPage() {
 
                 {/* Services Offered Section */}
                 <section className="py-20 bg-linear-to-b from-orange-50/50 to-white">
-                    <div className="container mx-auto px-4 md:px-8 lg:px-12">
+                    <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <motion.div
                             className="text-center mb-16"
                             initial={{ opacity: 0, y: 30 }}
@@ -405,7 +405,7 @@ export default function RockWorkHardscapingPage() {
 
                 {/* Why Choose Us Section */}
                 <section className="py-20 bg-linear-to-br from-orange-50/50 to-yellow-50/50">
-                    <div className="container mx-auto px-4 md:px-8 lg:px-12">
+                    <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                             Our Stone Work Excellence
                         </h2>
@@ -455,7 +455,7 @@ export default function RockWorkHardscapingPage() {
 
                 {/* CTA Banner */}
                 <section className="py-20 bg-linear-to-r from-orange-600/10 to-red-600/10">
-                    <div className="container mx-auto px-4 md:px-6 lg:px-8">
+                    <div className="container mx-auto px-4 md:px-6 lg:px-22">
                         <motion.div
                             className="bg-linear-to-r from-orange-600 to-red-600 rounded-3xl shadow-2xl overflow-hidden"
                             initial={{ opacity: 0, y: 30 }}

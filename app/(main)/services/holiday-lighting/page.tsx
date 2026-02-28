@@ -144,9 +144,9 @@ export default function HolidayLightingPage() {
 
             <div className="min-h-screen bg-linear-to-br from-white to-red-50/30">
                 {/* Hero Section */}
-                <section className="relative py-20 lg:py-25 overflow-hidden min-h-screen flex justify-center items-center bg-linear-to-b from-red-900 to-green-700">
+                <section className="relative py-20 lg:pt-25 overflow-hidden min-h-screen flex justify-center items-center bg-linear-to-b from-red-900 to-green-700">
                     <div className="container mx-auto px-4 md:px-8 lg:px-12">
-                        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+                        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-22">
                             {/* Content Column */}
                             <motion.div
                                 className="w-full lg:w-1/2 text-center lg:text-left"
@@ -293,7 +293,7 @@ export default function HolidayLightingPage() {
 
                 {/* Common Lighting Problems Section */}
                 <section className="py-20 bg-white">
-                    <div className="container mx-auto px-4 md:px-8 lg:px-12">
+                    <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <motion.div
                             className="text-center mb-16"
                             initial={{ opacity: 0, y: 30 }}
@@ -393,7 +393,7 @@ export default function HolidayLightingPage() {
 
                 {/* Services Offered Section */}
                 <section className="py-20 bg-linear-to-b from-red-50/50 to-white">
-                    <div className="container mx-auto px-4 md:px-8 lg:px-12">
+                    <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <motion.div
                             className="text-center mb-16"
                             initial={{ opacity: 0, y: 30 }}
@@ -467,7 +467,7 @@ export default function HolidayLightingPage() {
 
                 {/* Why Choose Us Section */}
                 <section className="py-20 bg-linear-to-br from-red-50/50 to-green-50/50">
-                    <div className="container mx-auto px-4 md:px-8 lg:px-12">
+                    <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                             Our Holiday Lighting Excellence
                         </h2>
@@ -517,7 +517,7 @@ export default function HolidayLightingPage() {
 
                 {/* Early Booking CTA Banner */}
                 <section className="py-20 bg-linear-to-r from-red-600/10 to-green-600/10">
-                    <div className="container mx-auto px-4 md:px-6 lg:px-8">
+                    <div className="container mx-auto px-4 md:px-6 lg:px-22">
                         <motion.div
                             className="bg-linear-to-r from-red-600 to-green-600 rounded-3xl shadow-2xl overflow-hidden"
                             initial={{ opacity: 0, y: 30 }}

@@ -73,7 +73,7 @@ export function ContactSection() {
 
   return (
     <section id="contact" ref={ref} className="py-16 bg-linear-to-br from-white to-green-50/30">
-      <div className="container mx-auto px-4 md:px-8 lg:px-12">
+      <div className="container mx-auto px-4 md:px-8 lg:px-22">
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}

@@ -143,8 +143,8 @@ export default function PrivacyFencingPage() {
 
             <div className="min-h-screen bg-linear-to-br from-white to-purple-50/30">
                 {/* Hero Section */}
-                <section className="relative py-20 lg:py-25 overflow-hidden min-h-screen flex justify-center items-center bg-linear-to-b from-purple-900 to-purple-700">
-                    <div className="container mx-auto px-4 md:px-8 lg:px-12">
+                <section className="relative py-20 lg:pt-25 overflow-hidden min-h-screen flex justify-center items-center bg-linear-to-b from-purple-900 to-purple-700">
+                    <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
                             {/* Content Column */}
                             <motion.div
@@ -269,7 +269,7 @@ export default function PrivacyFencingPage() {
 
                 {/* Common Fencing Problems Section */}
                 <section className="py-20 bg-white">
-                    <div className="container mx-auto px-4 md:px-8 lg:px-12">
+                    <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <motion.div
                             className="text-center mb-16"
                             initial={{ opacity: 0, y: 30 }}
@@ -369,7 +369,7 @@ export default function PrivacyFencingPage() {
 
                 {/* Services Offered Section */}
                 <section className="py-20 bg-linear-to-b from-purple-50/50 to-white">
-                    <div className="container mx-auto px-4 md:px-8 lg:px-12">
+                    <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <motion.div
                             className="text-center mb-16"
                             initial={{ opacity: 0, y: 30 }}
@@ -443,7 +443,7 @@ export default function PrivacyFencingPage() {
 
                 {/* Why Choose Us Section */}
                 <section className="py-20 bg-linear-to-br from-purple-50/50 to-pink-50/50">
-                    <div className="container mx-auto px-4 md:px-8 lg:px-12">
+                    <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                             Our Fencing Excellence
                         </h2>
@@ -493,7 +493,7 @@ export default function PrivacyFencingPage() {
 
                 {/* CTA Banner */}
                 <section className="py-20 bg-linear-to-r from-purple-600/10 to-pink-600/10">
-                    <div className="container mx-auto px-4 md:px-6 lg:px-8">
+                    <div className="container mx-auto px-4 md:px-6 lg:px-22">
                         <motion.div
                             className="bg-linear-to-r from-purple-600 to-pink-600 rounded-3xl shadow-2xl overflow-hidden"
                             initial={{ opacity: 0, y: 30 }}

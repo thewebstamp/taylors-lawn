@@ -125,8 +125,8 @@ export default function DrainageSolutionsPage() {
 
             <div className="min-h-screen bg-linear-to-br from-white to-blue-50/30">
                 {/* Hero Section - Updated with new headline */}
-                <section className="relative py-20 lg:py-25 overflow-hidden min-h-screen flex justify-center items-center bg-linear-to-b from-blue-900 to-green-900">
-                    <div className="container mx-auto px-4 md:px-8 lg:px-12">
+                <section className="relative py-20 lg:pt-25 overflow-hidden min-h-screen flex justify-center items-center bg-linear-to-b from-blue-900 to-green-900">
+                    <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
                             {/* Content Column - Left side for desktop, full width for mobile */}
                             <motion.div
@@ -289,7 +289,7 @@ export default function DrainageSolutionsPage() {
 
                 {/* Major/Common Drainage Problems Section */}
                 <section className="py-20 bg-white">
-                    <div className="container mx-auto px-4 md:px-8 lg:px-12">
+                    <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <motion.div
                             className="text-center mb-16"
                             initial={{ opacity: 0, y: 30 }}
@@ -389,7 +389,7 @@ export default function DrainageSolutionsPage() {
 
                 {/* Services Offered Section */}
                 <section className="py-20 bg-linear-to-b from-blue-50/50 to-white">
-                    <div className="container mx-auto px-4 md:px-8 lg:px-12">
+                    <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <motion.div
                             className="text-center mb-16"
                             initial={{ opacity: 0, y: 30 }}
@@ -463,7 +463,7 @@ export default function DrainageSolutionsPage() {
 
                 {/* Why Choose Us Section */}
                 <section className="py-20 bg-linear-to-br from-green-50/50 to-blue-50/50">
-                    <div className="container mx-auto px-4 md:px-8 lg:px-12">
+                    <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                             Our Drainage Track Record
                         </h2>
@@ -513,7 +513,7 @@ export default function DrainageSolutionsPage() {
 
                 {/* Emergency CTA Banner */}
                 <section className="py-20 bg-linear-to-r from-red-600/10 to-orange-600/10">
-                    <div className="container mx-auto px-4 md:px-6 lg:px-8">
+                    <div className="container mx-auto px-4 md:px-6 lg:px-22">
                         <motion.div
                             className="bg-linear-to-r from-red-600 to-orange-600 rounded-3xl shadow-2xl overflow-hidden"
                             initial={{ opacity: 0, y: 30 }}
