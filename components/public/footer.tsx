@@ -162,7 +162,7 @@ export function Footer() {
                   </div>
                   <div>
                     <p className="font-semibold text-white group-hover:text-green-400 transition-colors">Email Us</p>
-                    <p className="text-sm text-gray-400">taylorslawncare21 @gmail.com</p>
+                    <p className="text-sm text-gray-400">taylorslawncare21@gmail.com</p>
                   </div>
                 </motion.a>
 
