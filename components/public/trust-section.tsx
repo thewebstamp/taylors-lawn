@@ -232,7 +232,7 @@ export function TrustSection() {
           className="text-center"
           variants={itemVariants}
         >
-          <motion.a
+          {/* <motion.a
             href="https://web.facebook.com/TLCLAWN21/reviews"
             target="_blank"
             rel="noopener noreferrer"
@@ -243,14 +243,14 @@ export function TrustSection() {
             <Facebook className="h-5 w-5" />
             <span>Read All Reviews</span>
             <div className="w-2 h-2 bg-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          </motion.a>
+          </motion.a> */}
 
           <motion.div
             className="flex items-center justify-center gap-2 mt-6 text-gray-600 text-md"
             variants={itemVariants}
           >
             <Star className="h-4 w-4 text-yellow-500 fill-current" />
-            <span>4.9/5 Rating from 33+ Verified Reviews</span>
+            {/* <span>4.9/5 Rating from 33+ Verified Reviews</span> */}
           </motion.div>
         </motion.div>
       </motion.div>

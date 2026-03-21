@@ -83,8 +83,8 @@ export function Footer() {
                 {/* Trust Badges */}
                 <div className="space-y-1">
                   <div className="flex items-center justify-center lg:justify-start gap-2 text-green-400">
-                    <Star className="h-4 w-4 fill-current" />
-                    <span className="text-sm font-semibold">98% Recommendation Rate</span>
+                    {/* <Star className="h-4 w-4 fill-current" />
+                    <span className="text-sm font-semibold">98% Recommendation Rate</span> */}
                   </div>
                   <div className="flex items-center justify-center lg:justify-start gap-2 text-green-400">
                     <Clock className="h-4 w-4" />
@@ -94,7 +94,7 @@ export function Footer() {
               </div>
 
               {/* Social Media */}
-              <div className="flex space-x-4 justify-center lg:justify-start">
+              {/* <div className="flex space-x-4 justify-center lg:justify-start">
                 <motion.a
                   href="https://web.facebook.com/TLCLAWN21"
                   target="_blank"
@@ -105,7 +105,7 @@ export function Footer() {
                 >
                   <Facebook className="h-5 w-5" />
                 </motion.a>
-              </div>
+              </div> */}
             </motion.div>
 
             {/* Quick Links */}
