@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 // app/(main)/services/page.tsx
 'use client';
+import { AffirmFinancingBanner } from '@/components/public/affirm-financing-banner';
 import { motion } from 'framer-motion';
 import { CheckCircle, Star, Clock, Shield, Phone, ArrowRight, Calendar } from 'lucide-react';
 import Image from 'next/image';
@@ -167,6 +168,8 @@ export default function ServicesPage() {
           </motion.div>
         </div>
       </section>
+
+      <AffirmFinancingBanner />
 
       {/* Services Grid */}
       <section className="py-10 pb-20 lg:py-20 bg-linear-to-b from-white to-gray-50/30">

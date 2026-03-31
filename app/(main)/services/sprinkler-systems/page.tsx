@@ -2,6 +2,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
+import { AffirmFinancingBanner } from '@/components/public/affirm-financing-banner';
 import { motion } from 'framer-motion';
 import { CheckCircle, Phone, Shield, Clock, ArrowRight, Calendar, Gauge, Zap, Eye, ThumbsUp, Droplets as DropletsIcon, CloudRain as CloudRainIcon } from 'lucide-react';
 import Image from 'next/image';
@@ -252,6 +253,8 @@ export default function SprinklerSystemsPage() {
                         </div>
                     </div>
                 </section>
+
+                <AffirmFinancingBanner />
 
                 {/* Common Sprinkler Problems Section */}
                 <section className="py-20 bg-white">

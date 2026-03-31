@@ -2,6 +2,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
+import { AffirmFinancingBanner } from '@/components/public/affirm-financing-banner';
 import { motion } from 'framer-motion';
 import { CheckCircle, Phone, Shield, Clock, ArrowRight, CloudRain, Calendar, ThumbsUp, Sprout, Leaf, Wind, CloudSun } from 'lucide-react';
 import Image from 'next/image';
@@ -255,6 +256,9 @@ export default function SeasonalCleanupPage() {
                         </div>
                     </div>
                 </section>
+
+
+                <AffirmFinancingBanner />
 
                 {/* Common Cleanup Problems Section */}
                 <section className="py-20 bg-white">

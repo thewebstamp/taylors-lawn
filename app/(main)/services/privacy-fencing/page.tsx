@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
+import { AffirmFinancingBanner } from '@/components/public/affirm-financing-banner';
 import { motion } from 'framer-motion';
 import { CheckCircle, Phone, Shield, Clock, ArrowRight, Calendar, Zap, ThumbsUp, Fence, Home, Lock } from 'lucide-react';
 import Image from 'next/image';
@@ -266,6 +267,9 @@ export default function PrivacyFencingPage() {
                         </div>
                     </div>
                 </section>
+
+
+                <AffirmFinancingBanner />
 
                 {/* Common Fencing Problems Section */}
                 <section className="py-20 bg-white">

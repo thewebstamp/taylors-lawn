@@ -2,6 +2,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
+import { AffirmFinancingBanner } from '@/components/public/affirm-financing-banner';
 import { motion } from 'framer-motion';
 import { CheckCircle, Phone, Shield, Clock, ArrowRight, CloudRain, Calendar, Droplets, Gauge, Zap, Eye, Truck, ThumbsUp } from 'lucide-react';
 import Image from 'next/image';
@@ -286,6 +287,9 @@ export default function DrainageSolutionsPage() {
                         </div>
                     </div>
                 </section>
+
+
+                <AffirmFinancingBanner />
 
                 {/* Major/Common Drainage Problems Section */}
                 <section className="py-20 bg-white">

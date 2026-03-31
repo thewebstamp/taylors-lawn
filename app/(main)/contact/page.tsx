@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 // app/(main)/contact/page.tsx
 'use client';
+import { AffirmFinancingBanner } from '@/components/public/affirm-financing-banner';
 import { motion } from 'framer-motion';
 import { Phone, Mail, MapPin, Clock, Star, Calendar, CheckCircle } from 'lucide-react';
 import Image from 'next/image';
@@ -89,6 +90,8 @@ export default function ContactPage() {
           </motion.div>
         </div>
       </section>
+
+      <AffirmFinancingBanner />
 
       {/* Main Content */}
       <section className="py-16">

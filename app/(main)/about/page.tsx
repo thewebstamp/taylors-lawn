@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 // app/(main)/about/page.tsx
 'use client';
+import { AffirmFinancingBanner } from '@/components/public/affirm-financing-banner';
 import { motion } from 'framer-motion';
 import { Users, Clock, Shield, MapPin, Heart, ThumbsUp, Phone } from 'lucide-react';
 import Image from 'next/image';
@@ -98,6 +99,8 @@ export default function AboutPage() {
           </motion.div>
         </div>
       </section>
+
+      <AffirmFinancingBanner />
 
       {/* Stats Section */}
       <section className="py-20 bg-linear-to-br from-gray-50 to-white relative overflow-hidden">

@@ -9,6 +9,7 @@ import { PortfolioShowcase } from "@/components/public/portfolio-showcase";
 import { ServicesShowcase } from "@/components/public/services-showcase";
 import { TrustSection } from "@/components/public/trust-section";
 import { useEffect } from 'react';
+import { AffirmFinancingBanner } from '@/components/public/affirm-financing-banner';
 
 export default function HomePage() {
   const pathname = usePathname();
@@ -25,6 +26,7 @@ export default function HomePage() {
   return (
     <main className="overflow-hidden">
       <HeroSection />
+      <AffirmFinancingBanner />
       <TrustSection />
       <ServicesShowcase />
       <PortfolioShowcase />

@@ -8,6 +8,7 @@ import { ExternalLink, Filter, X, Briefcase } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { AffirmFinancingBanner } from '@/components/public/affirm-financing-banner';
 
 export default function GalleryPage() {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -226,6 +227,8 @@ export default function GalleryPage() {
           </motion.div>
         </div>
       </section>
+
+      <AffirmFinancingBanner />
 
       {/* Filter Section */}
       <section id='portfolio' className="py-3 bg-white sticky top-20 z-30 shadow-sm">
