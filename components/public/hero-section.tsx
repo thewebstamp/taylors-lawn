@@ -2,7 +2,7 @@
 // components/hero-section.tsx
 'use client';
 import { motion, AnimatePresence } from 'framer-motion';
-import { CloudRain, ArrowRight, Star } from 'lucide-react';
+import { Sun, ArrowRight, Star } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect, useMemo } from 'react';
@@ -33,7 +33,7 @@ export function HeroSection() {
   }, []);
 
   // Generate random positions only on client side
-  const rainDrops = useMemo(() => {
+  const sunParticles = useMemo(() => {
     if (!isMounted) return [];
 
     return Array.from({ length: 20 }, (_, i) => ({
@@ -41,9 +41,11 @@ export function HeroSection() {
       // eslint-disable-next-line react-hooks/purity
       left: Math.random() * 100,
       // eslint-disable-next-line react-hooks/purity
-      duration: 1 + Math.random() * 2,
+      duration: 3 + Math.random() * 3,
       // eslint-disable-next-line react-hooks/purity
-      delay: Math.random() * 2,
+      delay: Math.random() * 3,
+      // eslint-disable-next-line react-hooks/purity
+      size: 0.25 + Math.random() * 0.35,
     }));
   }, [isMounted]);
 
@@ -66,29 +68,33 @@ export function HeroSection() {
           className="object-cover opacity-15" // Reduced opacity
           priority
         />
-        <div className="absolute inset-0 bg-linear-to-b from-blue-600/30 to-green-600/50" />
+        <div className="absolute inset-0 bg-linear-to-b from-amber-500/30 to-green-600/50" />
       </div>
 
-      {/* Rain Animation */}
+      {/* Summer Light Particle Animation */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         {isMounted ? (
           // Client-side only with random animations
-          rainDrops.map((drop) => (
+          sunParticles.map((particle) => (
             <motion.div
-              key={drop.id}
-              className="absolute w-0.5 h-8 bg-blue-400/30 rounded-full"
+              key={particle.id}
+              className="absolute rounded-full bg-yellow-300/40 blur-[1px]"
               style={{
-                left: `${drop.left}%`,
-                top: '-2rem',
+                left: `${particle.left}%`,
+                top: '100%',
+                width: `${particle.size}rem`,
+                height: `${particle.size}rem`,
               }}
               animate={{
-                y: ['0vh', '100vh'],
+                y: ['0vh', '-100vh'],
                 opacity: [0, 1, 0],
+                x: [0, 15, -15, 0],
               }}
               transition={{
-                duration: drop.duration,
+                duration: particle.duration,
                 repeat: Infinity,
-                delay: drop.delay,
+                delay: particle.delay,
+                ease: 'easeInOut',
               }}
             />
           ))
@@ -97,10 +103,10 @@ export function HeroSection() {
           Array.from({ length: 20 }, (_, i) => (
             <div
               key={i}
-              className="absolute w-0.5 h-8 bg-blue-400/30 rounded-full"
+              className="absolute w-1 h-1 rounded-full bg-yellow-300/40"
               style={{
                 left: `${(i * 5) % 100}%`,
-                top: '-2rem',
+                top: '100%',
               }}
             />
           ))
@@ -118,7 +124,7 @@ export function HeroSection() {
           transition={{ duration: 4, repeat: Infinity }}
         />
         <motion.div
-          className="absolute bottom-1/3 right-1/4 w-40 h-40 bg-blue-500/5 rounded-full blur-3xl"
+          className="absolute bottom-1/3 right-1/4 w-40 h-40 bg-amber-400/10 rounded-full blur-3xl"
           animate={{
             scale: [1.2, 1, 1.2],
             opacity: [0.4, 0.2, 0.4],
@@ -155,7 +161,7 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.8 }}
             >
-              <span className="text-green-400">Lawncare, Landscaping & Drainage Solutions You Can Trust</span>
+              <span className="text-green-400">Get Your Yard Summer-Ready with Landscaping & Drainage Experts You Can Trust</span>
             </motion.h1>
 
             {/* Compelling Subheadline */}
@@ -165,7 +171,7 @@ export function HeroSection() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.7 }}
             >
-              <span className="text-yellow-500 font-semibold">Professional</span>, <span className="text-yellow-500 font-semibold">Reliable</span>, and <span className="text-yellow-500 font-semibold">Local</span> - Keeping your yard healthy and beautiful year-round.
+              <span className="text-yellow-500 font-semibold">Professional</span>, <span className="text-yellow-500 font-semibold">Reliable</span>, and <span className="text-yellow-500 font-semibold">Local</span> - Sod, landscaping, drainage & hardscaping built for summer storms and summer fun.
             </motion.p>
 
             {/* Compact Discount Banner */}
@@ -197,7 +203,7 @@ export function HeroSection() {
                 onClick={trackPhoneCall}
                 className="group bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 flex items-center justify-center gap-3 shadow-lg hover:shadow-xl relative overflow-hidden"
               >
-                <CloudRain className="h-5 w-5" />
+                <Sun className="h-5 w-5" />
                 <span>Call (870) 530-4289</span>
                 <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/10 to-transparent -skew-x-12 transform -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
               </a>
@@ -251,8 +257,8 @@ export function HeroSection() {
                 transition={{ delay: 1, type: "spring" }}
               >
                 <div className="text-center">
-                  <div className="font-bold text-sm">Book Now!</div>
-                  <div className="text-xs font-semibold">Get Best Rates</div>
+                  <div className="font-bold text-sm">Summer Special!</div>
+                  <div className="text-xs font-semibold">Book Your Spot</div>
                 </div>
               </motion.div>
 
@@ -276,7 +282,7 @@ export function HeroSection() {
               animate={{ opacity: 1 }}
               transition={{ delay: 1.2, duration: 0.6 }}
             >
-              {['Drainage Solutions', 'Lawn Care', 'Landscaping'].map((service, index) => (
+              {['Drainage Solutions', 'Sod & Landscaping', 'Patios & Hardscaping'].map((service, index) => (
                 <motion.span
                   key={service}
                   className="bg-white/10 backdrop-blur-sm text-white text-xs px-3 py-1 rounded-full border border-white/20"
