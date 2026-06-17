@@ -161,7 +161,7 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.8 }}
             >
-              <span className="text-green-400">Get Your Yard Summer-Ready with Landscaping & Drainage Experts You Can Trust</span>
+              <span className="text-gray-50">Get Your Yard Summer-Ready with Trusted Landscaping & Drainage Experts</span>
             </motion.h1>
 
             {/* Compelling Subheadline */}
