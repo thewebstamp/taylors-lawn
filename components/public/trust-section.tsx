@@ -56,6 +56,20 @@ export function TrustSection() {
 
   return (
     <section ref={ref} className="py-16 bg-white relative overflow-hidden text-center lg:text-left">
+      {/* Decorative Summer Glow */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <motion.div
+          className="absolute -top-20 -right-20 w-72 h-72 bg-amber-300/10 rounded-full blur-3xl"
+          animate={{ scale: [1, 1.15, 1], opacity: [0.3, 0.5, 0.3] }}
+          transition={{ duration: 6, repeat: Infinity }}
+        />
+        <motion.div
+          className="absolute bottom-0 -left-10 w-64 h-64 bg-green-300/10 rounded-full blur-3xl"
+          animate={{ scale: [1.1, 1, 1.1], opacity: [0.4, 0.2, 0.4] }}
+          transition={{ duration: 7, repeat: Infinity, delay: 1 }}
+        />
+      </div>
+
       <motion.div
         className="container mx-auto px-4 md:px-8 lg:px-22 relative z-10"
         variants={containerVariants}
@@ -106,7 +120,7 @@ export function TrustSection() {
                 <span className="block text-green-600">Can Count On</span>
               </h2>
               <p className="text-gray-600 text-xl md:text-[22px] lg:text-[24px]">
-                25+ years of transforming properties across Arkansas with reliable, professional service that exceeds expectations every time.
+                25+ years of transforming properties across Arkansas with reliable, professional service that gets your yard summer-ready, every time.
               </p>
             </motion.div>
 
@@ -118,7 +132,7 @@ export function TrustSection() {
               {[
                 { value: '98%', label: 'Recommend', icon: Star, color: 'text-yellow-500' },
                 { value: '25+', label: 'Years Exp', icon: Award, color: 'text-green-600' },
-                { value: '300+', label: 'Projects', icon: TrendingUp, color: 'text-blue-600' }
+                { value: '300+', label: 'Projects', icon: TrendingUp, color: 'text-amber-600' }
               ].map((stat, index) => (
                 <motion.div
                   key={stat.label}
@@ -148,7 +162,7 @@ export function TrustSection() {
               fill
               className="object-cover opacity-40"
             />
-            <div className="absolute inset-0 bg-linear-to-r from-green-900/80 to-blue-900/80" />
+            <div className="absolute inset-0 bg-linear-to-r from-green-900/80 via-green-800/60 to-amber-900/70" />
 
             {/* Background Content */}
             <div className="relative z-10 h-full flex justify-center text-center text-white p-8">
