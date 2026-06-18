@@ -1,3 +1,4 @@
+
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
@@ -299,10 +300,10 @@ export default function ProfessionalLawnCarePage() {
                                 },
                                 {
                                     problem: 'Brown Patches',
-                                    description: 'Unsightly brown or dead spots ruining your green lawn.',
+                                    description: 'Unsightly brown or dead spots from summer heat and drought stress ruining your green lawn.',
                                     icon: '🍂',
                                     urgency: 'URGENT',
-                                    color: 'bg-brown-100 text-brown-800'
+                                    color: 'bg-amber-100 text-amber-900'
                                 },
                                 {
                                     problem: 'Thin & Patchy Grass',
@@ -445,7 +446,7 @@ export default function ProfessionalLawnCarePage() {
                 </section>
 
                 {/* Why Choose Us Section */}
-                <section className="py-20 bg-linear-to-br from-green-50/50 to-blue-50/50">
+                <section className="py-20 bg-linear-to-br from-green-50/50 to-amber-50/50">
                     <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                             Our Lawn Care Excellence
@@ -510,18 +511,18 @@ export default function ProfessionalLawnCarePage() {
                                         <div className="p-3 bg-white/20 rounded-2xl">
                                             <LeafIcon className="h-8 w-8" />
                                         </div>
-                                        <span className="text-xl font-bold uppercase tracking-widest">SPRING SPECIAL</span>
+                                        <span className="text-xl font-bold uppercase tracking-widest">SUMMER SPECIAL</span>
                                     </div>
                                     <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                                        Start Spring with a Perfect Lawn
+                                        Keep Your Lawn Perfect All Summer
                                     </h2>
                                     <p className="text-gray-50 text-[19.5px] lg:text-[23px] font-light mb-8 opacity-95 leading-relaxed">
-                                        Early spring treatment prevents weeds and ensures lush growth all season long.
+                                        Regular summer lawn care prevents weeds and keeps your grass thick, green, and resilient through the heat.
                                     </p>
                                     <div className="space-y-4 text-lg lg:text-xl">
                                         <div className="flex items-center gap-4">
                                             <Calendar className="h-6 w-6" />
-                                            <span>Book now for spring treatment</span>
+                                            <span>Book now for summer lawn care</span>
                                         </div>
                                         <div className="flex items-center gap-4">
                                             <Clock className="h-6 w-6" />
@@ -561,7 +562,7 @@ export default function ProfessionalLawnCarePage() {
                                                 <span>99% Recommended</span>
                                             </div>
                                             <div className="flex items-center gap-3">
-                                                <Clock className="h-6 w-6 text-blue-600" />
+                                                <Clock className="h-6 w-6 text-amber-600" />
                                                 <span>25+ Years Experience</span>
                                             </div>
                                         </div>
