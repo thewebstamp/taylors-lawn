@@ -204,7 +204,7 @@ export default function PrivacyFencingPage() {
                                     {/* Free Evaluation Button */}
                                     <Link
                                         href="/contact#form"
-                                        className="group bg-linear-to-r from-yellow-600 to-yellow-700 hover:from-yellow-700 hover:to-yellow-800 text-white font-bold py-4 px-6 rounded-xl text-lg transition-all duration-300 flex items-center justify-center gap-3 shadow-2xl hover:shadow-3xl w-full md:w-auto"
+                                        className="group bg-linear-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-bold py-4 px-6 rounded-xl text-lg transition-all duration-300 flex items-center justify-center gap-3 shadow-2xl hover:shadow-3xl w-full md:w-auto"
                                     >
                                         <Calendar className="h-5 w-5" />
                                         <span className="text-center">
@@ -215,7 +215,7 @@ export default function PrivacyFencingPage() {
                                     </Link>
                                 </motion.div>
 
-                                {/* Trust Indicators */}
+                                {/* Trust Indicators - Updated with summer amber accent */}
                                 <motion.div
                                     className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mt-8 text-white/80 text-sm"
                                     initial={{ opacity: 0 }}
@@ -223,15 +223,15 @@ export default function PrivacyFencingPage() {
                                     transition={{ delay: 1.2 }}
                                 >
                                     <div className="flex items-center gap-2">
-                                        <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse" style={{ animationDelay: '0.3s' }}></div>
+                                        <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse" style={{ animationDelay: '0.3s' }}></div>
                                         <span>25+ Years Experience</span>
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse" style={{ animationDelay: '0.6s' }}></div>
+                                        <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse" style={{ animationDelay: '0.6s' }}></div>
                                         <span>Quality Materials</span>
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse" style={{ animationDelay: '0.9s' }}></div>
+                                        <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse" style={{ animationDelay: '0.9s' }}></div>
                                         <span>1-Year Guarantee</span>
                                     </div>
                                 </motion.div>
@@ -246,7 +246,6 @@ export default function PrivacyFencingPage() {
                             >
                                 {/* Image Carousel */}
                                 <div className="relative h-[300px] md:h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-                                    {/* {fenceImages.map((img, index) => ( */}
                                     <motion.div
                                         className="absolute inset-0"
                                         initial={{ opacity: 0 }}
@@ -296,7 +295,7 @@ export default function PrivacyFencingPage() {
                                     description: 'Decaying wood posts and boards compromising security.',
                                     icon: '🪵',
                                     urgency: 'REPLACEMENT',
-                                    color: 'bg-brown-100 text-brown-800'
+                                    color: 'bg-amber-100 text-amber-900'
                                 },
                                 {
                                     problem: 'Leaning or Falling Fence',
@@ -314,7 +313,7 @@ export default function PrivacyFencingPage() {
                                 },
                                 {
                                     problem: 'Damaged by Storms',
-                                    description: 'Wind or fallen trees damaging your fence structure.',
+                                    description: 'Summer storms and wind damaging your fence structure.',
                                     icon: '🌪️',
                                     urgency: 'REPAIR',
                                     color: 'bg-blue-100 text-blue-800'
@@ -445,8 +444,8 @@ export default function PrivacyFencingPage() {
                     </div>
                 </section>
 
-                {/* Why Choose Us Section */}
-                <section className="py-20 bg-linear-to-br from-purple-50/50 to-pink-50/50">
+                {/* Why Choose Us Section - Updated with amber accent replacing stray pink */}
+                <section className="py-20 bg-linear-to-br from-purple-50/50 to-amber-50/50">
                     <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                             Our Fencing Excellence
@@ -495,11 +494,11 @@ export default function PrivacyFencingPage() {
                     </div>
                 </section>
 
-                {/* CTA Banner */}
-                <section className="py-20 bg-linear-to-r from-purple-600/10 to-pink-600/10">
+                {/* CTA Banner - Updated for Summer */}
+                <section className="py-20 bg-linear-to-r from-purple-600/10 to-amber-600/10">
                     <div className="container mx-auto px-4 md:px-6 lg:px-22">
                         <motion.div
-                            className="bg-linear-to-r from-purple-600 to-pink-600 rounded-3xl shadow-2xl overflow-hidden"
+                            className="bg-linear-to-r from-purple-600 to-amber-600 rounded-3xl shadow-2xl overflow-hidden"
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -511,18 +510,18 @@ export default function PrivacyFencingPage() {
                                         <div className="p-3 bg-white/20 rounded-2xl">
                                             <Fence className="h-8 w-8" />
                                         </div>
-                                        <span className="text-xl font-bold uppercase tracking-widest">SPRING INSTALLATION SPECIAL</span>
+                                        <span className="text-xl font-bold uppercase tracking-widest">SUMMER INSTALLATION SPECIAL</span>
                                     </div>
                                     <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                                        Perfect Time for Fence Installation
+                                        Perfect Time for Summer Fence Installation
                                     </h2>
                                     <p className="text-gray-50 text-[19.5px] lg:text-[23px] font-light mb-8 opacity-95 leading-relaxed">
-                                        Spring weather provides ideal conditions for fence installation and soil settling.
+                                        Summer weather provides ideal conditions for fence installation and soil settling. Get your privacy now.
                                     </p>
                                     <div className="space-y-4 text-lg lg:text-xl">
                                         <div className="flex items-center gap-4">
                                             <Calendar className="h-6 w-6" />
-                                            <span>Book now for spring installation</span>
+                                            <span>Book now for summer installation</span>
                                         </div>
                                         <div className="flex items-center gap-4">
                                             <Clock className="h-6 w-6" />
@@ -562,7 +561,7 @@ export default function PrivacyFencingPage() {
                                                 <span>99% Recommended</span>
                                             </div>
                                             <div className="flex items-center gap-3">
-                                                <Clock className="h-6 w-6 text-pink-600" />
+                                                <Clock className="h-6 w-6 text-amber-600" />
                                                 <span>25+ Years Experience</span>
                                             </div>
                                         </div>
