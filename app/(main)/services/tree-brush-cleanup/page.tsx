@@ -476,7 +476,7 @@ export default function TreeBrushCleanupPage() {
                                         <span className="text-xl font-bold uppercase tracking-widest">⚠️ SUMMER STORM WARNING</span>
                                     </div>
                                     <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                                        Don&apos;t Wait for Summer Storms
+                                        <span className="text-green-300">Don&apos;t Wait for Summer Storms</span>
                                     </h2>
                                     <p className="text-gray-50 text-[19.5px] lg:text-[23px] font-light mb-8 opacity-95 leading-relaxed">
                                         Overgrown or damaged trees can fall during summer storms, causing property damage and safety hazards. Get your property ready now.
