@@ -499,7 +499,7 @@ export default function SprinklerSystemsPage() {
                                         <span className="text-xl font-bold uppercase tracking-widest">SUMMER INSTALLATION SPECIAL</span>
                                     </div>
                                     <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                                        Get Your System Ready for Summer Heat
+                                        <span className="text-green-200">Get Your System Ready for Summer Heat</span>
                                     </h2>
                                     <p className="text-gray-50 text-[19.5px] lg:text-[23px] font-light mb-8 opacity-95 leading-relaxed">
                                         Summer installation ensures your lawn stays green and healthy through the hottest months. Beat the heat with a professionally installed irrigation system.
