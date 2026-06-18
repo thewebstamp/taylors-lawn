@@ -40,7 +40,7 @@ export function ServicesShowcase() {
       img: "/drainage.jpg",
       icon: '💧',
       title: 'Drainage Solutions',
-      description: 'French drains, surface drainage, downspout drainage. Over 3,000 feet installed this season!',
+      description: 'French drains, surface drainage, downspout drainage — built to handle Arkansas summer storms. Over 3,000 feet installed this season!',
       features: [['Emergency Service'], ['Free Inspection']],
       slug: "drainage-solution"
     },
@@ -48,7 +48,7 @@ export function ServicesShowcase() {
       img: "/sod.jpg",
       icon: '🌿',
       title: 'Landscaping & Sod',
-      description: 'Complete landscape design, sod installation, garden beds, and outdoor living spaces',
+      description: 'Complete landscape design, sod installation, garden beds, and outdoor living spaces — get your yard ready before the summer heat sets in.',
       features: [['Custom Designs'], ['Premium Materials']],
       slug: "landscaping-sod"
     },
@@ -66,7 +66,7 @@ export function ServicesShowcase() {
       img: "/sprinkler.jpg",
       icon: '🚿',
       title: 'Sprinkler Systems',
-      description: 'Professional irrigation system installation and repair for healthy lawns',
+      description: 'Professional irrigation system installation and repair to keep your lawn healthy through the hottest summer days',
       features: [['Smart Systems'], ['Maintenance Plans']],
       slug: "sprinkler-systems"
     },
@@ -98,25 +98,25 @@ export function ServicesShowcase() {
       img: "/stone.jpg",
       icon: '🧱',
       title: 'Rock Work & Hardscaping',
-      description: 'Retaining walls, stone features, and hardscape to boost curb appeal',
+      description: 'Retaining walls, flagstone patios, stone features, and hardscape to boost curb appeal and your outdoor living space',
       features: [['Quality Craftsmanship'], ['Durable Materials']],
       slug: "rock-work-hardscaping"
     },
     {
-      img: "/holiday.jpg",
-      icon: '🎄',
-      title: 'Holiday Lighting',
-      description: 'Professional holiday light installation starting at $2.50/ft',
-      features: [['Professional Design'], ['Install & Removal']],
-      slug: "holiday-lighting"
+      img: "/1781740335628.jpg",
+      icon: '✨',
+      title: 'Pressure Washing & Sealing',
+      description: 'Restore your driveway, patio, and siding with professional pressure washing, then seal your driveway to protect it from Arkansas summer heat and storms.',
+      features: [['Driveways & Patios'], ['Siding & Walkways']],
+      slug: "pressure-washing-sealing"
     },
     {
-      img: "/clean.jpg",
-      icon: '🍂',
-      title: 'Seasonal Cleanup',
-      description: 'Fall cleanups, leaf removal, and winter preparation services',
-      features: [['Thorough Service'], ['Seasonal Expertise']],
-      slug: "seasonal-cleanup"
+      img: "/1781740860830_1.jpg",
+      icon: '🟤',
+      title: 'Mulch & Decorative Rock',
+      description: 'Fresh mulch and decorative rock installation to lock in moisture, suppress weeds, and keep your beds looking sharp all summer long',
+      features: [['Moisture Retention'], ['Weed Suppression']],
+      slug: "mulch-decorative-rock"
     }
   ];
 
@@ -142,11 +142,11 @@ export function ServicesShowcase() {
           transition={{ duration: 0.6 }}
         >
           <motion.div
-            className="inline-flex items-center gap-2 bg-yellow-600 text-white px-4 py-2 rounded-full mb-3"
+            className="inline-flex items-center gap-2 bg-linear-to-r from-amber-500 to-amber-600 text-white px-4 py-2 rounded-full mb-3"
             whileHover={{ scale: 1.05 }}
           >
             <Calendar className="h-4 w-4" />
-            <span className="text-sm font-semibold">WINTER & SPRING BOOKING OPEN</span>
+            <span className="text-sm font-semibold">SUMMER PROJECTS BOOKING OPEN</span>
           </motion.div>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-5">
@@ -154,7 +154,7 @@ export function ServicesShowcase() {
             <span className="block text-green-600">Landscape and Drainage Challenges</span>
           </h2>
           <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-5xl mx-auto">
-            Trusted by Northeast Arkansas homeowners for 25+ years— delivering professional results that stand the test of time and seasons.
+            Trusted by Northeast Arkansas homeowners for 25+ years — delivering professional results built to handle everything Arkansas summers bring.
           </p>
         </motion.div>
 
@@ -168,7 +168,7 @@ export function ServicesShowcase() {
           {services.map((service, index) => (
             <motion.div
               key={index}
-              className="min-h-80 group bg-white rounded-2xl shadow-lg hover:shadow-2xl border border-gray-100 overflow-hidden transition-all duration-500"
+              className="min-h-80 group bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-amber-200/40 border border-gray-100 hover:border-amber-200/60 overflow-hidden transition-all duration-500"
               variants={itemVariants}
               whileHover={{
                 y: -8,
@@ -186,7 +186,7 @@ export function ServicesShowcase() {
                 <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent" />
 
                 {/* Service Icon */}
-                <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-sm rounded-xl p-3">
+                <div className="absolute top-4 left-4 bg-linear-to-br from-amber-300/30 to-amber-500/20 backdrop-blur-sm border border-amber-200/30 rounded-xl p-3">
                   <span className="text-2xl">{service.icon}</span>
                 </div>
 
@@ -254,6 +254,9 @@ export function ServicesShowcase() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ delay: 0.8, duration: 0.6 }}
         >
+          {/* Premium Gold Accent Strip */}
+          <div className="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-amber-400 via-yellow-300 to-amber-400" />
+
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-10">
             <div className="absolute top-0 left-0 w-32 h-32 bg-white rounded-full -translate-x-1/2 -translate-y-1/2"></div>
@@ -262,7 +265,7 @@ export function ServicesShowcase() {
 
           <div className="relative z-10">
             <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
-              <span className='text-gray-50'>Tired of Seasonal Landscape Headaches?</span>
+              <span className='text-gray-50'>Tired of Summer Yard Headaches?</span>
             </h3>
             <p className="text-xl font-light md:text-[22px] lg:text-[24px] mb-6 opacity-90 max-w-2xl mx-auto">
               Get your free, no-obligation estimate today and see why Arkansas homeowners trust us
