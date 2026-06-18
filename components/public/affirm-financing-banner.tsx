@@ -27,7 +27,7 @@ export function AffirmFinancingBanner() {
                     transition={{ duration: 8, repeat: Infinity }}
                 />
                 <motion.div
-                    className="absolute -bottom-20 -left-20 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl"
+                    className="absolute -bottom-20 -left-20 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl"
                     animate={{
                         scale: [1.2, 1, 1.2],
                         opacity: [0.4, 0.2, 0.4],
@@ -61,7 +61,7 @@ export function AffirmFinancingBanner() {
 
                             <h3 className="text-[26px] md:text-[32px] lg:text-[40px] font-bold text-white mb-3">
                                 <span className='text-white'>Now Offering&nbsp;</span>
-                                <span className="bg-linear-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
+                                <span className="bg-linear-to-r from-green-400 to-amber-400 bg-clip-text text-transparent">
                                     Affirm Financing
                                 </span>
                             </h3>
