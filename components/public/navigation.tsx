@@ -23,13 +23,13 @@ const navigation = [
             { name: 'Lawn Care', href: '/services/lawn-care' },
             { name: 'Landscaping & Sod', href: '/services/landscaping-sod' },
             { name: 'Drainage Solution', href: '/services/drainage-solution' },
-            { name: 'Seasonal Cleanup', href: '/services/seasonal-cleanup' },
+            { name: 'Mulch Rock', href: '/services/mulch-decorative-rock' },
             { name: 'Sprinkler Systems', href: '/services/sprinkler-systems' },
             { name: 'Tree & Brush Cleanup', href: '/services/tree-brush-cleanup' },
             { name: 'Privacy Fencing', href: '/services/privacy-fencing' },
             { name: 'Dirt Work & Grading', href: '/services/dirt-work-grading' },
             { name: 'Hardscaping', href: '/services/rock-work-hardscaping' },
-            { name: 'Holiday Lighting', href: '/services/holiday-lighting' },
+            { name: 'Pressure Washing', href: '/services/pressure-washing-sealing' },
         ]
     },
     {
