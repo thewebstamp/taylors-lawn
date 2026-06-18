@@ -50,7 +50,7 @@ export default function DrainageSolutionsPage() {
         },
         {
             title: 'Surface Drainage',
-            description: 'Channel drains, catch basins, and swales to manage surface water runoff during heavy rains.',
+            description: 'Channel drains, catch basins, and swales to manage surface water runoff during summer storms.',
             icon: CloudRain,
             features: ['Catch basin installation', 'Channel drains', 'Swale construction', 'Grading adjustments'],
         },
@@ -125,8 +125,8 @@ export default function DrainageSolutionsPage() {
 
 
             <div className="min-h-screen bg-linear-to-br from-white to-blue-50/30">
-                {/* Hero Section - Updated with new headline */}
-                <section className="relative py-20 lg:pt-25 overflow-hidden min-h-screen flex justify-center items-center bg-linear-to-b from-blue-900 to-green-900">
+                {/* Hero Section - Updated for Summer */}
+                <section className="relative py-20 lg:pt-25 overflow-hidden min-h-screen flex justify-center items-center bg-linear-to-b from-blue-900 to-blue-700">
                     <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
                             {/* Content Column - Left side for desktop, full width for mobile */}
@@ -136,25 +136,25 @@ export default function DrainageSolutionsPage() {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.8 }}
                             >
-                                {/* Main Headline */}
+                                {/* Main Headline - Updated for Summer */}
                                 <motion.h1
                                     className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6"
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.4, duration: 0.8 }}
                                 >
-                                    <span className="text-yellow-400 block mb-2">Wet Season Is Coming</span>
+                                    <span className="text-yellow-400 block mb-2">Summer Storms Are Coming</span>
                                     <span className="text-white block">Protect Your Property From Flooding</span>
                                 </motion.h1>
 
-                                {/* Subheadline */}
+                                {/* Subheadline - Updated for Summer */}
                                 <motion.div
                                     className="text-xl md:text-2xl font-light text-gray-200 mb-8 leading-relaxed"
                                     initial={{ opacity: 0 }}
                                     animate={{ opacity: 1 }}
                                     transition={{ delay: 0.6, duration: 0.7 }}
                                 >
-                                    <p>Don&apos;t wait for the next heavy rain to damage your home. Act now with proven drainage solutions.</p>
+                                    <p>Don&apos;t wait for the next summer downpour to damage your home. Act now with proven drainage solutions.</p>
                                     <p><span className='text-[22px] md:text-[26px] font-extrabold text-yellow-400'>10% OFF</span> for Veterans, Military & First Responders <span className='text-[22px] md:text-[26px] font-extrabold text-yellow-400'>15% OFF</span> for Widows.</p>
                                 </motion.div>
 
@@ -186,7 +186,7 @@ export default function DrainageSolutionsPage() {
                                     {/* Free Evaluation Button */}
                                     <Link
                                         href="/contact#form"
-                                        className="group bg-linear-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold py-4 px-6 rounded-xl text-lg transition-all duration-300 flex items-center justify-center gap-3 shadow-2xl hover:shadow-3xl w-full md:w-auto"
+                                        className="group bg-linear-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-bold py-4 px-6 rounded-xl text-lg transition-all duration-300 flex items-center justify-center gap-3 shadow-2xl hover:shadow-3xl w-full md:w-auto"
                                     >
                                         <Calendar className="h-5 w-5" />
                                         <span className="text-center">
@@ -205,11 +205,11 @@ export default function DrainageSolutionsPage() {
                                     transition={{ delay: 1.2 }}
                                 >
                                     <div className="flex items-center gap-2">
-                                        <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" style={{ animationDelay: '0.3s' }}></div>
+                                        <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse" style={{ animationDelay: '0.3s' }}></div>
                                         <span>25+ Years Experience</span>
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" style={{ animationDelay: '0.6s' }}></div>
+                                        <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse" style={{ animationDelay: '0.6s' }}></div>
                                         <span>Lifetime Warranty</span>
                                     </div>
                                 </motion.div>
@@ -241,12 +241,11 @@ export default function DrainageSolutionsPage() {
                                                 className="object-cover"
                                                 priority={index === 0}
                                             />
-                                            {/* Semi-transparent overlay for better contrast */}
                                             <div className="absolute inset-0 bg-linear-to-t from-blue-900/20 to-transparent" />
                                         </motion.div>
                                     ))}
 
-                                    {/* Animated Rain Drops on Image */}
+                                    {/* Animated Rain Drops - Keeping for summer storms visual */}
                                     {isMounted && (
                                         <div className="absolute inset-0 pointer-events-none overflow-hidden">
                                             {Array.from({ length: 15 }, (_, i) => (
@@ -277,7 +276,7 @@ export default function DrainageSolutionsPage() {
                                             <button
                                                 key={index}
                                                 onClick={() => setCurrentImage(index)}
-                                                className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentImage ? 'bg-green-400 scale-125' : 'bg-white/70 hover:bg-white'}`}
+                                                className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentImage ? 'bg-yellow-400 scale-125' : 'bg-white/70 hover:bg-white'}`}
                                                 aria-label={`View image ${index + 1}`}
                                             />
                                         ))}
@@ -302,10 +301,10 @@ export default function DrainageSolutionsPage() {
                             transition={{ duration: 0.6 }}
                         >
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                                Major Drainage Problems You&apos;ll Face This Season
+                                Major Drainage Problems You'll Face This Summer
                             </h2>
                             <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                                Arkansas wet seasons bring specific challenges. Here&apos;s what to watch for:
+                                Arkansas summer storms bring specific challenges. Here's what to watch for:
                             </p>
                         </motion.div>
 
@@ -313,14 +312,14 @@ export default function DrainageSolutionsPage() {
                             {[
                                 {
                                     problem: 'Basement Flooding',
-                                    description: 'Heavy rains overwhelm inadequate drainage, leading to costly water damage.',
+                                    description: 'Summer thunderstorms overwhelm inadequate drainage, leading to costly water damage.',
                                     icon: '🏠',
                                     urgency: 'EMERGENCY',
                                     color: 'bg-red-100 text-red-800'
                                 },
                                 {
                                     problem: 'Foundation Erosion',
-                                    description: 'Water pooling around your foundation causes soil erosion and structural damage.',
+                                    description: 'Water pooling around your foundation during summer rains causes soil erosion and structural damage.',
                                     icon: '⚠️',
                                     urgency: 'HIGH PRIORITY',
                                     color: 'bg-orange-100 text-orange-800'
@@ -341,14 +340,14 @@ export default function DrainageSolutionsPage() {
                                 },
                                 {
                                     problem: 'Driveway & Walkway Damage',
-                                    description: 'Water runoff erodes pavement and creates safety hazards.',
+                                    description: 'Summer storm runoff erodes pavement and creates safety hazards.',
                                     icon: '🛤️',
                                     urgency: 'HIGH PRIORITY',
-                                    color: 'bg-purple-100 text-purple-800'
+                                    color: 'bg-amber-100 text-amber-900'
                                 },
                                 {
                                     problem: 'Downspout Overload',
-                                    description: 'Gutters overflow, pouring water directly against your home\'s foundation.',
+                                    description: 'Gutters overflow during intense summer downpours, pouring water directly against your home\'s foundation.',
                                     icon: '🌧️',
                                     urgency: 'URGENT',
                                     color: 'bg-cyan-100 text-cyan-800'
@@ -379,7 +378,7 @@ export default function DrainageSolutionsPage() {
                                         <a
                                             href="tel:870-530-4289"
                                             onClick={trackPhoneCall}
-                                            className="text-green-600 hover:text-green-700 font-bold text-lg lg:text-xl flex items-center gap-3"
+                                            className="text-blue-600 hover:text-blue-700 font-bold text-lg lg:text-xl flex items-center gap-3"
                                         >
                                             <Phone className="h-5 w-5" />
                                             <span>Get Professional Help →</span>
@@ -426,8 +425,8 @@ export default function DrainageSolutionsPage() {
                                     {/* Header */}
                                     <div className="p-8 pb-4 border-b border-gray-100">
                                         <div className="flex items-center justify-between mb-6">
-                                            <div className="p-4 bg-green-100 rounded-2xl">
-                                                <service.icon className="h-8 w-8 text-green-600" />
+                                            <div className="p-4 bg-blue-100 rounded-2xl">
+                                                <service.icon className="h-8 w-8 text-blue-600" />
                                             </div>
                                         </div>
                                         <h3 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h3>
@@ -439,7 +438,7 @@ export default function DrainageSolutionsPage() {
                                         <div className="space-y-4 mb-6">
                                             {service.features.map((feature, featureIndex) => (
                                                 <div key={featureIndex} className="flex items-center gap-4 text-gray-700">
-                                                    <CheckCircle className="h-5 w-5 text-green-500 shrink-0" />
+                                                    <CheckCircle className="h-5 w-5 text-blue-500 shrink-0" />
                                                     <span className="text-lg lg:text-xl">{feature}</span>
                                                 </div>
                                             ))}
@@ -450,7 +449,7 @@ export default function DrainageSolutionsPage() {
                                             <motion.a
                                                 href="tel:870-530-4289"
                                                 onClick={trackPhoneCall}
-                                                className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 flex items-center gap-3 text-lg"
+                                                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 flex items-center gap-3 text-lg"
                                                 whileHover={{ scale: 1.05 }}
                                                 whileTap={{ scale: 0.95 }}
                                             >
@@ -465,8 +464,8 @@ export default function DrainageSolutionsPage() {
                     </div>
                 </section>
 
-                {/* Why Choose Us Section */}
-                <section className="py-20 bg-linear-to-br from-green-50/50 to-blue-50/50">
+                {/* Why Choose Us Section - Updated with amber accent replacing stray blue */}
+                <section className="py-20 bg-linear-to-br from-blue-50/50 to-amber-50/50">
                     <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                             Our Drainage Track Record
@@ -489,11 +488,11 @@ export default function DrainageSolutionsPage() {
                                     <div key={index}>
                                         <div className="flex items-center justify-between mb-2">
                                             <span className="text-gray-700 text-lg lg:text-[22px] font-semibold">{stat.label}</span>
-                                            <span className="text-2xl font-bold text-green-600">{stat.value}</span>
+                                            <span className="text-2xl font-bold text-blue-600">{stat.value}</span>
                                         </div>
                                         <div className="w-full bg-gray-200 rounded-full h-2">
                                             <div
-                                                className="bg-green-600 h-2 rounded-full transition-all duration-1000"
+                                                className="bg-blue-600 h-2 rounded-full transition-all duration-1000"
                                                 style={{ width: `${stat.percent}%` }}
                                             ></div>
                                         </div>
@@ -515,11 +514,11 @@ export default function DrainageSolutionsPage() {
                     </div>
                 </section>
 
-                {/* Emergency CTA Banner */}
-                <section className="py-20 bg-linear-to-r from-red-600/10 to-orange-600/10">
+                {/* Emergency CTA Banner - Updated for Summer */}
+                <section className="py-20 bg-linear-to-r from-red-600/10 to-amber-600/10">
                     <div className="container mx-auto px-4 md:px-6 lg:px-22">
                         <motion.div
-                            className="bg-linear-to-r from-red-600 to-orange-600 rounded-3xl shadow-2xl overflow-hidden"
+                            className="bg-linear-to-r from-red-600 to-amber-600 rounded-3xl shadow-2xl overflow-hidden"
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -531,22 +530,22 @@ export default function DrainageSolutionsPage() {
                                         <div className="p-3 bg-white/20 rounded-2xl">
                                             <Zap className="h-8 w-8" />
                                         </div>
-                                        <span className="text-xl font-bold uppercase tracking-widest">⚠️ EMERGENCY WARNING</span>
+                                        <span className="text-xl font-bold uppercase tracking-widest">⚠️ SUMMER STORM WARNING</span>
                                     </div>
                                     <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                                        Don&apos;t Wait Until It&apos;s Too Late
+                                        Don't Wait Until Summer Storms Hit
                                     </h2>
                                     <p className="text-gray-50 text-[19.5px] lg:text-[23px] font-light mb-8 opacity-95 leading-relaxed">
-                                        Every day you wait puts your property at greater risk. Water damage from poor drainage can cost tens of thousands to repair.
+                                        Every day you wait puts your property at greater risk. Summer storm flooding from poor drainage can cost tens of thousands to repair.
                                     </p>
                                     <div className="space-y-4 text-lg lg:text-xl">
                                         <div className="flex items-center gap-4">
                                             <Clock className="h-6 w-6" />
-                                            <span>Next heavy rain could flood your basement</span>
+                                            <span>Next summer downpour could flood your basement</span>
                                         </div>
                                         <div className="flex items-center gap-4">
                                             <Truck className="h-6 w-6" />
-                                            <span>Emergency slots fill quickly during wet season</span>
+                                            <span>Emergency slots fill quickly during storm season</span>
                                         </div>
                                         <div className="flex items-center gap-4">
                                             <Shield className="h-6 w-6" />
@@ -578,11 +577,11 @@ export default function DrainageSolutionsPage() {
                                     <div className="mt-12 pt-8 border-t border-gray-200">
                                         <div className="flex flex-col sm:flex-row items-center justify-center gap-8 text-gray-700 text-lg">
                                             <div className="flex items-center gap-3">
-                                                <ThumbsUp className="h-6 w-6 text-green-600" />
+                                                <ThumbsUp className="h-6 w-6 text-blue-600" />
                                                 <span>98% Recommended</span>
                                             </div>
                                             <div className="flex items-center gap-3">
-                                                <Clock className="h-6 w-6 text-blue-600" />
+                                                <Clock className="h-6 w-6 text-amber-600" />
                                                 <span>25+ Years Experience</span>
                                             </div>
                                         </div>
