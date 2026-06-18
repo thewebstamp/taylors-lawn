@@ -19,7 +19,7 @@ export default function ContactPage() {
     {
       icon: Mail,
       title: 'Email Us',
-      value: 'taylorslawncare21 @gmail.com',
+      value: 'taylorslawncare21@gmail.com',
       link: 'mailto:taylorslawncare21@gmail.com',
       description: 'We respond within 2 hours'
     },
@@ -62,7 +62,7 @@ export default function ContactPage() {
             className="object-cover opacity-15"
             priority
           />
-          <div className="absolute inset-0 bg-linear-to-b from-blue-600/60 to-green-600/70" />
+          <div className="absolute inset-0 bg-linear-to-b from-amber-600/50 to-green-600/70" />
         </div>
 
         <div className="container mx-auto px-4 md:px-8 lg:px-22 relative z-10">
@@ -110,7 +110,7 @@ export default function ContactPage() {
                     key={item.title}
                     href={item.link || '#'}
                     className={`flex items-start gap-6 p-6 rounded-2xl border transition-all duration-300 group cursor-pointer ${item.highlight
-                      ? 'bg-linear-to-r from-green-600/70 to-forest-600/90 text-white border-green-600 shadow-lg hover:shadow-xl hover:bg-green-700'
+                      ? 'bg-linear-to-r from-green-600/70 to-green-800/90 text-white border-green-600 shadow-lg hover:shadow-xl hover:bg-green-700'
                       : 'bg-white shadow-lg hover:shadow-xl border-gray-100 hover:border-green-200'
                       }`}
                     initial={{ opacity: 1, y: 20 }}
@@ -193,7 +193,7 @@ export default function ContactPage() {
 
                     <motion.a
                       href="sms:+18705304289"
-                      className="inline-flex items-center justify-center gap-3 bg-linear-to-r from-green-600 to-forest-600 hover:from-green-700 hover:to-forest-700 text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-300 group relative overflow-hidden"
+                      className="inline-flex items-center justify-center gap-3 bg-linear-to-r from-green-600 to-green-800 hover:from-green-700 hover:to-green-900 text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-300 group relative overflow-hidden"
                       whileHover={{ scale: 1.02, y: -2 }}
                       whileTap={{ scale: 0.98 }}
                       onClick={() => {
@@ -301,7 +301,7 @@ export default function ContactPage() {
         {/* Background Elements */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-10 left-10 w-64 h-64 bg-green-400 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-10 right-10 w-80 h-80 bg-blue-400 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-10 right-10 w-80 h-80 bg-amber-400 rounded-full blur-3xl"></div>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-green-300 rounded-full blur-3xl"></div>
         </div>
 
@@ -371,7 +371,7 @@ export default function ContactPage() {
                 }}
               >
                 {/* Hover Background Effect */}
-                <div className="absolute inset-0 bg-linear-to-br from-green-600 to-blue-600 opacity-0 group-hover:opacity-5 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-linear-to-br from-green-600 to-amber-600 opacity-0 group-hover:opacity-5 transition-opacity duration-500"></div>
 
                 {/* Top Accent Line */}
                 <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-12 h-1 bg-green-500 rounded-full group-hover:bg-green-400 transition-colors"></div>
