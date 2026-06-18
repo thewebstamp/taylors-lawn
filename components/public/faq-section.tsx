@@ -5,7 +5,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Phone } from 'lucide-react';
 
 export function FAQSection() {
   const ref = useRef(null);
@@ -36,7 +36,7 @@ export function FAQSection() {
   const faqs = [
     {
       question: "How quickly can you start a drainage project?",
-      answer: "We prioritize drainage emergencies and can often start within 24-48 hours, especially during active rain seasons."
+      answer: "We prioritize drainage emergencies and can often start within 24-48 hours, especially during active summer storm season."
     },
     {
       question: "Do you offer free estimates?",
@@ -52,7 +52,7 @@ export function FAQSection() {
     },
     {
       question: "Do you offer financing or payment plans?",
-      answer: "We offer flexible payment options for larger projects. Contact us to discuss what works for your budget."
+      answer: "Yes! We now offer Affirm financing, so you can get the work done now and pay over time with flexible, simple payment plans. Contact us to find an option that fits your budget."
     }
   ];
 
@@ -68,7 +68,7 @@ export function FAQSection() {
   };
 
   return (
-    <section ref={ref} className="py-20 bg-linear-to-br from-green-50 via-white to-blue-50 relative overflow-hidden">
+    <section ref={ref} className="py-20 bg-linear-to-br from-green-50 via-white to-amber-50 relative overflow-hidden">
       {/* Elegant Background Pattern */}
       <div className="absolute inset-0 opacity-30">
         {/* Top Left Organic Shape */}
@@ -78,7 +78,7 @@ export function FAQSection() {
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-20"></div>
 
         {/* Center Accent */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-10"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-amber-200 rounded-full mix-blend-multiply filter blur-xl opacity-10"></div>
 
         {/* Grid Pattern Overlay */}
         <div className="absolute inset-0 opacity-10"
@@ -124,7 +124,8 @@ export function FAQSection() {
           {faqs.map((faq, index) => (
             <motion.div
               key={index}
-              className="border border-green-200 rounded-2xl overflow-hidden bg-white/80 backdrop-blur-sm shadow-sm hover:shadow-md transition-shadow duration-300"
+              className={`border border-green-200 rounded-2xl overflow-hidden bg-white/80 backdrop-blur-sm shadow-sm hover:shadow-md transition-all duration-300 border-l-4 ${openIndex === index ? 'border-l-amber-400' : 'border-l-transparent'
+                }`}
               variants={itemVariants}
               whileHover={{
                 y: -2,
@@ -146,7 +147,8 @@ export function FAQSection() {
                   transition={{ duration: 0.3 }}
                   className="shrink-0"
                 >
-                  <ChevronDown className="h-5 w-5 text-gray-500 group-hover:text-green-500 transition-colors" />
+                  <ChevronDown className={`h-5 w-5 transition-colors ${openIndex === index ? 'text-amber-500' : 'text-gray-500 group-hover:text-green-500'
+                    }`} />
                 </motion.div>
               </motion.button>
               <AnimatePresence>
@@ -158,7 +160,7 @@ export function FAQSection() {
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                     className="overflow-hidden"
                   >
-                    <div className="px-6 py-4 bg-green-50/50 border-t border-green-100">
+                    <div className="px-6 py-4 bg-linear-to-r from-green-50/50 to-amber-50/40 border-t border-green-100">
                       <p className="text-gray-700 text-[19px] lg:text-[21px] leading-relaxed">{faq.answer}</p>
                     </div>
                   </motion.div>
@@ -179,12 +181,13 @@ export function FAQSection() {
           <motion.a
             href="tel:870-530-4289"
             onClick={trackPhoneCall}
-            className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold text-xl md:text-[22px] lg:text-[25px]"
+            className="inline-flex items-center gap-3 bg-linear-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-semibold text-xl md:text-[22px] lg:text-[25px] px-8 py-3.5 rounded-full shadow-lg hover:shadow-xl hover:shadow-amber-200/40 transition-all duration-300"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
+            <Phone className="h-5 w-5" />
             <span>Call (870) 530-4289</span>
-            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+            <div className="w-2 h-2 bg-white/70 rounded-full animate-pulse"></div>
           </motion.a>
         </motion.div>
       </div>
