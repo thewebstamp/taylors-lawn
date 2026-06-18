@@ -500,7 +500,7 @@ export default function MulchDecorativeRockPage() {
                                         <span className="text-xl font-bold uppercase tracking-widest">SUMMER REFRESH SPECIAL</span>
                                     </div>
                                     <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                                        Get Your Beds Summer-Ready
+                                        <span className="text-green-200">Get Your Beds Summer-Ready</span>
                                     </h2>
                                     <p className="text-gray-50 text-[19.5px] lg:text-[23px] font-light mb-8 opacity-95 leading-relaxed">
                                         Bare or faded beds lose moisture fast and invite weeds. Fresh mulch and rock protect your landscaping investment all season.
