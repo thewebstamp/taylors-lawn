@@ -47,7 +47,7 @@ export function ContactSection() {
     {
       icon: Mail,
       title: 'Email Us',
-      value: 'taylorslawncare21@gmail.com',
+      value: 'taylorslawncare21 @gmail.com',
       link: 'mailto:taylorslawncare21@gmail.com',
       description: 'We respond within 2 hours'
     },
