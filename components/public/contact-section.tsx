@@ -47,7 +47,7 @@ export function ContactSection() {
     {
       icon: Mail,
       title: 'Email Us',
-      value: 'taylorslawncare21 @gmail.com',
+      value: 'taylorslawncare21@gmail.com',
       link: 'mailto:taylorslawncare21@gmail.com',
       description: 'We respond within 2 hours'
     },
@@ -81,11 +81,11 @@ export function ContactSection() {
           transition={{ duration: 0.6 }}
         >
           <motion.div
-            className="inline-flex items-center gap-2 bg-yellow-600 text-white px-4 py-2 rounded-full mb-3"
+            className="inline-flex items-center gap-2 bg-linear-to-r from-amber-500 to-amber-600 text-white px-4 py-2 rounded-full mb-3"
             whileHover={{ scale: 1.05 }}
           >
             <Calendar className="h-4 w-4" />
-            <span className="text-sm font-semibold">FALL BOOKING ONGOING</span>
+            <span className="text-sm font-semibold">SUMMER BOOKING OPEN</span>
           </motion.div>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
@@ -147,7 +147,7 @@ export function ContactSection() {
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
             transition={{ delay: 0.3, duration: 0.6 }}
-            className="bg-linear-to-br from-green-600 to-blue-600 rounded-2xl shadow-2xl overflow-hidden relative"
+            className="bg-linear-to-br from-green-600 to-amber-600 rounded-2xl shadow-2xl overflow-hidden relative"
           >
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-10">
