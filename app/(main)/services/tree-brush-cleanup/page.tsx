@@ -46,7 +46,7 @@ export default function TreeBrushCleanupPage() {
         },
         {
             title: 'Storm Damage Cleanup',
-            description: 'Emergency response for fallen trees and branches after storms.',
+            description: 'Emergency response for fallen trees and branches after summer storms.',
             icon: Zap,
             features: ['24/7 emergency service', 'Quick response', 'Insurance coordination', 'Complete cleanup'],
             emergency: true
@@ -168,7 +168,7 @@ export default function TreeBrushCleanupPage() {
                                     {/* Free Evaluation Button */}
                                     <Link
                                         href="/contact#form"
-                                        className="group bg-linear-to-r from-yellow-600 to-yellow-700 hover:from-yellow-700 hover:to-yellow-800 text-white font-bold py-4 px-6 rounded-xl text-lg transition-all duration-300 flex items-center justify-center gap-3 shadow-2xl hover:shadow-3xl w-full md:w-auto"
+                                        className="group bg-linear-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-bold py-4 px-6 rounded-xl text-lg transition-all duration-300 flex items-center justify-center gap-3 shadow-2xl hover:shadow-3xl w-full md:w-auto"
                                     >
                                         <Calendar className="h-5 w-5" />
                                         <span className="text-center">
@@ -179,7 +179,7 @@ export default function TreeBrushCleanupPage() {
                                     </Link>
                                 </motion.div>
 
-                                {/* Trust Indicators */}
+                                {/* Trust Indicators - Updated with summer amber accent */}
                                 <motion.div
                                     className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mt-8 text-white/80 text-sm"
                                     initial={{ opacity: 0 }}
@@ -187,15 +187,15 @@ export default function TreeBrushCleanupPage() {
                                     transition={{ delay: 1.2 }}
                                 >
                                     <div className="flex items-center gap-2">
-                                        <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" style={{ animationDelay: '0.3s' }}></div>
+                                        <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse" style={{ animationDelay: '0.3s' }}></div>
                                         <span>25+ Years Experience</span>
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" style={{ animationDelay: '0.6s' }}></div>
+                                        <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse" style={{ animationDelay: '0.6s' }}></div>
                                         <span>Professional Equipment</span>
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" style={{ animationDelay: '0.9s' }}></div>
+                                        <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse" style={{ animationDelay: '0.9s' }}></div>
                                         <span>Safety First Approach</span>
                                     </div>
                                 </motion.div>
@@ -268,8 +268,8 @@ export default function TreeBrushCleanupPage() {
                                     color: 'bg-green-100 text-green-800'
                                 },
                                 {
-                                    problem: 'Storm Damage',
-                                    description: 'Fallen branches or trees after severe weather.',
+                                    problem: 'Summer Storm Damage',
+                                    description: 'Fallen branches or trees after severe summer storms.',
                                     icon: '🌩️',
                                     urgency: 'EMERGENCY',
                                     color: 'bg-red-100 text-red-800'
@@ -279,14 +279,14 @@ export default function TreeBrushCleanupPage() {
                                     description: 'Hazardous trees that could fall and cause damage.',
                                     icon: '🍂',
                                     urgency: 'URGENT',
-                                    color: 'bg-brown-100 text-brown-800'
+                                    color: 'bg-amber-100 text-amber-900'
                                 },
                                 {
                                     problem: 'Property Clearing Needed',
                                     description: 'Overgrown land needing clearing for construction.',
                                     icon: '🏗️',
                                     urgency: 'DEVELOPMENT',
-                                    color: 'bg-gray-100 text-gray-800'
+                                    color: 'bg-amber-100 text-amber-800'
                                 },
                                 {
                                     problem: 'Unusable Yard Space',
@@ -407,8 +407,8 @@ export default function TreeBrushCleanupPage() {
                     </div>
                 </section>
 
-                {/* Why Choose Us Section */}
-                <section className="py-20 bg-linear-to-br from-emerald-50/50 to-green-50/50">
+                {/* Why Choose Us Section - Updated with amber accent replacing stray green */}
+                <section className="py-20 bg-linear-to-br from-emerald-50/50 to-amber-50/50">
                     <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                             Our Tree Service Excellence
@@ -457,11 +457,11 @@ export default function TreeBrushCleanupPage() {
                     </div>
                 </section>
 
-                {/* Emergency CTA Banner */}
-                <section className="py-20 bg-linear-to-r from-red-600/10 to-orange-600/10">
+                {/* Emergency CTA Banner - Updated for Summer Storms */}
+                <section className="py-20 bg-linear-to-r from-red-600/10 to-amber-600/10">
                     <div className="container mx-auto px-4 md:px-6 lg:px-22">
                         <motion.div
-                            className="bg-linear-to-r from-red-600 to-orange-600 rounded-3xl shadow-2xl overflow-hidden"
+                            className="bg-linear-to-r from-red-600 to-amber-600 rounded-3xl shadow-2xl overflow-hidden"
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -473,18 +473,18 @@ export default function TreeBrushCleanupPage() {
                                         <div className="p-3 bg-white/20 rounded-2xl">
                                             <Zap className="h-8 w-8" />
                                         </div>
-                                        <span className="text-xl font-bold uppercase tracking-widest">⚠️ STORM DAMAGE WARNING</span>
+                                        <span className="text-xl font-bold uppercase tracking-widest">⚠️ SUMMER STORM WARNING</span>
                                     </div>
                                     <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                                        Don&apos;t Wait for Disaster
+                                        Don&apos;t Wait for Summer Storms
                                     </h2>
                                     <p className="text-gray-50 text-[19.5px] lg:text-[23px] font-light mb-8 opacity-95 leading-relaxed">
-                                        Overgrown or damaged trees can fall during storms, causing property damage and safety hazards.
+                                        Overgrown or damaged trees can fall during summer storms, causing property damage and safety hazards. Get your property ready now.
                                     </p>
                                     <div className="space-y-4 text-lg lg:text-xl">
                                         <div className="flex items-center gap-4">
                                             <Clock className="h-6 w-6" />
-                                            <span>Next storm could bring trees down</span>
+                                            <span>Next summer storm could bring trees down</span>
                                         </div>
                                         <div className="flex items-center gap-4">
                                             <Truck className="h-6 w-6" />
@@ -524,7 +524,7 @@ export default function TreeBrushCleanupPage() {
                                                 <span>99% Recommended</span>
                                             </div>
                                             <div className="flex items-center gap-3">
-                                                <Clock className="h-6 w-6 text-blue-600" />
+                                                <Clock className="h-6 w-6 text-amber-600" />
                                                 <span>25+ Years Experience</span>
                                             </div>
                                         </div>
