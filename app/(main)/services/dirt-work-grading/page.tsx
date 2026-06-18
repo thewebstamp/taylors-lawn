@@ -250,7 +250,7 @@ export default function DirtWorkGradingPage() {
                             {[
                                 {
                                     problem: 'Water Pooling',
-                                    description: 'Low spots in your yard collecting water after every rain.',
+                                    description: 'Low spots in your yard collecting water after every summer storm.',
                                     icon: '💧',
                                     urgency: 'DRAINAGE',
                                     color: 'bg-blue-100 text-blue-800'
@@ -264,10 +264,10 @@ export default function DirtWorkGradingPage() {
                                 },
                                 {
                                     problem: 'Erosion Issues',
-                                    description: 'Soil washing away creating gullies and unstable ground.',
+                                    description: 'Soil washing away from summer downpours, creating gullies and unstable ground.',
                                     icon: '🌊',
                                     urgency: 'URGENT',
-                                    color: 'bg-brown-100 text-brown-800'
+                                    color: 'bg-amber-100 text-amber-900'
                                 },
                                 {
                                     problem: 'Uneven Ground',
@@ -468,22 +468,22 @@ export default function DirtWorkGradingPage() {
                                         <div className="p-3 bg-white/20 rounded-2xl">
                                             <Tractor className="h-8 w-8" />
                                         </div>
-                                        <span className="text-xl font-bold uppercase tracking-widest">HEAVY EQUIPMENT READY</span>
+                                        <span className="text-xl font-bold uppercase tracking-widest">SUMMER GRADING SPECIAL</span>
                                     </div>
                                     <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                                        Don&apos;t Let Poor Grading Cost You
+                                        Get Your Property Graded Right This Summer
                                     </h2>
                                     <p className="text-gray-50 text-[19.5px] lg:text-[23px] font-light mb-8 opacity-95 leading-relaxed">
-                                        Proper grading prevents foundation damage, flooding, and costly repairs.
+                                        Summer is the perfect time for grading projects — dry soil makes for easier, more precise work and faster results.
                                     </p>
                                     <div className="space-y-4 text-lg lg:text-xl">
                                         <div className="flex items-center gap-4">
                                             <Calendar className="h-6 w-6" />
-                                            <span>Spring is ideal for grading projects</span>
+                                            <span>Book now for summer grading projects</span>
                                         </div>
                                         <div className="flex items-center gap-4">
                                             <Clock className="h-6 w-6" />
-                                            <span>Schedule now before the busy season</span>
+                                            <span>Priority scheduling for summer work</span>
                                         </div>
                                         <div className="flex items-center gap-4">
                                             <Shield className="h-6 w-6" />
