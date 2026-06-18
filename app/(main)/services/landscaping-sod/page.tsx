@@ -172,7 +172,7 @@ export default function LandscapingSodPage() {
                                     animate={{ opacity: 1 }}
                                     transition={{ delay: 0.6, duration: 0.7 }}
                                 >
-                                    <p>From bare dirt to beautiful landscape—we create outdoor spaces you&apos;ll love for years.</p>
+                                    <p>From bare dirt to beautiful landscape—create outdoor spaces you'll love for years.</p>
                                     <p><span className='text-[22px] md:text-[26px] font-extrabold text-yellow-400'>10% OFF</span> for Veterans, Military & First Responders <span className='text-[22px] md:text-[26px] font-extrabold text-yellow-400'>15% OFF</span> for Widows.</p>
                                 </motion.div>
 
@@ -204,7 +204,7 @@ export default function LandscapingSodPage() {
                                     {/* Free Evaluation Button */}
                                     <Link
                                         href="/contact#form"
-                                        className="group bg-linear-to-r from-yellow-600 to-yellow-700 hover:from-yellow-700 hover:to-yellow-800 text-white font-bold py-4 px-6 rounded-xl text-lg transition-all duration-300 flex items-center justify-center gap-3 shadow-2xl hover:shadow-3xl w-full md:w-auto"
+                                        className="group bg-linear-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-bold py-4 px-6 rounded-xl text-lg transition-all duration-300 flex items-center justify-center gap-3 shadow-2xl hover:shadow-3xl w-full md:w-auto"
                                     >
                                         <Calendar className="h-5 w-5" />
                                         <span className="text-center">
@@ -223,15 +223,15 @@ export default function LandscapingSodPage() {
                                     transition={{ delay: 1.2 }}
                                 >
                                     <div className="flex items-center gap-2">
-                                        <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" style={{ animationDelay: '0.3s' }}></div>
+                                        <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse" style={{ animationDelay: '0.3s' }}></div>
                                         <span>25+ Years Experience</span>
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" style={{ animationDelay: '0.6s' }}></div>
+                                        <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse" style={{ animationDelay: '0.6s' }}></div>
                                         <span>Premium Materials</span>
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" style={{ animationDelay: '0.9s' }}></div>
+                                        <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse" style={{ animationDelay: '0.9s' }}></div>
                                         <span>Custom Designs</span>
                                     </div>
                                 </motion.div>
@@ -299,7 +299,7 @@ export default function LandscapingSodPage() {
                                 },
                                 {
                                     problem: 'Poor Yard Drainage',
-                                    description: 'Water pooling in your lawn after rains, killing grass and plants.',
+                                    description: 'Water pooling in your lawn after summer storms, killing grass and plants.',
                                     icon: '💧',
                                     urgency: 'URGENT',
                                     color: 'bg-blue-100 text-blue-800'
@@ -309,14 +309,14 @@ export default function LandscapingSodPage() {
                                     description: 'Overgrown plants and dated designs that detract from your home.',
                                     icon: '🏡',
                                     urgency: 'UPGRADE',
-                                    color: 'bg-purple-100 text-purple-800'
+                                    color: 'bg-amber-100 text-amber-900'
                                 },
                                 {
                                     problem: 'Soil Quality Issues',
                                     description: 'Compacted or poor soil preventing healthy plant growth.',
                                     icon: '🌍',
                                     urgency: 'FOUNDATIONAL',
-                                    color: 'bg-brown-100 text-brown-800'
+                                    color: 'bg-amber-100 text-amber-800'
                                 },
                                 {
                                     problem: 'Lack of Curb Appeal',
@@ -444,8 +444,8 @@ export default function LandscapingSodPage() {
                     </div>
                 </section>
 
-                {/* Why Choose Us Section */}
-                <section className="py-20 bg-linear-to-br from-green-50/50 to-blue-50/50">
+                {/* Why Choose Us Section - Updated with amber accent replacing stray blue */}
+                <section className="py-20 bg-linear-to-br from-green-50/50 to-amber-50/50">
                     <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                             Our Landscaping Excellence
@@ -494,11 +494,11 @@ export default function LandscapingSodPage() {
                     </div>
                 </section>
 
-                {/* CTA Banner */}
-                <section className="py-20 bg-linear-to-r from-green-600/10 to-yellow-600/10">
+                {/* CTA Banner - Updated for Summer */}
+                <section className="py-20 bg-linear-to-r from-green-600/10 to-amber-600/10">
                     <div className="container mx-auto px-4 md:px-6 lg:px-22">
                         <motion.div
-                            className="bg-linear-to-r from-green-600 to-yellow-600 rounded-3xl shadow-2xl overflow-hidden"
+                            className="bg-linear-to-r from-green-600 to-amber-600 rounded-3xl shadow-2xl overflow-hidden"
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -510,18 +510,18 @@ export default function LandscapingSodPage() {
                                         <div className="p-3 bg-white/20 rounded-2xl">
                                             <Sprout className="h-8 w-8" />
                                         </div>
-                                        <span className="text-xl font-bold uppercase tracking-widest">SPRING READY</span>
+                                        <span className="text-xl font-bold uppercase tracking-widest">SUMMER LANDSCAPING</span>
                                     </div>
                                     <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                                        Perfect Time for Transformation
+                                        Perfect Time for Summer Landscaping
                                     </h2>
                                     <p className="text-gray-50 text-[19.5px] lg:text-[23px] font-light mb-8 opacity-95 leading-relaxed">
-                                        Spring is the ideal season for landscaping. Get your project started now for maximum growth and establishment.
+                                        Summer is the ideal season for landscaping projects. Get your outdoor space transformed now for immediate enjoyment and lasting beauty.
                                     </p>
                                     <div className="space-y-4 text-lg lg:text-xl">
                                         <div className="flex items-center gap-4">
                                             <Calendar className="h-6 w-6" />
-                                            <span>Book now for spring installation</span>
+                                            <span>Book now for summer installation</span>
                                         </div>
                                         <div className="flex items-center gap-4">
                                             <Clock className="h-6 w-6" />
@@ -561,7 +561,7 @@ export default function LandscapingSodPage() {
                                                 <span>98% Recommended</span>
                                             </div>
                                             <div className="flex items-center gap-3">
-                                                <Clock className="h-6 w-6 text-blue-600" />
+                                                <Clock className="h-6 w-6 text-amber-600" />
                                                 <span>25+ Years Experience</span>
                                             </div>
                                         </div>
