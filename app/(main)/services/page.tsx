@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 // app/(main)/services/page.tsx
 'use client';
 import { AffirmFinancingBanner } from '@/components/public/affirm-financing-banner';
@@ -14,7 +13,7 @@ export default function ServicesPage() {
       img: "/drainage.jpg",
       icon: '💧',
       title: 'Drainage Solutions',
-      description: 'French drains, surface drainage, downspout drainage. Over 3,000 feet installed this season!',
+      description: 'French drains, surface drainage, downspout drainage — built to handle Arkansas summer storms. Over 3,000 feet installed this season!',
       features: ['Emergency Service', 'Free Inspection', 'Expert Installation', '25+ Years Experience'],
       highlight: true,
       slug: "drainage-solution"
@@ -23,7 +22,7 @@ export default function ServicesPage() {
       img: "/sod.jpg",
       icon: '🌿',
       title: 'Landscaping & Sod',
-      description: 'Complete landscape design, sod installation, garden beds, and outdoor living spaces',
+      description: 'Complete landscape design, sod installation, garden beds, and outdoor living spaces — get your yard ready before the summer heat sets in.',
       features: ['Custom Designs', 'Premium Materials', '25+ Years Experience', 'Heavy Equipment Operation'],
       slug: "landscaping-sod"
     },
@@ -31,7 +30,7 @@ export default function ServicesPage() {
       img: "/hero.jpg",
       icon: '🌱',
       title: 'Lawn Care',
-      description: 'Mowing, weed eating, edging, blowing, fertilization, and seasonal care year-round.',
+      description: 'Mowing, weed eating, edging, blowing, fertilization, and weed control to keep your lawn thick and green all summer.',
       features: ['Mowing & Edging', 'Weed Eating', 'Blowing Surfaces'],
       slug: "lawn-care"
     },
@@ -39,7 +38,7 @@ export default function ServicesPage() {
       img: "/sprinkler.jpg",
       icon: '🚿',
       title: 'Sprinkler Systems',
-      description: 'Professional irrigation system installation and repair for healthy lawns',
+      description: 'Professional irrigation system installation and repair to keep your lawn healthy through the hottest summer days',
       features: ['Smart Systems', 'Maintenance Plans', 'Expert Installation', 'Water Efficiency'],
       slug: "sprinkler-systems"
     },
@@ -71,25 +70,25 @@ export default function ServicesPage() {
       img: "/stone.jpg",
       icon: '🧱',
       title: 'Rock Work & Hardscaping',
-      description: 'Retaining walls, stone features, and hardscape to boost curb appeal',
+      description: 'Retaining walls, flagstone patios, stone features, and hardscape to boost curb appeal and your outdoor living space',
       features: ['Quality Craftsmanship', 'Durable Materials', 'Expert Installation', '25+ Years Experience'],
       slug: "rock-work-hardscaping"
     },
     {
-      img: "/holiday.jpg",
-      icon: '🎄',
-      title: 'Holiday Lighting',
-      description: 'Professional holiday light installation starting at $2.50/ft',
-      features: ['Professional Design', 'Install & Removal', 'LED Technology', 'Seasonal Service'],
-      slug: "holiday-lighting"
+      img: "/1781740335628.jpg",
+      icon: '✨',
+      title: 'Pressure Washing & Sealing',
+      description: 'Restore your driveway, patio, and siding with professional pressure washing, then seal your driveway to protect it from Arkansas summer heat and storms.',
+      features: ['Driveways & Patios', 'Siding & Walkways', 'Professional Equipment', 'Quick Turnaround'],
+      slug: "pressure-washing-sealing"
     },
     {
-      img: "/clean.jpg",
-      icon: '🍂',
-      title: 'Seasonal Cleanup',
-      description: 'Fall cleanups, leaf removal, and winter preparation services',
-      features: ['Thorough Service', 'Seasonal Expertise', 'Debris Removal', 'Quick Response'],
-      slug: "seasonal-cleanup"
+      img: "/1781740860830_1.jpg",
+      icon: '🟤',
+      title: 'Mulch & Decorative Rock',
+      description: 'Fresh mulch and decorative rock installation to lock in moisture, suppress weeds, and keep your beds looking sharp all summer long',
+      features: ['Moisture Retention', 'Weed Suppression', 'Premium Materials', 'Expert Installation'],
+      slug: "mulch-decorative-rock"
     }
   ];
 
@@ -140,7 +139,7 @@ export default function ServicesPage() {
             priority
           />
           {/* Added darker overlay for better text visibility */}
-          <div className="absolute inset-0 bg-linear-to-b from-blue-600/60 to-green-600/70" />
+          <div className="absolute inset-0 bg-linear-to-b from-amber-600/50 to-green-600/70" />
         </div>
 
         <div className="container mx-auto px-4 md:px-6 lg:px-22 relative z-10">
@@ -151,11 +150,11 @@ export default function ServicesPage() {
             transition={{ duration: 0.6 }}
           >
             <motion.div
-              className="inline-flex items-center gap-2 bg-green-600/70 text-white px-4 py-2 rounded-full mb-3"
+              className="inline-flex items-center gap-2 bg-linear-to-r from-amber-500/90 to-amber-600/90 text-white px-4 py-2 rounded-full mb-3"
               whileHover={{ scale: 1.05 }}
             >
               <Calendar className="h-4 w-4" />
-              <span className="text-sm font-semibold">WINTER & SPRING BOOKING OPEN</span>
+              <span className="text-sm font-semibold">SUMMER PROJECTS BOOKING OPEN</span>
             </motion.div>
 
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
@@ -178,7 +177,7 @@ export default function ServicesPage() {
             {services.map((service, index) => (
               <motion.div
                 key={service.title}
-                className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl border border-gray-100 overflow-hidden transition-all duration-500"
+                className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-amber-200/40 border border-gray-100 hover:border-amber-200/60 overflow-hidden transition-all duration-500"
                 initial={{ opacity: 1, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-50px' }}
@@ -198,7 +197,7 @@ export default function ServicesPage() {
                   <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent" />
 
                   {/* Service Icon */}
-                  <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-sm rounded-xl p-3">
+                  <div className="absolute top-4 left-4 bg-linear-to-br from-amber-300/30 to-amber-500/20 backdrop-blur-sm border border-amber-200/30 rounded-xl p-3">
                     <span className="text-2xl">{service.icon}</span>
                   </div>
 
@@ -243,7 +242,6 @@ export default function ServicesPage() {
                     <Link
                       href={`/services/${service.slug}`}
                       className="w-full bg-gray-800 hover:bg-gray-950 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 group/btn">
-                      <Phone className="h-4 w-4" />
                       <span className='text-lg lg:text-xl'>Learn More</span>
                       <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
                     </Link>
@@ -264,7 +262,7 @@ export default function ServicesPage() {
             <div className="absolute top-0 left-0 w-full h-full"
               style={{
                 backgroundImage: `radial-gradient(circle at 25% 25%, #16a34a 2px, transparent 0),
-                               radial-gradient(circle at 75% 75%, #0ea5e9 2px, transparent 0)`,
+                               radial-gradient(circle at 75% 75%, #d97706 2px, transparent 0)`,
                 backgroundSize: '60px 60px',
               }}>
             </div>
@@ -272,7 +270,7 @@ export default function ServicesPage() {
 
           {/* Accent Lines */}
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-px h-32 bg-linear-to-b from-green-500 to-transparent"></div>
-          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-px h-32 bg-linear-to-t from-blue-500 to-transparent"></div>
+          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-px h-32 bg-linear-to-t from-amber-500 to-transparent"></div>
         </div>
 
         <div className="container mx-auto px-4 md:px-8 lg:px-22 relative z-10">
@@ -288,12 +286,12 @@ export default function ServicesPage() {
               whileHover={{ scale: 1.05 }}
             >
               <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-              <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+              <div className="w-2 h-2 bg-amber-500 rounded-full"></div>
               <div className="w-2 h-2 bg-green-500 rounded-full"></div>
               <span className="text-sm font-semibold tracking-widest uppercase">OUR COMMITMENT</span>
-              <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+              <div className="w-2 h-2 bg-amber-500 rounded-full"></div>
               <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-              <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+              <div className="w-2 h-2 bg-amber-500 rounded-full"></div>
             </motion.div>
 
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
@@ -329,10 +327,10 @@ export default function ServicesPage() {
                 {/* Card */}
                 <div className="relative bg-white rounded-2xl p-8 shadow-lg border border-gray-100 group-hover:shadow-2xl transition-all duration-500 overflow-hidden">
                   {/* Background Gradient on Hover */}
-                  <div className="absolute inset-0 bg-linear-to-br from-green-50 to-blue-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="absolute inset-0 bg-linear-to-br from-green-50 to-amber-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                   {/* Top Accent Bar */}
-                  <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-green-500 to-blue-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+                  <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-green-500 to-amber-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
 
                   {/* Icon Container */}
                   <motion.div
@@ -345,7 +343,7 @@ export default function ServicesPage() {
                   >
                     <div className="relative inline-flex">
                       {/* Icon Background */}
-                      <div className="absolute inset-0 bg-linear-to-br from-green-500 to-blue-500 rounded-2xl transform rotate-6 opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+                      <div className="absolute inset-0 bg-linear-to-br from-green-500 to-amber-500 rounded-2xl transform rotate-6 opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
 
                       {/* Icon */}
                       <div className="relative bg-white rounded-xl p-3 shadow-md border border-gray-100">
@@ -361,7 +359,7 @@ export default function ServicesPage() {
                             <defs>
                               <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
                                 <stop offset="0%" stopColor="#16a34a" />
-                                <stop offset="100%" stopColor="#0ea5e9" />
+                                <stop offset="100%" stopColor="#d97706" />
                               </linearGradient>
                             </defs>
                           </svg>
@@ -387,7 +385,7 @@ export default function ServicesPage() {
                   >
                     <div className="flex items-center gap-1 text-gray-400">
                       <div className="w-1 h-1 bg-green-500 rounded-full"></div>
-                      <div className="w-1 h-1 bg-blue-500 rounded-full"></div>
+                      <div className="w-1 h-1 bg-amber-500 rounded-full"></div>
                       <div className="w-1 h-1 bg-green-500 rounded-full"></div>
                     </div>
                   </motion.div>
@@ -407,7 +405,7 @@ export default function ServicesPage() {
                   }}
                 />
                 <motion.div
-                  className="absolute -bottom-2 -left-2 w-3 h-3 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  className="absolute -bottom-2 -left-2 w-3 h-3 bg-amber-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   animate={{
                     scale: [1, 1.3, 1],
                     opacity: [0, 0.4, 0]
@@ -441,7 +439,7 @@ export default function ServicesPage() {
                 <span>Trusted</span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" style={{ animationDelay: '0.2s' }}></div>
+                <div className="w-2 h-2 bg-amber-500 rounded-full animate-pulse" style={{ animationDelay: '0.2s' }}></div>
                 <span>Reliable</span>
               </div>
               <div className="flex items-center gap-2">
