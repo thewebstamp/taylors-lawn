@@ -23,7 +23,7 @@ const navigation = [
             { name: 'Lawn Care', href: '/services/lawn-care' },
             { name: 'Landscaping & Sod', href: '/services/landscaping-sod' },
             { name: 'Drainage Solution', href: '/services/drainage-solution' },
-            { name: 'Mulch Rock', href: '/services/mulch-decorative-rock' },
+            { name: 'Mulch & Decorative Rock', href: '/services/mulch-decorative-rock' },
             { name: 'Sprinkler Systems', href: '/services/sprinkler-systems' },
             { name: 'Tree & Brush Cleanup', href: '/services/tree-brush-cleanup' },
             { name: 'Privacy Fencing', href: '/services/privacy-fencing' },
