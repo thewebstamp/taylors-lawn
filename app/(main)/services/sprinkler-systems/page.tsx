@@ -168,7 +168,7 @@ export default function SprinklerSystemsPage() {
                                     {/* Free Evaluation Button */}
                                     <Link
                                         href="/contact#form"
-                                        className="group bg-linear-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold py-4 px-6 rounded-xl text-lg transition-all duration-300 flex items-center justify-center gap-3 shadow-2xl hover:shadow-3xl w-full md:w-auto"
+                                        className="group bg-linear-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-bold py-4 px-6 rounded-xl text-lg transition-all duration-300 flex items-center justify-center gap-3 shadow-2xl hover:shadow-3xl w-full md:w-auto"
                                     >
                                         <Calendar className="h-5 w-5" />
                                         <span className="text-center">
@@ -179,7 +179,7 @@ export default function SprinklerSystemsPage() {
                                     </Link>
                                 </motion.div>
 
-                                {/* Trust Indicators */}
+                                {/* Trust Indicators - Updated with summer amber accent */}
                                 <motion.div
                                     className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mt-8 text-white/80 text-sm"
                                     initial={{ opacity: 0 }}
@@ -187,15 +187,15 @@ export default function SprinklerSystemsPage() {
                                     transition={{ delay: 1.2 }}
                                 >
                                     <div className="flex items-center gap-2">
-                                        <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse" style={{ animationDelay: '0.3s' }}></div>
+                                        <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse" style={{ animationDelay: '0.3s' }}></div>
                                         <span>25+ Years Experience</span>
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse" style={{ animationDelay: '0.6s' }}></div>
+                                        <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse" style={{ animationDelay: '0.6s' }}></div>
                                         <span>Smart System Installation</span>
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse" style={{ animationDelay: '0.9s' }}></div>
+                                        <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse" style={{ animationDelay: '0.9s' }}></div>
                                         <span>Water Conservation Experts</span>
                                     </div>
                                 </motion.div>
@@ -226,7 +226,7 @@ export default function SprinklerSystemsPage() {
                                         <div className="absolute inset-0 bg-linear-to-t from-blue-900/20 to-transparent" />
                                     </motion.div>
 
-                                    {/* Animated Water Drops */}
+                                    {/* Animated Water Drops - Keeping for summer watering visual */}
                                     <div className="absolute inset-0 pointer-events-none overflow-hidden">
                                         {Array.from({ length: 10 }, (_, i) => (
                                             <motion.div
@@ -270,7 +270,7 @@ export default function SprinklerSystemsPage() {
                                 Common Sprinkler System Problems
                             </h2>
                             <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                                Don&apos;t let irrigation issues waste water and damage your lawn
+                                Don&apos;t let irrigation issues waste water and damage your lawn this summer
                             </p>
                         </motion.div>
 
@@ -302,14 +302,14 @@ export default function SprinklerSystemsPage() {
                                     description: 'Dragging hoses and forgetting to water damaging your lawn.',
                                     icon: '💧',
                                     urgency: 'INCONVENIENT',
-                                    color: 'bg-purple-100 text-purple-800'
+                                    color: 'bg-amber-100 text-amber-900'
                                 },
                                 {
                                     problem: 'Outdated Controller',
                                     description: 'Old timer wasting water with no smart features or weather adjustment.',
                                     icon: '⏰',
                                     urgency: 'UPGRADE',
-                                    color: 'bg-gray-100 text-gray-800'
+                                    color: 'bg-amber-100 text-amber-800'
                                 },
                                 {
                                     problem: 'System Not Winterized',
@@ -430,8 +430,8 @@ export default function SprinklerSystemsPage() {
                     </div>
                 </section>
 
-                {/* Why Choose Us Section */}
-                <section className="py-20 bg-linear-to-br from-blue-50/50 to-green-50/50">
+                {/* Why Choose Us Section - Updated with amber accent replacing stray green */}
+                <section className="py-20 bg-linear-to-br from-blue-50/50 to-amber-50/50">
                     <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                             Our Sprinkler System Expertise
@@ -480,11 +480,11 @@ export default function SprinklerSystemsPage() {
                     </div>
                 </section>
 
-                {/* CTA Banner */}
-                <section className="py-20 bg-linear-to-r from-blue-600/10 to-green-600/10">
+                {/* CTA Banner - Updated for Summer */}
+                <section className="py-20 bg-linear-to-r from-blue-600/10 to-amber-600/10">
                     <div className="container mx-auto px-4 md:px-6 lg:px-22">
                         <motion.div
-                            className="bg-linear-to-r from-blue-600 to-green-600 rounded-3xl shadow-2xl overflow-hidden"
+                            className="bg-linear-to-r from-blue-600 to-amber-600 rounded-3xl shadow-2xl overflow-hidden"
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -496,18 +496,18 @@ export default function SprinklerSystemsPage() {
                                         <div className="p-3 bg-white/20 rounded-2xl">
                                             <DropletsIcon className="h-8 w-8" />
                                         </div>
-                                        <span className="text-xl font-bold uppercase tracking-widest">SPRING SPECIAL</span>
+                                        <span className="text-xl font-bold uppercase tracking-widest">SUMMER INSTALLATION SPECIAL</span>
                                     </div>
                                     <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                                        Perfect Time for Installation
+                                        Get Your System Ready for Summer Heat
                                     </h2>
                                     <p className="text-gray-50 text-[19.5px] lg:text-[23px] font-light mb-8 opacity-95 leading-relaxed">
-                                        Spring installation ensures your system is ready for summer watering needs.
+                                        Summer installation ensures your lawn stays green and healthy through the hottest months. Beat the heat with a professionally installed irrigation system.
                                     </p>
                                     <div className="space-y-4 text-lg lg:text-xl">
                                         <div className="flex items-center gap-4">
                                             <Calendar className="h-6 w-6" />
-                                            <span>Book now for spring installation</span>
+                                            <span>Book now for summer installation</span>
                                         </div>
                                         <div className="flex items-center gap-4">
                                             <Clock className="h-6 w-6" />
@@ -547,7 +547,7 @@ export default function SprinklerSystemsPage() {
                                                 <span>98% Recommended</span>
                                             </div>
                                             <div className="flex items-center gap-3">
-                                                <Clock className="h-6 w-6 text-green-600" />
+                                                <Clock className="h-6 w-6 text-amber-600" />
                                                 <span>25+ Years Experience</span>
                                             </div>
                                         </div>
