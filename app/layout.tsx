@@ -7,6 +7,7 @@ import './globals.css';
 import { PerformanceTracker } from '@/components/public/performance-tracker';
 import { Footer } from '@/components/public/footer';
 import { Navigation } from '@/components/public/navigation';
+import { HostingError } from '@/components/public/hosting-error';
 
 // Optimized font loading with next/font
 const josefinSans = Josefin_Sans({
@@ -135,6 +136,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const SHOW_HOSTING_ERROR = true;
+  if (SHOW_HOSTING_ERROR) return <HostingError />;
+
   return (
     <html lang="en" className={`${josefinSans.variable} ${poetsenOne.variable} scroll-smooth`}>
       <head>
@@ -157,17 +161,11 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased">
         <div className="min-h-screen bg-earth-50">
-          {/* Navigation Component (Client Component) */}
           <Navigation />
-
-          {/* Main Content */}
           <main className="relative">
             {children}
           </main>
-
-          {/* Footer */}
           <Footer />
-
           <PerformanceTracker />
         </div>
         <Analytics />
