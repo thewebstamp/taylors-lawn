@@ -136,7 +136,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const SHOW_HOSTING_ERROR = true;
+  const SHOW_HOSTING_ERROR = false;
   if (SHOW_HOSTING_ERROR) return <HostingError />;
 
   return (
@@ -182,4 +182,4 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+};
