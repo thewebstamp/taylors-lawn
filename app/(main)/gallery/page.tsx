@@ -136,7 +136,25 @@ export default function GalleryPage() {
       title: 'Patio Hardscaping',
       category: 'others',
       image: '/others-8.jpg',
-    }
+    },
+    {
+  id: 20,
+  title: 'Property Improvement',
+  category: 'others',
+  image: '/TLC1.jpg',
+},
+{
+  id: 21,
+  title: 'Property Improvement',
+  category: 'others',
+  image: '/TLC2.jpg',
+},
+{
+  id: 22,
+  title: 'Property Improvement',
+  category: 'others',
+  image: '/TLC3.jpg',
+},
   ];
 
   const filteredProjects = activeFilter === 'all'
