@@ -37,7 +37,7 @@ export function TrustSection() {
     {
       name: "Mary Waddell",
       rating: 5,
-      text: "I recommend! In a few short hours they overhauled my flowerbeds. They worked fast and were thorough. They hauled off all brush. I’ll be using them to plant shrubs in the Spring!",
+      text: "I recommend! In a few short hours they overhauled my flowerbeds. They worked fast and were thorough. They hauled off all brush. I'll be using them to plant shrubs in the Spring!",
       service: "Fall & Bush Cleanup"
     },
     {
@@ -56,15 +56,15 @@ export function TrustSection() {
 
   return (
     <section ref={ref} className="py-16 bg-white relative overflow-hidden text-center lg:text-left">
-      {/* Decorative Summer Glow */}
+      {/* Decorative Fall Glow */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
-          className="absolute -top-20 -right-20 w-72 h-72 bg-amber-300/10 rounded-full blur-3xl"
+          className="absolute -top-20 -right-20 w-72 h-72 bg-orange-400/10 rounded-full blur-3xl"
           animate={{ scale: [1, 1.15, 1], opacity: [0.3, 0.5, 0.3] }}
           transition={{ duration: 6, repeat: Infinity }}
         />
         <motion.div
-          className="absolute bottom-0 -left-10 w-64 h-64 bg-green-300/10 rounded-full blur-3xl"
+          className="absolute bottom-0 -left-10 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl"
           animate={{ scale: [1.1, 1, 1.1], opacity: [0.4, 0.2, 0.4] }}
           transition={{ duration: 7, repeat: Infinity, delay: 1 }}
         />
@@ -120,7 +120,7 @@ export function TrustSection() {
                 <span className="block text-green-600">Can Count On</span>
               </h2>
               <p className="text-gray-600 text-xl md:text-[22px] lg:text-[24px]">
-                25+ years of transforming properties across Arkansas with reliable, professional service that gets your yard summer-ready, every time.
+                25+ years of transforming properties across Arkansas with reliable, professional service that keeps your property protected and looking sharp through fall and winter.
               </p>
             </motion.div>
 
@@ -132,8 +132,8 @@ export function TrustSection() {
               {[
                 { value: '98%', label: 'Recommend', icon: Star, color: 'text-yellow-500' },
                 { value: '25+', label: 'Years Exp', icon: Award, color: 'text-green-600' },
-                { value: '300+', label: 'Projects', icon: TrendingUp, color: 'text-amber-600' }
-              ].map((stat, index) => (
+                { value: '300+', label: 'Projects', icon: TrendingUp, color: 'text-orange-600' }
+              ].map((stat) => (
                 <motion.div
                   key={stat.label}
                   className="text-center"
@@ -162,7 +162,7 @@ export function TrustSection() {
               fill
               className="object-cover opacity-40"
             />
-            <div className="absolute inset-0 bg-linear-to-r from-green-900/80 via-green-800/60 to-amber-900/70" />
+            <div className="absolute inset-0 bg-linear-to-r from-green-900/80 via-green-800/60 to-orange-900/70" />
 
             {/* Background Content */}
             <div className="relative z-10 h-full flex justify-center text-center text-white p-8">
@@ -220,54 +220,4 @@ export function TrustSection() {
                   <div>
                     {/* Reviewer Info */}
                     <div className="mb-4">
-                      <h4 className="font-bold text-gray-900 text-lg md:text-[20px] lg:text-[22px]">{review.name}</h4>
-                      <p className="text-green-600 font-medium text-sm md:text-base">{review.service}</p>
-                    </div>
-
-                    {/* Footer - Uniform across all cards */}
-                    <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-                      <div className="flex items-center gap-2 text-blue-600">
-                        <Facebook className="h-4 w-4" />
-                        <span className="text-sm md:text-base font-medium">Facebook</span>
-                      </div>
-                      <div className="text-green-600 font-semibold text-sm md:text-base">
-                        Verified
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </motion.div>
-
-        {/* CTA Section */}
-        <motion.div
-          className="text-center"
-          variants={itemVariants}
-        >
-          {/* <motion.a
-            href="https://web.facebook.com/TLCLAWN21/reviews"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex text-lg items-center gap-3 bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl mx-auto group"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <Facebook className="h-5 w-5" />
-            <span>Read All Reviews</span>
-            <div className="w-2 h-2 bg-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          </motion.a> */}
-
-          <motion.div
-            className="flex items-center justify-center gap-2 mt-6 text-gray-600 text-md"
-            variants={itemVariants}
-          >
-            <Star className="h-4 w-4 text-yellow-500 fill-current" />
-            {/* <span>4.9/5 Rating from 33+ Verified Reviews</span> */}
-          </motion.div>
-        </motion.div>
-      </motion.div>
-    </section>
-  );
-}
+                      <h4 className="font-bold
