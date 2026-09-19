@@ -256,3 +256,78 @@ export function HeroSection() {
                   />
 
                   {/* Gradient Overlay */}
+                  <div className="absolute inset-0 bg-linear-to-t from-gray-900/40 via-gray-900/20 to-transparent" />
+                </motion.div>
+              </AnimatePresence>
+
+              {/* Floating Offer Badge */}
+              <motion.div
+                className="absolute top-6 right-6 bg-linear-to-r from-orange-500 to-amber-600 text-white px-4 py-3 rounded-xl shadow-2xl"
+                initial={{ scale: 0, rotate: -10 }}
+                animate={{ scale: 1, rotate: 0 }}
+                transition={{ delay: 1, type: "spring" }}
+              >
+                <div className="text-center">
+                  <div className="font-bold text-sm">Fall Special!</div>
+                  <div className="text-xs font-semibold">Book Your Spot</div>
+                </div>
+              </motion.div>
+
+              {/* Carousel Controls */}
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
+                {heroImages.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentImage(index)}
+                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                      index === currentImage ? 'bg-orange-400 scale-125' : 'bg-white/40 hover:bg-white/60'
+                    }`}
+                  />
+                ))}
+              </div>
+            </div>
+
+            {/* Service Tags */}
+            <motion.div
+              className="flex flex-wrap gap-2 justify-center mt-4"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.2, duration: 0.6 }}
+            >
+              {['Drainage Solutions', 'Yard & Leaf Cleanup', 'Mulch & Hardscaping'].map((service, index) => (
+                <motion.span
+                  key={service}
+                  className="bg-white/10 backdrop-blur-sm text-white text-xs px-3 py-1 rounded-full border border-white/20"
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ delay: 1.4 + index * 0.1, type: "spring" }}
+                >
+                  {service}
+                </motion.span>
+              ))}
+            </motion.div>
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <motion.div
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 hidden lg:block"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5, duration: 0.6 }}
+      >
+        <div className="flex flex-col items-center gap-2 text-white/40">
+          <span className="text-sm">Scroll to explore</span>
+          <div className="w-6 h-10 border-2 border-white/20 rounded-full flex justify-center">
+            <motion.div
+              className="w-1 h-3 bg-white/40 rounded-full mt-2"
+              animate={{ y: [0, 12, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity }}
+            />
+          </div>
+        </div>
+      </motion.div>
+    </section>
+  );
+}
