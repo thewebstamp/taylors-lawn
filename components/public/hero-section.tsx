@@ -13,8 +13,6 @@ const heroImages = [
   '/hero-3.jpg',
 ];
 
-const LEAF_TYPES = ['🍂', '🍁'];
-
 export function HeroSection() {
   const [currentImage, setCurrentImage] = useState(0);
   const [isMounted, setIsMounted] = useState(false);
@@ -34,25 +32,24 @@ export function HeroSection() {
     setIsMounted(true);
   }, []);
 
-  const fallingLeaves = useMemo(() => {
+  const fallingParticles = useMemo(() => {
     if (!isMounted) return [];
-
-    return Array.from({ length: 20 }, (_, i) => ({
+    return Array.from({ length: 18 }, (_, i) => ({
       id: i,
       // eslint-disable-next-line react-hooks/purity
       left: Math.random() * 100,
       // eslint-disable-next-line react-hooks/purity
-      duration: 5 + Math.random() * 5,
+      duration: 6 + Math.random() * 6,
       // eslint-disable-next-line react-hooks/purity
-      delay: Math.random() * 6,
+      delay: Math.random() * 8,
       // eslint-disable-next-line react-hooks/purity
-      size: 14 + Math.random() * 12,
+      swayX: (Math.random() - 0.5) * 80,
       // eslint-disable-next-line react-hooks/purity
-      swayX: (Math.random() - 0.5) * 120,
+      rotation: Math.random() * 360 - 180,
       // eslint-disable-next-line react-hooks/purity
-      rotation: Math.random() * 720 - 360,
+      width: 1.5 + Math.random() * 1.5,
       // eslint-disable-next-line react-hooks/purity
-      leaf: LEAF_TYPES[Math.floor(Math.random() * LEAF_TYPES.length)],
+      height: 3 + Math.random() * 5,
     }));
   }, [isMounted]);
 
@@ -60,7 +57,6 @@ export function HeroSection() {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % heroImages.length);
     }, 4000);
-
     return () => clearInterval(interval);
   }, []);
 
@@ -78,68 +74,58 @@ export function HeroSection() {
         <div className="absolute inset-0 bg-linear-to-b from-orange-900/40 to-green-900/50" />
       </div>
 
-      {/* Falling Leaves Animation */}
+      {/* Falling Particle Animation — subtle grey drift */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         {isMounted ? (
-          fallingLeaves.map((leaf) => (
+          fallingParticles.map((particle) => (
             <motion.div
-              key={leaf.id}
-              className="absolute select-none pointer-events-none"
+              key={particle.id}
+              className="absolute rounded-sm bg-white/20 pointer-events-none"
               style={{
-                left: `${leaf.left}%`,
-                top: '-3rem',
-                fontSize: `${leaf.size}px`,
-                lineHeight: 1,
+                left: `${particle.left}%`,
+                top: '-2rem',
+                width: `${particle.width}px`,
+                height: `${particle.height}px`,
               }}
               animate={{
                 y: ['0vh', '110vh'],
-                x: [0, leaf.swayX * 0.3, leaf.swayX * -0.2, leaf.swayX * 0.4, 0],
-                rotate: [0, leaf.rotation * 0.4, leaf.rotation * 0.7, leaf.rotation],
-                opacity: [0, 0.9, 0.9, 0.7, 0],
+                x: [0, particle.swayX * 0.4, particle.swayX * -0.3, particle.swayX * 0.2, 0],
+                rotate: [0, particle.rotation * 0.5, particle.rotation],
+                opacity: [0, 0.45, 0.45, 0.3, 0],
               }}
               transition={{
-                duration: leaf.duration,
+                duration: particle.duration,
                 repeat: Infinity,
-                delay: leaf.delay,
+                delay: particle.delay,
                 ease: 'easeInOut',
-                times: [0, 0.2, 0.6, 0.85, 1],
+                times: [0, 0.2, 0.65, 0.85, 1],
               }}
-            >
-              {leaf.leaf}
-            </motion.div>
+            />
           ))
         ) : (
-          Array.from({ length: 20 }, (_, i) => (
+          Array.from({ length: 18 }, (_, i) => (
             <div
               key={i}
-              className="absolute text-lg opacity-0"
+              className="absolute w-0.5 h-4 bg-white/10 rounded-sm"
               style={{
-                left: `${(i * 5) % 100}%`,
-                top: '-3rem',
+                left: `${(i * 5.5) % 100}%`,
+                top: '-2rem',
               }}
-            >
-              🍂
-            </div>
+            />
           ))
         )}
       </div>
 
       {/* Floating Background Elements */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
           className="absolute top-1/4 left-1/4 w-32 h-32 bg-orange-500/5 rounded-full blur-3xl"
-          animate={{
-            scale: [1, 1.2, 1],
-            opacity: [0.3, 0.5, 0.3],
-          }}
+          animate={{ scale: [1, 1.2, 1], opacity: [0.2, 0.4, 0.2] }}
           transition={{ duration: 4, repeat: Infinity }}
         />
         <motion.div
-          className="absolute bottom-1/3 right-1/4 w-40 h-40 bg-amber-600/10 rounded-full blur-3xl"
-          animate={{
-            scale: [1.2, 1, 1.2],
-            opacity: [0.4, 0.2, 0.4],
-          }}
+          className="absolute bottom-1/3 right-1/4 w-40 h-40 bg-amber-600/8 rounded-full blur-3xl"
+          animate={{ scale: [1.2, 1, 1.2], opacity: [0.3, 0.1, 0.3] }}
           transition={{ duration: 5, repeat: Infinity, delay: 1 }}
         />
       </div>
@@ -172,7 +158,7 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.8 }}
             >
-              <span className="text-green-400">Get Your Yard Fall-Ready with Landscaping & Drainage Experts You Can Trust</span>
+              <span className="text-green-400">Fall Is Here — Don&apos;t Let Leaves, Drainage & Winter Damage Ruin Your Yard</span>
             </motion.h1>
 
             {/* Compelling Subheadline */}
@@ -182,7 +168,7 @@ export function HeroSection() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.7 }}
             >
-              <span className="text-yellow-500 font-semibold">Professional</span>, <span className="text-yellow-500 font-semibold">Reliable</span>, and <span className="text-yellow-500 font-semibold">Local</span> — Yard cleanup, drainage prep, mulch & hardscaping built to protect your property through fall and winter.
+              <span className="text-yellow-500 font-semibold">Trusted</span>, <span className="text-yellow-500 font-semibold">Insured</span>, and <span className="text-yellow-500 font-semibold">Local</span> — Yard cleanup, drainage solutions, mulch & hardscaping that protect your property before winter sets in. Call today for a free estimate.
             </motion.p>
 
             {/* Compact Discount Banner */}
@@ -220,10 +206,10 @@ export function HeroSection() {
               </a>
 
               <Link
-                href="/services"
+                href="/contact"
                 className="group bg-white/10 backdrop-blur-sm hover:bg-white/20 border border-white/20 hover:border-white/30 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 flex items-center justify-center gap-2"
               >
-                <span>View Services</span>
+                <span>Get Free Estimate</span>
                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Link>
             </motion.div>
@@ -254,8 +240,6 @@ export function HeroSection() {
                     className="object-cover"
                     priority
                   />
-
-                  {/* Gradient Overlay */}
                   <div className="absolute inset-0 bg-linear-to-t from-gray-900/40 via-gray-900/20 to-transparent" />
                 </motion.div>
               </AnimatePresence>
