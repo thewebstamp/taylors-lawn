@@ -209,7 +209,7 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.9, duration: 0.6 }}
             >
-              
+              <a
                 href="tel:870-530-4289"
                 onClick={trackPhoneCall}
                 className="group bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 flex items-center justify-center gap-3 shadow-lg hover:shadow-xl relative overflow-hidden"
