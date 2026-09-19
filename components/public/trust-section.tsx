@@ -220,4 +220,40 @@ export function TrustSection() {
                   <div>
                     {/* Reviewer Info */}
                     <div className="mb-4">
-                      <h4 className="font-bold
+                      <h4 className="font-bold text-gray-900 text-lg md:text-[20px] lg:text-[22px]">{review.name}</h4>
+                      <p className="text-green-600 font-medium text-sm md:text-base">{review.service}</p>
+                    </div>
+
+                    {/* Footer */}
+                    <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+                      <div className="flex items-center gap-2 text-blue-600">
+                        <Facebook className="h-4 w-4" />
+                        <span className="text-sm md:text-base font-medium">Facebook</span>
+                      </div>
+                      <div className="text-green-600 font-semibold text-sm md:text-base">
+                        Verified
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </motion.div>
+
+        {/* CTA Section */}
+        <motion.div
+          className="text-center"
+          variants={itemVariants}
+        >
+          <motion.div
+            className="flex items-center justify-center gap-2 mt-6 text-gray-600 text-md"
+            variants={itemVariants}
+          >
+            <Star className="h-4 w-4 text-yellow-500 fill-current" />
+          </motion.div>
+        </motion.div>
+      </motion.div>
+    </section>
+  );
+}
