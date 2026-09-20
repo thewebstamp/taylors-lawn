@@ -308,7 +308,7 @@ export default function DirtWorkGradingPage() {
                                         {problem.description}
                                     </p>
                                     <div className="pt-6 border-t border-gray-100">
-                                        
+                                        <a
                                             href="tel:870-530-4289"
                                             onClick={trackPhoneCall}
                                             className="text-amber-600 hover:text-amber-700 font-bold text-lg lg:text-xl flex items-center gap-3"
