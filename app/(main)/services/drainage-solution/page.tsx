@@ -1,3 +1,4 @@
+```tsx
 /* eslint-disable react-hooks/purity */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
@@ -43,38 +44,38 @@ export default function DrainageSolutionsPage() {
     const services = [
         {
             title: 'French Drain Systems',
-            description: 'Professional French drain installation to redirect water away from your property foundation and prevent basement flooding.',
+            description: 'Professional French drain installation to redirect water away from your property foundation and prevent flooding as fall rains saturate the ground.',
             icon: Droplets,
             features: ['Underground piping', 'Gravel filtration', 'Proper slope calculation', 'Discharge to safe area'],
             emergency: true
         },
         {
             title: 'Surface Drainage',
-            description: 'Channel drains, catch basins, and swales to manage surface water runoff during summer storms.',
+            description: 'Channel drains, catch basins, and swales designed to manage surface runoff from heavy fall rainfall and keep water moving away from your property.',
             icon: CloudRain,
             features: ['Catch basin installation', 'Channel drains', 'Swale construction', 'Grading adjustments'],
         },
         {
             title: 'Downspout & Gutter Drainage',
-            description: 'Extend downspouts away from foundations and install underground piping to prevent water damage.',
+            description: 'Extend downspouts away from foundations and install underground piping to help prevent fall rainwater from collecting around your home.',
             icon: Gauge,
             features: ['Downspout extensions', 'Underground piping', 'Splash block installation', 'Proper discharge'],
         },
         {
             title: 'Emergency Flood Relief',
-            description: '24/7 emergency response for flooded yards, standing water, and urgent drainage issues.',
+            description: 'Emergency response for flooded yards, standing water, and urgent drainage problems following heavy rainfall.',
             icon: Zap,
             features: ['Same-day response', 'Water extraction', 'Temporary solutions', 'Emergency pumps'],
         },
         {
             title: 'Yard Grading & Regrading',
-            description: 'Proper yard sloping and grading to ensure water flows away from your home naturally.',
+            description: 'Proper yard sloping and grading to help direct fall rainfall away from your home and prevent recurring water problems.',
             icon: Eye,
             features: ['Laser level grading', 'Soil compaction', 'Proper slope (2% minimum)', 'Erosion control'],
         },
         {
             title: 'Retaining Wall Drainage',
-            description: 'Proper drainage behind retaining walls to prevent hydrostatic pressure buildup and failure.',
+            description: 'Proper drainage behind retaining walls to help prevent hydrostatic pressure buildup and drainage-related damage during wet weather.',
             icon: Shield,
             features: ['Weep hole installation', 'Gravel backfill', 'Filter fabric', 'Drainage pipes'],
         }
@@ -123,49 +124,45 @@ export default function DrainageSolutionsPage() {
                 }}
             />
 
-
             <div className="min-h-screen bg-linear-to-br from-white to-blue-50/30">
-                {/* Hero Section - Updated for Summer */}
+
+                {/* HERO SECTION — LEFT UNCHANGED */}
                 <section className="relative py-20 lg:pt-25 overflow-hidden min-h-screen flex justify-center items-center bg-linear-to-b from-blue-900 to-blue-700">
                     <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
-                            {/* Content Column - Left side for desktop, full width for mobile */}
+
                             <motion.div
                                 className="w-full lg:w-1/2 text-center lg:text-left"
                                 initial={{ opacity: 0, y: 30 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.8 }}
                             >
-                                {/* Main Headline - Updated for Summer */}
                                 <motion.h1
                                     className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6"
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.4, duration: 0.8 }}
                                 >
-                                    <span className="text-yellow-400 block mb-2">Summer Storms Are Coming</span>
+                                    <span className="text-yellow-400 block mb-2">🍂 Fall Is Here</span>
                                     <span className="text-white block">Protect Your Property From Flooding</span>
                                 </motion.h1>
 
-                                {/* Subheadline - Updated for Summer */}
                                 <motion.div
                                     className="text-xl md:text-2xl font-light text-gray-200 mb-8 leading-relaxed"
                                     initial={{ opacity: 0 }}
                                     animate={{ opacity: 1 }}
                                     transition={{ delay: 0.6, duration: 0.7 }}
                                 >
-                                    <p>Don&apos;t wait for the next summer downpour to damage your home. Act now with proven drainage solutions.</p>
+                                    <p>Get ahead of the season with professional drainage and water-management solutions designed to protect your home and property.</p>
                                     <p><span className='text-[22px] md:text-[26px] font-extrabold text-yellow-400'>10% OFF</span> for Veterans, Military & First Responders <span className='text-[22px] md:text-[26px] font-extrabold text-yellow-400'>15% OFF</span> for Widows.</p>
                                 </motion.div>
 
-                                {/* Big CTA Buttons */}
                                 <motion.div
                                     className="flex flex-col md:flex-row gap-4 justify-center lg:justify-start items-center"
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 1, duration: 0.6 }}
                                 >
-                                    {/* Call Now Button */}
                                     <a
                                         href="tel:870-530-4289"
                                         onClick={trackPhoneCall}
@@ -180,10 +177,8 @@ export default function DrainageSolutionsPage() {
                                         <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/20 to-transparent -skew-x-12 transform -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
                                     </a>
 
-                                    {/* Or Divider */}
                                     <div className="text-white/70 font-semibold">OR</div>
 
-                                    {/* Free Evaluation Button */}
                                     <Link
                                         href="/contact#form"
                                         className="group bg-linear-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-bold py-4 px-6 rounded-xl text-lg transition-all duration-300 flex items-center justify-center gap-3 shadow-2xl hover:shadow-3xl w-full md:w-auto"
@@ -197,7 +192,6 @@ export default function DrainageSolutionsPage() {
                                     </Link>
                                 </motion.div>
 
-                                {/* Trust Indicators */}
                                 <motion.div
                                     className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mt-8 text-white/80 text-sm"
                                     initial={{ opacity: 0 }}
@@ -215,14 +209,12 @@ export default function DrainageSolutionsPage() {
                                 </motion.div>
                             </motion.div>
 
-                            {/* Image Column - Right side for desktop, bottom for mobile */}
                             <motion.div
                                 className="w-full lg:w-1/2 relative order-first lg:order-last"
                                 initial={{ opacity: 0, scale: 0.9 }}
                                 animate={{ opacity: 1, scale: 1 }}
                                 transition={{ delay: 0.5, duration: 0.8 }}
                             >
-                                {/* Image Carousel */}
                                 <div className="relative h-[300px] md:h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                                     {drainageImages.map((img, index) => (
                                         <motion.div
@@ -245,7 +237,6 @@ export default function DrainageSolutionsPage() {
                                         </motion.div>
                                     ))}
 
-                                    {/* Animated Rain Drops - Keeping for summer storms visual */}
                                     {isMounted && (
                                         <div className="absolute inset-0 pointer-events-none overflow-hidden">
                                             {Array.from({ length: 15 }, (_, i) => (
@@ -270,7 +261,6 @@ export default function DrainageSolutionsPage() {
                                         </div>
                                     )}
 
-                                    {/* Carousel Controls */}
                                     <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2 z-20">
                                         {drainageImages.map((_, index) => (
                                             <button
@@ -287,10 +277,9 @@ export default function DrainageSolutionsPage() {
                     </div>
                 </section>
 
-
                 <AffirmFinancingBanner />
 
-                {/* Major/Common Drainage Problems Section */}
+                {/* FALL DRAINAGE PROBLEMS */}
                 <section className="py-20 bg-white">
                     <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <motion.div
@@ -301,54 +290,54 @@ export default function DrainageSolutionsPage() {
                             transition={{ duration: 0.6 }}
                         >
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                                Major Drainage Problems You'll Face This Summer
+                                Common Drainage Problems This Fall
                             </h2>
                             <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                                Arkansas summer storms bring specific challenges. Here's what to watch for:
+                                Fall brings heavier rainfall, saturated soil, and falling leaves that can put extra pressure on your property's drainage system.
                             </p>
                         </motion.div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {[
                                 {
-                                    problem: 'Basement Flooding',
-                                    description: 'Summer thunderstorms overwhelm inadequate drainage, leading to costly water damage.',
+                                    problem: 'Basement & Foundation Flooding',
+                                    description: 'Heavy fall rainfall can overwhelm inadequate drainage and send water toward your foundation, increasing the risk of costly water damage.',
                                     icon: '🏠',
-                                    urgency: 'EMERGENCY',
+                                    urgency: 'HIGH PRIORITY',
                                     color: 'bg-red-100 text-red-800'
                                 },
                                 {
                                     problem: 'Foundation Erosion',
-                                    description: 'Water pooling around your foundation during summer rains causes soil erosion and structural damage.',
+                                    description: 'Repeated rainfall and poor drainage can wash soil away from your foundation, creating erosion and long-term property concerns.',
                                     icon: '⚠️',
                                     urgency: 'HIGH PRIORITY',
                                     color: 'bg-orange-100 text-orange-800'
                                 },
                                 {
                                     problem: 'Standing Water in Yard',
-                                    description: 'Poor grading creates ponds in your lawn, killing grass and attracting mosquitoes.',
+                                    description: 'Fall rain can expose poor grading and drainage by leaving low areas of your yard saturated or covered with standing water.',
                                     icon: '💧',
                                     urgency: 'URGENT',
                                     color: 'bg-blue-100 text-blue-800'
                                 },
                                 {
                                     problem: 'Muddy & Soggy Lawns',
-                                    description: 'Saturated soil creates walking hazards and ruins landscaping investments.',
+                                    description: 'Saturated soil can turn your lawn into a muddy mess, damage grass, and make it difficult to use or maintain your property.',
                                     icon: '🌱',
                                     urgency: 'SEASONAL',
                                     color: 'bg-green-100 text-green-800'
                                 },
                                 {
-                                    problem: 'Driveway & Walkway Damage',
-                                    description: 'Summer storm runoff erodes pavement and creates safety hazards.',
+                                    problem: 'Driveway & Walkway Runoff',
+                                    description: 'Uncontrolled fall runoff can wash soil away from paved areas and create pooling or erosion around driveways and walkways.',
                                     icon: '🛤️',
                                     urgency: 'HIGH PRIORITY',
                                     color: 'bg-amber-100 text-amber-900'
                                 },
                                 {
-                                    problem: 'Downspout Overload',
-                                    description: 'Gutters overflow during intense summer downpours, pouring water directly against your home\'s foundation.',
-                                    icon: '🌧️',
+                                    problem: 'Clogged Downspouts & Gutters',
+                                    description: 'Falling leaves and debris can restrict water flow, causing gutters and downspouts to overflow and send water toward your foundation.',
+                                    icon: '🍂',
                                     urgency: 'URGENT',
                                     color: 'bg-cyan-100 text-cyan-800'
                                 }
@@ -371,9 +360,11 @@ export default function DrainageSolutionsPage() {
                                             <h3 className="text-2xl font-bold text-gray-900">{problem.problem}</h3>
                                         </div>
                                     </div>
+
                                     <p className="text-black text-xl md:text-[21px] lg:text-[23px] font-light mb-8 leading-relaxed">
                                         {problem.description}
                                     </p>
+
                                     <div className="pt-6 border-t border-gray-100">
                                         <a
                                             href="tel:870-530-4289"
@@ -390,7 +381,7 @@ export default function DrainageSolutionsPage() {
                     </div>
                 </section>
 
-                {/* Services Offered Section */}
+                {/* SERVICES */}
                 <section className="py-20 bg-linear-to-b from-blue-50/50 to-white">
                     <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <motion.div
@@ -404,7 +395,7 @@ export default function DrainageSolutionsPage() {
                                 Professional Drainage Solutions
                             </h2>
                             <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                                Comprehensive solutions tailored to your specific drainage needs
+                                Prepare your property for fall rainfall with drainage solutions tailored to your specific needs.
                             </p>
                         </motion.div>
 
@@ -422,18 +413,22 @@ export default function DrainageSolutionsPage() {
                                         transition: { type: "spring", stiffness: 300 }
                                     }}
                                 >
-                                    {/* Header */}
                                     <div className="p-8 pb-4 border-b border-gray-100">
                                         <div className="flex items-center justify-between mb-6">
                                             <div className="p-4 bg-blue-100 rounded-2xl">
                                                 <service.icon className="h-8 w-8 text-blue-600" />
                                             </div>
                                         </div>
-                                        <h3 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h3>
-                                        <p className="text-black text-[19.5px] lg:text-[23px] font-light leading-relaxed">{service.description}</p>
+
+                                        <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                                            {service.title}
+                                        </h3>
+
+                                        <p className="text-black text-[19.5px] lg:text-[23px] font-light leading-relaxed">
+                                            {service.description}
+                                        </p>
                                     </div>
 
-                                    {/* Features */}
                                     <div className="p-8 py-4">
                                         <div className="space-y-4 mb-6">
                                             {service.features.map((feature, featureIndex) => (
@@ -444,7 +439,6 @@ export default function DrainageSolutionsPage() {
                                             ))}
                                         </div>
 
-                                        {/* Price & CTA */}
                                         <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-6 border-t border-gray-100">
                                             <motion.a
                                                 href="tel:870-530-4289"
@@ -464,14 +458,13 @@ export default function DrainageSolutionsPage() {
                     </div>
                 </section>
 
-                {/* Why Choose Us Section - Updated with amber accent replacing stray blue */}
+                {/* TRACK RECORD */}
                 <section className="py-20 bg-linear-to-br from-blue-50/50 to-amber-50/50">
                     <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                             Our Drainage Track Record
                         </h2>
 
-                        {/* Stats Card */}
                         <motion.div
                             className="bg-white rounded-2xl shadow-2xl p-8 lg:px-12 border max-w-4xl mx-auto border-gray-100"
                             initial={{ opacity: 0, x: 30 }}
@@ -487,9 +480,14 @@ export default function DrainageSolutionsPage() {
                                 ].map((stat, index) => (
                                     <div key={index}>
                                         <div className="flex items-center justify-between mb-2">
-                                            <span className="text-gray-700 text-lg lg:text-[22px] font-semibold">{stat.label}</span>
-                                            <span className="text-2xl font-bold text-blue-600">{stat.value}</span>
+                                            <span className="text-gray-700 text-lg lg:text-[22px] font-semibold">
+                                                {stat.label}
+                                            </span>
+                                            <span className="text-2xl font-bold text-blue-600">
+                                                {stat.value}
+                                            </span>
                                         </div>
+
                                         <div className="w-full bg-gray-200 rounded-full h-2">
                                             <div
                                                 className="bg-blue-600 h-2 rounded-full transition-all duration-1000"
@@ -501,10 +499,16 @@ export default function DrainageSolutionsPage() {
                             </div>
 
                             <div className="mt-12 pt-8 border-t border-gray-200">
-                                <h4 className="text-xl font-bold text-gray-900 mb-6 text-center">Areas We Serve</h4>
+                                <h4 className="text-xl font-bold text-gray-900 mb-6 text-center">
+                                    Areas We Serve
+                                </h4>
+
                                 <div className="flex flex-wrap gap-3 justify-center">
                                     {areasServed.map((area) => (
-                                        <span key={area} className="px-4 py-2 bg-blue-100 text-blue-800 text-base font-medium rounded-full">
+                                        <span
+                                            key={area}
+                                            className="px-4 py-2 bg-blue-100 text-blue-800 text-base font-medium rounded-full"
+                                        >
                                             {area}
                                         </span>
                                     ))}
@@ -514,7 +518,7 @@ export default function DrainageSolutionsPage() {
                     </div>
                 </section>
 
-                {/* Emergency CTA Banner - Updated for Summer */}
+                {/* FALL EMERGENCY CTA */}
                 <section className="py-20 bg-linear-to-r from-red-600/10 to-amber-600/10">
                     <div className="container mx-auto px-4 md:px-6 lg:px-22">
                         <motion.div
@@ -525,37 +529,48 @@ export default function DrainageSolutionsPage() {
                             transition={{ duration: 0.6 }}
                         >
                             <div className="grid grid-cols-1 lg:grid-cols-2">
+
                                 <div className="p-12 text-white">
                                     <div className="flex items-center gap-4 mb-6">
                                         <div className="p-3 bg-white/20 rounded-2xl">
                                             <Zap className="h-8 w-8" />
                                         </div>
-                                        <span className="text-xl font-bold uppercase tracking-widest">⚠️ SUMMER STORM WARNING</span>
+
+                                        <span className="text-xl font-bold uppercase tracking-widest">
+                                            🍂 FALL WEATHER WARNING
+                                        </span>
                                     </div>
+
                                     <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                                        Don't Wait Until Summer Storms Hit
+                                        Prepare Your Property Before Fall Rain Takes Its Toll
                                     </h2>
+
                                     <p className="text-gray-50 text-[19.5px] lg:text-[23px] font-light mb-8 opacity-95 leading-relaxed">
-                                        Every day you wait puts your property at greater risk. Summer storm flooding from poor drainage can cost tens of thousands to repair.
+                                        Fall rainfall, saturated soil, and clogged drainage systems can quickly turn small drainage problems into expensive property damage. Address problem areas before the next heavy rain.
                                     </p>
+
                                     <div className="space-y-4 text-lg lg:text-xl">
                                         <div className="flex items-center gap-4">
                                             <Clock className="h-6 w-6" />
-                                            <span>Next summer downpour could flood your basement</span>
+                                            <span>Heavy fall rain can quickly expose drainage problems</span>
                                         </div>
+
                                         <div className="flex items-center gap-4">
                                             <Truck className="h-6 w-6" />
-                                            <span>Emergency slots fill quickly during storm season</span>
+                                            <span>Emergency drainage needs can increase after heavy rainfall</span>
                                         </div>
+
                                         <div className="flex items-center gap-4">
                                             <Shield className="h-6 w-6" />
-                                            <span>Prevention costs 90% less than repairs</span>
+                                            <span>Protect your foundation, yard, and landscaping before problems worsen</span>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="p-12 bg-white flex flex-col justify-center">
-                                    <h3 className="text-[27px] font-bold text-gray-900 mb-8 text-center">Act Now to Protect Your Home</h3>
+                                    <h3 className="text-[27px] font-bold text-gray-900 mb-8 text-center">
+                                        Get Your Property Ready for Fall
+                                    </h3>
 
                                     <div className="space-y-6">
                                         <motion.a
@@ -566,32 +581,40 @@ export default function DrainageSolutionsPage() {
                                             whileTap={{ scale: 0.98 }}
                                         >
                                             <Phone className="h-8 w-8" />
+
                                             <div className="text-left">
                                                 <div className="font-bold">CALL</div>
                                                 <div className="text-lg opacity-90">(870) 530-4289</div>
                                             </div>
+
                                             <div className="absolute right-8 w-3 h-3 bg-white rounded-full animate-ping"></div>
                                         </motion.a>
                                     </div>
 
                                     <div className="mt-12 pt-8 border-t border-gray-200">
                                         <div className="flex flex-col sm:flex-row items-center justify-center gap-8 text-gray-700 text-lg">
+
                                             <div className="flex items-center gap-3">
                                                 <ThumbsUp className="h-6 w-6 text-blue-600" />
                                                 <span>98% Recommended</span>
                                             </div>
+
                                             <div className="flex items-center gap-3">
                                                 <Clock className="h-6 w-6 text-amber-600" />
                                                 <span>25+ Years Experience</span>
                                             </div>
+
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </motion.div>
                     </div>
                 </section>
+
             </div>
         </>
     );
 }
+```
