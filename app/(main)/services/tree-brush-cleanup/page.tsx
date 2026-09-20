@@ -22,38 +22,38 @@ export default function TreeBrushCleanupPage() {
     const services = [
         {
             title: 'Tree Trimming & Pruning',
-            description: 'Professional trimming for tree health, safety, and aesthetic appeal.',
+            description: 'Professional trimming to improve tree health, safety, and appearance as Fall arrives.',
             icon: Scissors,
             features: ['Health-focused pruning', 'Safety trimming', 'Aesthetic shaping', 'Deadwood removal'],
         },
         {
             title: 'Brush & Undergrowth Removal',
-            description: 'Complete removal of unwanted brush, vines, and undergrowth.',
+            description: 'Complete removal of unwanted brush, vines, and undergrowth to refresh your property for Fall.',
             icon: Axe,
             features: ['Complete clearing', 'Root removal', 'Debris cleanup', 'Area restoration'],
         },
         {
             title: 'Small Tree Removal',
-            description: 'Safe removal of small to medium trees with minimal property impact.',
+            description: 'Safe removal of small to medium trees with minimal property impact and thorough cleanup.',
             icon: TreeDeciduous,
             features: ['Safe dismantling', 'Stump management', 'Cleanup included', 'Safety first approach'],
         },
         {
             title: 'Lot Clearing',
-            description: 'Complete property clearing for construction or landscaping projects.',
+            description: 'Complete property clearing for construction, landscaping, or Fall property improvement projects.',
             icon: Tractor,
             features: ['Heavy equipment operation', 'Complete debris removal', 'Site preparation', 'Efficient clearing'],
         },
         {
             title: 'Storm Damage Cleanup',
-            description: 'Emergency response for fallen trees and branches after summer storms.',
+            description: 'Emergency response for fallen trees and branches after Fall storms and severe weather.',
             icon: Zap,
             features: ['24/7 emergency service', 'Quick response', 'Insurance coordination', 'Complete cleanup'],
             emergency: true
         },
         {
             title: 'Hazardous Tree Assessment',
-            description: 'Professional assessment of dangerous trees and recommended actions.',
+            description: 'Professional assessment of dangerous trees and recommended actions before changing Fall weather arrives.',
             icon: Shield,
             features: ['Risk assessment', 'Recommendations', 'Preventative measures', 'Safety planning'],
         }
@@ -75,7 +75,7 @@ export default function TreeBrushCleanupPage() {
                         "@type": "Service",
                         "name": "Tree & Brush Cleanup Services",
                         "url": "https://taylorslawncare21.com/services/tree-brush-cleanup",
-                        "description": "Professional tree and brush cleanup services in Northeast Arkansas including tree trimming, brush removal, small tree removal, lot clearing, storm damage cleanup, and hazardous tree assessment.",
+                        "description": "Professional tree and brush cleanup services in Northeast Arkansas including Fall tree trimming, brush removal, small tree removal, lot clearing, storm damage cleanup, and hazardous tree assessment.",
                         "provider": {
                             "@type": "LocalBusiness",
                             "name": "Taylor's Lawn Care & Landscaping, LLC",
@@ -125,7 +125,7 @@ export default function TreeBrushCleanupPage() {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.4, duration: 0.8 }}
                                 >
-                                    <span className="text-yellow-400 block mb-2">Clean, Safe & Beautiful</span>
+                                    <span className="text-yellow-400 block mb-2">Get Your Property Fall-Ready</span>
                                     <span className="text-white block">Professional Tree & Brush Cleanup</span>
                                 </motion.h1>
 
@@ -136,7 +136,7 @@ export default function TreeBrushCleanupPage() {
                                     animate={{ opacity: 1 }}
                                     transition={{ delay: 0.6, duration: 0.7 }}
                                 >
-                                    <p>Transform overgrown areas into usable, beautiful spaces.</p>
+                                    <p>Clear overgrown areas, remove unwanted brush, and prepare your property for the changing Fall season.</p>
                                     <p><span className='text-[22px] md:text-[26px] font-extrabold text-yellow-400'>10% OFF</span> for Veterans, Military & First Responders <span className='text-[22px] md:text-[26px] font-extrabold text-yellow-400'>15% OFF</span> for Widows.</p>
                                 </motion.div>
 
@@ -179,7 +179,7 @@ export default function TreeBrushCleanupPage() {
                                     </Link>
                                 </motion.div>
 
-                                {/* Trust Indicators - Updated with summer amber accent */}
+                                {/* Trust Indicators */}
                                 <motion.div
                                     className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mt-8 text-white/80 text-sm"
                                     initial={{ opacity: 0 }}
@@ -218,7 +218,7 @@ export default function TreeBrushCleanupPage() {
                                     >
                                         <Image
                                             src="/tree.jpg"
-                                            alt="Professional tree work"
+                                            alt="Professional Fall tree and brush cleanup"
                                             fill
                                             className="object-cover"
                                             priority
@@ -244,10 +244,10 @@ export default function TreeBrushCleanupPage() {
                             transition={{ duration: 0.6 }}
                         >
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                                Common Tree & Brush Problems
+                                Common Fall Tree & Brush Problems
                             </h2>
                             <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                                Overgrowth creates safety hazards and reduces property value
+                                Fall weather, overgrowth, and seasonal debris can create safety and property maintenance problems
                             </p>
                         </motion.div>
 
@@ -255,42 +255,42 @@ export default function TreeBrushCleanupPage() {
                             {[
                                 {
                                     problem: 'Overgrown Trees',
-                                    description: 'Trees touching roofs, power lines, or blocking sunlight.',
+                                    description: 'Trees growing near roofs, power lines, or structures can become a concern as Fall weather changes.',
                                     icon: '🌳',
                                     urgency: 'SAFETY',
                                     color: 'bg-emerald-100 text-emerald-800'
                                 },
                                 {
                                     problem: 'Brush Invasion',
-                                    description: 'Unwanted brush and vines taking over your property.',
+                                    description: 'Unwanted brush, vines, and undergrowth can quickly make your property look overgrown and difficult to maintain.',
                                     icon: '🌿',
                                     urgency: 'CLEARING',
                                     color: 'bg-green-100 text-green-800'
                                 },
                                 {
-                                    problem: 'Summer Storm Damage',
-                                    description: 'Fallen branches or trees after severe summer storms.',
+                                    problem: 'Fall Storm Damage',
+                                    description: 'Fallen branches or trees after strong Fall storms can leave your property blocked, damaged, or unsafe.',
                                     icon: '🌩️',
                                     urgency: 'EMERGENCY',
                                     color: 'bg-red-100 text-red-800'
                                 },
                                 {
                                     problem: 'Dead or Diseased Trees',
-                                    description: 'Hazardous trees that could fall and cause damage.',
+                                    description: 'Dead or damaged trees can become hazardous and may require attention before severe weather arrives.',
                                     icon: '🍂',
                                     urgency: 'URGENT',
                                     color: 'bg-amber-100 text-amber-900'
                                 },
                                 {
                                     problem: 'Property Clearing Needed',
-                                    description: 'Overgrown land needing clearing for construction.',
+                                    description: 'Overgrown land may need clearing for construction, landscaping, or other property improvement projects.',
                                     icon: '🏗️',
                                     urgency: 'DEVELOPMENT',
                                     color: 'bg-amber-100 text-amber-800'
                                 },
                                 {
                                     problem: 'Unusable Yard Space',
-                                    description: 'Brush-filled areas that could be beautiful lawn space.',
+                                    description: 'Brush-filled areas can be cleared and restored into more usable outdoor space for your property.',
                                     icon: '🌱',
                                     urgency: 'TRANSFORMATION',
                                     color: 'bg-teal-100 text-teal-800'
@@ -344,10 +344,10 @@ export default function TreeBrushCleanupPage() {
                             transition={{ duration: 0.6 }}
                         >
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                                Professional Tree & Brush Services
+                                Professional Fall Tree & Brush Services
                             </h2>
                             <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                                Safe and efficient solutions for your property
+                                Safe and efficient tree and brush solutions to refresh and prepare your property for Fall
                             </p>
                         </motion.div>
 
@@ -407,11 +407,11 @@ export default function TreeBrushCleanupPage() {
                     </div>
                 </section>
 
-                {/* Why Choose Us Section - Updated with amber accent replacing stray green */}
+                {/* Why Choose Us Section */}
                 <section className="py-20 bg-linear-to-br from-emerald-50/50 to-amber-50/50">
                     <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                            Our Tree Service Excellence
+                            Our Fall Tree Service Excellence
                         </h2>
 
                         {/* Stats Card */}
@@ -457,7 +457,7 @@ export default function TreeBrushCleanupPage() {
                     </div>
                 </section>
 
-                {/* Emergency CTA Banner - Updated for Summer Storms */}
+                {/* Emergency CTA Banner - Updated for Fall Storms */}
                 <section className="py-20 bg-linear-to-r from-red-600/10 to-amber-600/10">
                     <div className="container mx-auto px-4 md:px-6 lg:px-22">
                         <motion.div
@@ -473,18 +473,18 @@ export default function TreeBrushCleanupPage() {
                                         <div className="p-3 bg-white/20 rounded-2xl">
                                             <Zap className="h-8 w-8" />
                                         </div>
-                                        <span className="text-xl font-bold uppercase tracking-widest">⚠️ SUMMER STORM WARNING</span>
+                                        <span className="text-xl font-bold uppercase tracking-widest">⚠️ FALL STORM WARNING</span>
                                     </div>
                                     <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                                        <span className="text-green-300">Don&apos;t Wait for Summer Storms</span>
+                                        <span className="text-green-300">Don&apos;t Wait for Fall Storms</span>
                                     </h2>
                                     <p className="text-gray-50 text-[19.5px] lg:text-[23px] font-light mb-8 opacity-95 leading-relaxed">
-                                        Overgrown or damaged trees can fall during summer storms, causing property damage and safety hazards. Get your property ready now.
+                                        Overgrown or damaged trees can fall during strong Fall storms, causing property damage and safety hazards. Get your property ready before severe weather arrives.
                                     </p>
                                     <div className="space-y-4 text-lg lg:text-xl">
                                         <div className="flex items-center gap-4">
                                             <Clock className="h-6 w-6" />
-                                            <span>Next summer storm could bring trees down</span>
+                                            <span>Fall storms can bring down damaged or unstable trees</span>
                                         </div>
                                         <div className="flex items-center gap-4">
                                             <Truck className="h-6 w-6" />
@@ -492,13 +492,13 @@ export default function TreeBrushCleanupPage() {
                                         </div>
                                         <div className="flex items-center gap-4">
                                             <Shield className="h-6 w-6" />
-                                            <span>Prevention costs less than emergency repairs</span>
+                                            <span>Prevention can help reduce emergency property risks</span>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="p-12 bg-white flex flex-col justify-center">
-                                    <h3 className="text-[27px] font-bold text-gray-900 mb-8 text-center">Act Now for Safety</h3>
+                                    <h3 className="text-[27px] font-bold text-gray-900 mb-8 text-center">Act Now for Fall Safety</h3>
 
                                     <div className="space-y-6">
                                         <motion.a
