@@ -23,37 +23,37 @@ export default function MulchDecorativeRockPage() {
     const services = [
         {
             title: 'Mulch Installation',
-            description: 'Premium hardwood or dyed mulch installed to lock in soil moisture and protect plant roots through summer heat.',
+            description: 'Premium hardwood or dyed mulch installed to help protect soil, suppress weeds, and keep your landscape beds looking fresh throughout Fall.',
             icon: Sprout,
-            features: ['Soil Moisture Retention', 'Weed Suppression', 'Premium Materials', 'Expert Installation'],
+            features: ['Soil Protection', 'Weed Suppression', 'Premium Materials', 'Expert Installation'],
         },
         {
             title: 'Decorative Rock Installation',
-            description: 'River rock, lava rock, or crushed stone installed for low-maintenance, long-lasting curb appeal.',
+            description: 'River rock, lava rock, or crushed stone installed for low-maintenance, long-lasting curb appeal throughout the changing Fall season.',
             icon: Mountain,
             features: ['Variety of Rock Types', 'Weed Barrier Fabric', 'Durable & Low-Maintenance', 'Custom Design'],
         },
         {
             title: 'Flower Bed Edging',
-            description: 'Clean, defined borders that separate beds from lawn and keep mulch and rock in place.',
+            description: 'Clean, defined borders that separate beds from lawn and help keep mulch and decorative rock neatly in place.',
             icon: Square,
             features: ['Steel & Stone Options', 'Crisp Clean Lines', 'Long-Lasting Materials', 'Custom Shapes'],
         },
         {
             title: 'Erosion Control',
-            description: 'Strategic mulch and rock placement to control runoff and prevent bed washout during summer storms.',
+            description: 'Strategic mulch and rock placement to help control runoff and protect landscape beds from Fall rainfall and washout.',
             icon: CloudRain,
-            features: ['Storm-Ready Design', 'Proper Grading', 'Drainage Integration', 'Long-Term Protection'],
+            features: ['Fall-Ready Design', 'Proper Grading', 'Drainage Integration', 'Long-Term Protection'],
         },
         {
             title: 'Mulch Color Refresh',
-            description: 'Refresh faded mulch with a new layer of color to restore your landscaping instantly.',
+            description: 'Refresh faded or thin mulch with a new layer of color to restore your landscaping and improve curb appeal this Fall.',
             icon: RefreshCw,
-            features: ['Same-Day Service', 'Multiple Color Options', 'Affordable Refresh', 'Boosts Curb Appeal'],
+            features: ['Seasonal Refresh', 'Multiple Color Options', 'Affordable Refresh', 'Boosts Curb Appeal'],
         },
         {
             title: 'Complete Bed Makeover',
-            description: 'Full bed cleanout, edging, mulch, and rock installation for a complete landscaping transformation.',
+            description: 'Full bed cleanout, edging, mulch, and rock installation for a complete Fall landscaping refresh.',
             icon: Sparkles,
             features: ['All Services Included', 'Priority Scheduling', 'Best Value', 'Full Transformation'],
         }
@@ -124,7 +124,7 @@ export default function MulchDecorativeRockPage() {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.4, duration: 0.8 }}
                                 >
-                                    <span className="text-yellow-400 block mb-2">Protect Your Beds This Summer</span>
+                                    <span className="text-yellow-400 block mb-2">🍂 Refresh Your Landscape This Fall</span>
                                     <span className="text-white block">With Premium Mulch & Rock Installation</span>
                                 </motion.h1>
 
@@ -135,7 +135,7 @@ export default function MulchDecorativeRockPage() {
                                     animate={{ opacity: 1 }}
                                     transition={{ delay: 0.6, duration: 0.7 }}
                                 >
-                                    <p>Fresh mulch and decorative rock that locks in moisture, suppresses weeds, and keeps your landscaping looking sharp all summer long.</p>
+                                    <p>Fresh mulch and decorative rock that help protect your landscape beds, suppress weeds, and keep your property looking beautiful through the Fall season.</p>
                                     <p><span className='text-[22px] md:text-[26px] font-extrabold text-yellow-400'>10% OFF</span> for Veterans, Military & First Responders <span className='text-[22px] md:text-[26px] font-extrabold text-yellow-400'>15% OFF</span> for Widows.</p>
                                 </motion.div>
 
@@ -268,10 +268,10 @@ export default function MulchDecorativeRockPage() {
                             transition={{ duration: 0.6 }}
                         >
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                                Common Landscape Bed Problems We Solve
+                                Common Fall Landscape Bed Problems We Solve
                             </h2>
                             <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                                Neglected beds lose curb appeal fast, especially in the summer heat
+                                Fall is a great time to refresh tired landscape beds, protect your soil, and improve curb appeal before the season changes.
                             </p>
                         </motion.div>
 
@@ -279,44 +279,44 @@ export default function MulchDecorativeRockPage() {
                             {[
                                 {
                                     problem: 'Weed Overgrowth',
-                                    description: 'Bare or thin mulch lets weeds take over your beds within weeks.',
+                                    description: 'Thin or worn mulch can leave landscape beds exposed to weeds, making Fall the right time for a fresh protective layer.',
                                     icon: '🌿',
-                                    urgency: 'COMMON',
+                                    urgency: 'FALL READY',
                                     color: 'bg-green-100 text-green-800'
                                 },
                                 {
-                                    problem: 'Moisture Loss & Dry Soil',
-                                    description: 'Summer heat dries out unprotected soil, stressing plant roots.',
-                                    icon: '☀️',
-                                    urgency: 'URGENT',
+                                    problem: 'Exposed & Dry Soil',
+                                    description: 'Unprotected soil can lose moisture and structure as the seasons change, leaving plant roots less protected.',
+                                    icon: '🍂',
+                                    urgency: 'IMPORTANT',
                                     color: 'bg-amber-100 text-amber-800'
                                 },
                                 {
                                     problem: 'Faded, Washed-Out Mulch',
-                                    description: 'Sun and rain fade mulch color, leaving beds looking tired and dull.',
+                                    description: 'Faded or thin mulch can make your landscape look tired. A fresh layer restores color and gives your beds a clean Fall appearance.',
                                     icon: '🟫',
                                     urgency: 'REFRESH',
                                     color: 'bg-orange-100 text-orange-800'
                                 },
                                 {
                                     problem: 'Erosion & Bed Washout',
-                                    description: 'Heavy summer storms wash mulch and soil out of unprotected beds.',
+                                    description: 'Fall rainfall can wash mulch and soil from unprotected beds. Strategic rock and mulch placement can help protect these areas.',
                                     icon: '🌧️',
-                                    urgency: 'STRUCTURAL',
+                                    urgency: 'PROTECTION',
                                     color: 'bg-blue-100 text-blue-800'
                                 },
                                 {
                                     problem: 'Uneven Rock Coverage',
-                                    description: 'Thin or shifted rock leaves bare patches and an unfinished look.',
+                                    description: 'Thin or shifted rock can leave bare patches and an unfinished appearance throughout your landscape.',
                                     icon: '🪨',
                                     urgency: 'CURB APPEAL',
                                     color: 'bg-stone-100 text-stone-800'
                                 },
                                 {
-                                    problem: 'Pest Habitats',
-                                    description: 'Mulch piled too deep or too old can attract insects and rodents.',
-                                    icon: '🐜',
-                                    urgency: 'SANITATION',
+                                    problem: 'Overgrown or Tired Beds',
+                                    description: 'Older beds can become cluttered and difficult to maintain. A complete refresh can restore a clean, finished look.',
+                                    icon: '🍁',
+                                    urgency: 'REFRESH',
                                     color: 'bg-red-100 text-red-800'
                                 }
                             ].map((problem, index) => (
@@ -371,7 +371,7 @@ export default function MulchDecorativeRockPage() {
                                 Professional Mulch & Rock Services
                             </h2>
                             <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                                Complete bed care for healthier plants and lasting curb appeal
+                                Fall landscaping solutions to refresh your beds, protect your landscape, and prepare your property for the season ahead.
                             </p>
                         </motion.div>
 
@@ -497,32 +497,32 @@ export default function MulchDecorativeRockPage() {
                                         <div className="p-3 bg-white/20 rounded-2xl">
                                             <Sprout className="h-8 w-8" />
                                         </div>
-                                        <span className="text-xl font-bold uppercase tracking-widest">SUMMER REFRESH SPECIAL</span>
+                                        <span className="text-xl font-bold uppercase tracking-widest">FALL BED REFRESH</span>
                                     </div>
                                     <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                                        <span className="text-green-200">Get Your Beds Summer-Ready</span>
+                                        <span className="text-green-200">Refresh Your Beds This Fall</span>
                                     </h2>
                                     <p className="text-gray-50 text-[19.5px] lg:text-[23px] font-light mb-8 opacity-95 leading-relaxed">
-                                        Bare or faded beds lose moisture fast and invite weeds. Fresh mulch and rock protect your landscaping investment all season.
+                                        Refresh tired or faded landscape beds with fresh mulch and decorative rock to improve curb appeal, protect your soil, and prepare your property for the season ahead.
                                     </p>
                                     <div className="space-y-4 text-lg lg:text-xl">
                                         <div className="flex items-center gap-4">
                                             <Calendar className="h-6 w-6" />
-                                            <span>Schedule summer bed care now</span>
+                                            <span>Schedule your Fall bed refresh now</span>
                                         </div>
                                         <div className="flex items-center gap-4">
                                             <Clock className="h-6 w-6" />
-                                            <span>Limited summer appointments available</span>
+                                            <span>Early Fall appointments get priority scheduling</span>
                                         </div>
                                         <div className="flex items-center gap-4">
                                             <Shield className="h-6 w-6" />
-                                            <span>Protect your landscaping investment</span>
+                                            <span>Protect and improve your landscaping investment</span>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="p-12 bg-white flex flex-col justify-center">
-                                    <h3 className="text-[27px] font-bold text-gray-900 mb-8 text-center">Schedule Your Bed Refresh Today</h3>
+                                    <h3 className="text-[27px] font-bold text-gray-900 mb-8 text-center">Schedule Your Fall Bed Refresh Today</h3>
 
                                     <div className="space-y-6">
                                         <motion.a
