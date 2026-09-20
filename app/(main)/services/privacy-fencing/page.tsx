@@ -22,37 +22,37 @@ export default function PrivacyFencingPage() {
     const services = [
         {
             title: 'Wood Privacy Fences',
-            description: 'Classic wood privacy fences with various styles and stain options.',
+            description: 'Classic wood privacy fences in various styles to create a comfortable, private outdoor space this Fall.',
             icon: Fence,
             features: ['Pressure-treated wood', 'Various styles', 'Custom heights', 'Professional staining'],
         },
         {
             title: 'Vinyl Privacy Fencing',
-            description: 'Low-maintenance vinyl fencing that stays beautiful for years.',
+            description: 'Low-maintenance vinyl fencing that keeps your yard looking clean and private through changing seasons.',
             icon: Home,
             features: ['No painting required', 'Weather resistant', 'Various colors', 'Long warranty'],
         },
         {
             title: 'Custom Gate Installation',
-            description: 'Matching gates with proper hardware and smooth operation.',
+            description: 'Matching gates with proper hardware and smooth operation for added privacy, access, and security.',
             icon: Lock,
             features: ['Matching design', 'Quality hardware', 'Smooth operation', 'Lock options'],
         },
         {
             title: 'Fence Repair & Maintenance',
-            description: 'Professional repair of damaged fences and maintenance services.',
+            description: 'Professional repair and maintenance to help keep your existing fence secure and ready for the Fall season.',
             icon: Shield,
             features: ['Post replacement', 'Board repair', 'Gate adjustment', 'Stain/seal application'],
         },
         {
             title: 'Complete Fence Replacement',
-            description: 'Remove old fence and install new, high-quality privacy fencing.',
+            description: 'Remove an old or damaged fence and install a new, high-quality privacy fence for a fresh seasonal upgrade.',
             icon: Zap,
             features: ['Old fence removal', 'Site preparation', 'Quality installation', 'Cleanup included'],
         },
         {
             title: 'Pool & Security Fencing',
-            description: 'Specialized fencing for pools and enhanced security needs.',
+            description: 'Specialized fencing solutions for pools, pets, children, and enhanced security around your property.',
             icon: Shield,
             features: ['Code compliance', 'Security features', 'Child safety', 'Durability'],
         }
@@ -75,7 +75,7 @@ export default function PrivacyFencingPage() {
                         "name": "Privacy Fence Installation & Repair Services",
                         "url": "https://taylorslawncare21.com/services/privacy-fencing",
                         "description":
-                            "Professional privacy fencing services in Northeast Arkansas including wood and vinyl fence installation, custom gates, fence repair, and complete fence replacement.",
+                            "Professional privacy fencing services in Northeast Arkansas including Fall fence installation, wood and vinyl fence installation, custom gates, fence repair, and complete fence replacement.",
                         "provider": {
                             "@type": "LocalBusiness",
                             "name": "Taylor's Lawn Care & Landscaping, LLC",
@@ -161,7 +161,7 @@ export default function PrivacyFencingPage() {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.4, duration: 0.8 }}
                                 >
-                                    <span className="text-yellow-400 block mb-2">Privacy & Security</span>
+                                    <span className="text-yellow-400 block mb-2">🍂 Privacy & Security This Fall</span>
                                     <span className="text-white block">Professional Fence Installation</span>
                                 </motion.h1>
 
@@ -172,7 +172,7 @@ export default function PrivacyFencingPage() {
                                     animate={{ opacity: 1 }}
                                     transition={{ delay: 0.6, duration: 0.7 }}
                                 >
-                                    <p>Create your private outdoor oasis with quality fencing that lasts.</p>
+                                    <p>Upgrade your outdoor space this Fall with quality fencing designed to give your property greater privacy, security, and lasting appeal.</p>
                                     <p><span className='text-[22px] md:text-[26px] font-extrabold text-yellow-400'>10% OFF</span> for Veterans, Military & First Responders <span className='text-[22px] md:text-[26px] font-extrabold text-yellow-400'>15% OFF</span> for Widows.</p>
                                 </motion.div>
 
@@ -215,7 +215,7 @@ export default function PrivacyFencingPage() {
                                     </Link>
                                 </motion.div>
 
-                                {/* Trust Indicators - Updated with summer amber accent */}
+                                {/* Trust Indicators - Updated with Fall amber accent */}
                                 <motion.div
                                     className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mt-8 text-white/80 text-sm"
                                     initial={{ opacity: 0 }}
@@ -281,10 +281,10 @@ export default function PrivacyFencingPage() {
                             transition={{ duration: 0.6 }}
                         >
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                                Common Fencing Problems
+                                Common Fall Fencing Problems
                             </h2>
                             <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                                Don&apos;t let fencing issues compromise your privacy and security
+                                Get your fence ready for the changing weather and outdoor season ahead
                             </p>
                         </motion.div>
 
@@ -292,42 +292,42 @@ export default function PrivacyFencingPage() {
                             {[
                                 {
                                     problem: 'Old, Rotted Fence',
-                                    description: 'Decaying wood posts and boards compromising security.',
+                                    description: 'Decaying wood posts and boards can leave your property looking worn and compromise privacy and security.',
                                     icon: '🪵',
                                     urgency: 'REPLACEMENT',
                                     color: 'bg-amber-100 text-amber-900'
                                 },
                                 {
                                     problem: 'Leaning or Falling Fence',
-                                    description: 'Improper installation or soil issues causing instability.',
+                                    description: 'Weak or unstable sections can become a bigger concern as changing Fall weather puts stress on your fence.',
                                     icon: '↘️',
                                     urgency: 'SAFETY',
                                     color: 'bg-red-100 text-red-800'
                                 },
                                 {
                                     problem: 'No Privacy',
-                                    description: 'Inadequate fencing allowing neighbors to see into your yard.',
+                                    description: 'An outdated or incomplete fence may leave your yard exposed when you want more privacy and comfort outdoors.',
                                     icon: '👀',
                                     urgency: 'PRIVACY',
                                     color: 'bg-purple-100 text-purple-800'
                                 },
                                 {
                                     problem: 'Damaged by Storms',
-                                    description: 'Summer storms and wind damaging your fence structure.',
+                                    description: 'Wind, rain, and seasonal weather can damage fence sections and leave posts, boards, or gates needing attention.',
                                     icon: '🌪️',
                                     urgency: 'REPAIR',
                                     color: 'bg-blue-100 text-blue-800'
                                 },
                                 {
                                     problem: 'Poor Quality Installation',
-                                    description: 'Crooked posts, uneven boards, and sagging gates.',
+                                    description: 'Crooked posts, uneven boards, and sagging gates can affect the appearance and performance of your fence.',
                                     icon: '📏',
                                     urgency: 'QUALITY',
                                     color: 'bg-gray-100 text-gray-800'
                                 },
                                 {
                                     problem: 'Pet or Child Safety',
-                                    description: 'Inadequate fencing for pet containment or child safety.',
+                                    description: 'Inadequate fencing can make it harder to keep pets and children safely contained in your yard.',
                                     icon: '🐕',
                                     urgency: 'SECURITY',
                                     color: 'bg-green-100 text-green-800'
@@ -381,10 +381,10 @@ export default function PrivacyFencingPage() {
                             transition={{ duration: 0.6 }}
                         >
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                                Professional Fencing Services
+                                Professional Fall Fencing Services
                             </h2>
                             <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                                Quality installation for lasting privacy and security
+                                Quality fencing solutions to refresh, protect, and improve your outdoor space this Fall
                             </p>
                         </motion.div>
 
@@ -494,7 +494,7 @@ export default function PrivacyFencingPage() {
                     </div>
                 </section>
 
-                {/* CTA Banner - Updated for Summer */}
+                {/* CTA Banner - Updated for Fall */}
                 <section className="py-20 bg-linear-to-r from-purple-600/10 to-amber-600/10">
                     <div className="container mx-auto px-4 md:px-6 lg:px-22">
                         <motion.div
@@ -510,18 +510,18 @@ export default function PrivacyFencingPage() {
                                         <div className="p-3 bg-white/20 rounded-2xl">
                                             <Fence className="h-8 w-8" />
                                         </div>
-                                        <span className="text-xl font-bold uppercase tracking-widest">SUMMER INSTALLATION SPECIAL</span>
+                                        <span className="text-xl font-bold uppercase tracking-widest">FALL FENCE INSTALLATION SPECIAL</span>
                                     </div>
                                     <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                                        Perfect Time for Summer Fence Installation
+                                        Refresh Your Property With a New Fence This Fall
                                     </h2>
                                     <p className="text-gray-50 text-[19.5px] lg:text-[23px] font-light mb-8 opacity-95 leading-relaxed">
-                                        Summer weather provides ideal conditions for fence installation and soil settling. Get your privacy now.
+                                        Fall is a great time to improve your outdoor space with a new privacy fence. Create a more comfortable, private, and secure yard before the season ahead.
                                     </p>
                                     <div className="space-y-4 text-lg lg:text-xl">
                                         <div className="flex items-center gap-4">
                                             <Calendar className="h-6 w-6" />
-                                            <span>Book now for summer installation</span>
+                                            <span>Book now for Fall installation</span>
                                         </div>
                                         <div className="flex items-center gap-4">
                                             <Clock className="h-6 w-6" />
@@ -529,13 +529,13 @@ export default function PrivacyFencingPage() {
                                         </div>
                                         <div className="flex items-center gap-4">
                                             <Shield className="h-6 w-6" />
-                                            <span>Enjoy your private yard all summer long</span>
+                                            <span>Enjoy greater privacy and security in your yard</span>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="p-12 bg-white flex flex-col justify-center">
-                                    <h3 className="text-[27px] font-bold text-gray-900 mb-8 text-center">Get Your Free Fence Estimate</h3>
+                                    <h3 className="text-[27px] font-bold text-gray-900 mb-8 text-center">Get Your Free Fall Fence Estimate</h3>
 
                                     <div className="space-y-6">
                                         <motion.a
