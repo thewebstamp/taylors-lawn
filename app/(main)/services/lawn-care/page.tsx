@@ -1,4 +1,3 @@
-
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
@@ -53,7 +52,7 @@ export default function ProfessionalLawnCarePage() {
         },
         {
             title: 'Complete Lawn Program',
-            description: 'mowing, edging, weed control, fertilization, aeration, and blowing for a pristine lawn.',
+            description: 'Mowing, edging, weed control, fertilization, aeration, and blowing for a pristine lawn.',
             icon: Layers,
             features: ['All Services Included', 'Priority Scheduling', 'Best Value', 'Full Maintenance'],
         }
@@ -94,58 +93,21 @@ export default function ProfessionalLawnCarePage() {
                             "@type": "OfferCatalog",
                             "name": "Professional Lawn Care Services",
                             "itemListElement": [
-                                {
-                                    "@type": "Offer",
-                                    "itemOffered": {
-                                        "@type": "Service",
-                                        "name": "Lawn Fertilization"
-                                    }
-                                },
-                                {
-                                    "@type": "Offer",
-                                    "itemOffered": {
-                                        "@type": "Service",
-                                        "name": "Weed Control"
-                                    }
-                                },
-                                {
-                                    "@type": "Offer",
-                                    "itemOffered": {
-                                        "@type": "Service",
-                                        "name": "Seasonal Lawn Aeration"
-                                    }
-                                },
-                                {
-                                    "@type": "Offer",
-                                    "itemOffered": {
-                                        "@type": "Service",
-                                        "name": "Lawn Mowing & Maintenance"
-                                    }
-                                },
-                                {
-                                    "@type": "Offer",
-                                    "itemOffered": {
-                                        "@type": "Service",
-                                        "name": "Disease & Pest Control"
-                                    }
-                                },
-                                {
-                                    "@type": "Offer",
-                                    "itemOffered": {
-                                        "@type": "Service",
-                                        "name": "Complete Lawn Care Program"
-                                    }
-                                }
+                                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lawn Fertilization" } },
+                                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Weed Control" } },
+                                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Seasonal Lawn Aeration" } },
+                                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lawn Mowing & Maintenance" } },
+                                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Disease & Pest Control" } },
+                                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Complete Lawn Care Program" } }
                             ]
                         }
                     }),
                 }}
             />
 
-
             <div className="min-h-screen bg-linear-to-br from-white to-green-50/30">
                 {/* Hero Section */}
-                <section className="relative py-20 lg:pt-25 overflow-hidden min-h-screen flex justify-center items-center bg-linear-to-b from-green-800 to-green-600">
+                <section className="relative py-20 lg:pt-25 overflow-hidden min-h-screen flex justify-center items-center bg-linear-to-b from-green-900 to-green-700">
                     <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
                             {/* Content Column */}
@@ -162,8 +124,8 @@ export default function ProfessionalLawnCarePage() {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.4, duration: 0.8 }}
                                 >
-                                    <span className="text-yellow-400 block mb-2">The Lush, Green Lawn</span>
-                                    <span className="text-white block">You&apos;ve Always Wanted</span>
+                                    <span className="text-yellow-400 block mb-2">Protect Your Lawn This Fall</span>
+                                    <span className="text-white block">So It Comes Back Strong in Spring</span>
                                 </motion.h1>
 
                                 {/* Subheadline */}
@@ -173,8 +135,8 @@ export default function ProfessionalLawnCarePage() {
                                     animate={{ opacity: 1 }}
                                     transition={{ delay: 0.6, duration: 0.7 }}
                                 >
-                                    <p>Professional lawn care that makes your neighbors look twice.</p>
-                                    <p><span className='text-[22px] md:text-[26px] font-extrabold text-yellow-400'>10% OFF</span> for Veterans, Military & First Responders <span className='text-[22px] md:text-[26px] font-extrabold text-yellow-400'>15% OFF</span> for Widows.</p>
+                                    <p>Fall fertilization, aeration, and cleanup now means a healthier, thicker lawn next season. Call today for your free estimate.</p>
+                                    <p className="mt-2"><span className='text-[22px] md:text-[26px] font-extrabold text-yellow-400'>10% OFF</span> for Veterans, Military & First Responders <span className='text-[22px] md:text-[26px] font-extrabold text-yellow-400'>15% OFF</span> for Widows.</p>
                                 </motion.div>
 
                                 {/* Big CTA Buttons */}
@@ -184,7 +146,6 @@ export default function ProfessionalLawnCarePage() {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 1, duration: 0.6 }}
                                 >
-                                    {/* Call Now Button */}
                                     <a
                                         href="tel:870-530-4289"
                                         onClick={trackPhoneCall}
@@ -199,10 +160,8 @@ export default function ProfessionalLawnCarePage() {
                                         <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/20 to-transparent -skew-x-12 transform -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
                                     </a>
 
-                                    {/* Or Divider */}
                                     <div className="text-white/70 font-semibold">OR</div>
 
-                                    {/* Free Evaluation Button */}
                                     <Link
                                         href="/contact#form"
                                         className="group bg-linear-to-r from-yellow-600 to-yellow-700 hover:from-yellow-700 hover:to-yellow-800 text-white font-bold py-4 px-6 rounded-xl text-lg transition-all duration-300 flex items-center justify-center gap-3 shadow-2xl hover:shadow-3xl w-full md:w-auto"
@@ -245,7 +204,6 @@ export default function ProfessionalLawnCarePage() {
                                 animate={{ opacity: 1, scale: 1 }}
                                 transition={{ delay: 0.5, duration: 0.8 }}
                             >
-                                {/* Image Carousel */}
                                 <div className="relative h-[300px] md:h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                                     <motion.div
                                         className="absolute inset-0"
@@ -268,7 +226,6 @@ export default function ProfessionalLawnCarePage() {
                     </div>
                 </section>
 
-
                 <AffirmFinancingBanner />
 
                 {/* Common Lawn Problems Section */}
@@ -285,7 +242,7 @@ export default function ProfessionalLawnCarePage() {
                                 Common Lawn Problems We Solve
                             </h2>
                             <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                                Don&apos;t let these common issues ruin your curb appeal
+                                Fall is the best time to fix these — don&apos;t let them carry into winter
                             </p>
                         </motion.div>
 
@@ -293,42 +250,42 @@ export default function ProfessionalLawnCarePage() {
                             {[
                                 {
                                     problem: 'Weed Invasion',
-                                    description: 'Dandelions, crabgrass, and other weeds taking over your lawn.',
+                                    description: 'Dandelions, crabgrass, and other weeds taking over your lawn — treat now before they seed again next spring.',
                                     icon: '🌿',
                                     urgency: 'COMMON',
                                     color: 'bg-green-100 text-green-800'
                                 },
                                 {
                                     problem: 'Brown Patches',
-                                    description: 'Unsightly brown or dead spots from summer heat and drought stress ruining your green lawn.',
+                                    description: 'Unsightly brown or dead spots caused by cooling temps, fungal disease, or drought stress heading into fall.',
                                     icon: '🍂',
                                     urgency: 'URGENT',
                                     color: 'bg-amber-100 text-amber-900'
                                 },
                                 {
                                     problem: 'Thin & Patchy Grass',
-                                    description: 'Sparse grass coverage that looks unhealthy and uneven.',
+                                    description: 'Fall is the ideal window for overseeding — cooler temps give new grass the best chance to establish before winter.',
                                     icon: '🌱',
                                     urgency: 'UPGRADE',
                                     color: 'bg-teal-100 text-teal-800'
                                 },
                                 {
                                     problem: 'Compacted Soil',
-                                    description: 'Hard soil preventing water and nutrients from reaching roots.',
+                                    description: 'Hard soil prevents water and nutrients from reaching roots — fall aeration fixes this before the ground freezes.',
                                     icon: '🏗️',
                                     urgency: 'FOUNDATIONAL',
                                     color: 'bg-gray-100 text-gray-800'
                                 },
                                 {
                                     problem: 'Lawn Diseases',
-                                    description: 'Fungal diseases killing your grass in circular patterns.',
+                                    description: 'Fungal diseases spread fast in fall moisture — identify and treat now before they overwinter in your soil.',
                                     icon: '🦠',
                                     urgency: 'TREATMENT',
                                     color: 'bg-red-100 text-red-800'
                                 },
                                 {
                                     problem: 'Insect Damage',
-                                    description: 'Grubs and other pests destroying your lawn from underneath.',
+                                    description: 'Grubs and other pests destroying your lawn from underneath — fall treatment stops them before they do more damage.',
                                     icon: '🐛',
                                     urgency: 'PROTECTION',
                                     color: 'bg-orange-100 text-orange-800'
@@ -385,7 +342,7 @@ export default function ProfessionalLawnCarePage() {
                                 Professional Lawn Care Services
                             </h2>
                             <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                                Comprehensive solutions for a healthy, beautiful lawn
+                                Comprehensive solutions for a healthy, beautiful lawn — now and into spring
                             </p>
                         </motion.div>
 
@@ -403,7 +360,6 @@ export default function ProfessionalLawnCarePage() {
                                         transition: { type: "spring", stiffness: 300 }
                                     }}
                                 >
-                                    {/* Header */}
                                     <div className="p-8 pb-4 border-b border-gray-100">
                                         <div className="flex items-center justify-between mb-6">
                                             <div className="p-4 bg-green-100 rounded-2xl">
@@ -414,7 +370,6 @@ export default function ProfessionalLawnCarePage() {
                                         <p className="text-black text-[19.5px] lg:text-[23px] font-light leading-relaxed">{service.description}</p>
                                     </div>
 
-                                    {/* Features */}
                                     <div className="p-8 py-4">
                                         <div className="space-y-4 mb-6">
                                             {service.features.map((feature, featureIndex) => (
@@ -425,7 +380,6 @@ export default function ProfessionalLawnCarePage() {
                                             ))}
                                         </div>
 
-                                        {/* CTA */}
                                         <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-6 border-t border-gray-100">
                                             <motion.a
                                                 href="tel:870-530-4289"
@@ -435,7 +389,7 @@ export default function ProfessionalLawnCarePage() {
                                                 whileTap={{ scale: 0.95 }}
                                             >
                                                 <Phone className="h-5 w-5" />
-                                                Get Free Quote
+                                                Get Free Estimate
                                             </motion.a>
                                         </div>
                                     </div>
@@ -452,7 +406,6 @@ export default function ProfessionalLawnCarePage() {
                             Our Lawn Care Excellence
                         </h2>
 
-                        {/* Stats Card */}
                         <motion.div
                             className="bg-white rounded-2xl shadow-2xl p-8 lg:px-12 border max-w-4xl mx-auto border-gray-100"
                             initial={{ opacity: 0, x: 30 }}
@@ -496,10 +449,10 @@ export default function ProfessionalLawnCarePage() {
                 </section>
 
                 {/* CTA Banner */}
-                <section className="py-20 bg-linear-to-r from-green-600/10 to-yellow-600/10">
+                <section className="py-20 bg-linear-to-r from-green-600/10 to-amber-600/10">
                     <div className="container mx-auto px-4 md:px-6 lg:px-22">
                         <motion.div
-                            className="bg-linear-to-r from-green-600 to-yellow-600 rounded-3xl shadow-2xl overflow-hidden"
+                            className="bg-linear-to-r from-green-700 to-amber-700 rounded-3xl shadow-2xl overflow-hidden"
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -511,26 +464,26 @@ export default function ProfessionalLawnCarePage() {
                                         <div className="p-3 bg-white/20 rounded-2xl">
                                             <LeafIcon className="h-8 w-8" />
                                         </div>
-                                        <span className="text-xl font-bold uppercase tracking-widest">SUMMER SPECIAL</span>
+                                        <span className="text-xl font-bold uppercase tracking-widest">FALL LAWN CARE SPECIAL</span>
                                     </div>
                                     <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                                        Keep Your Lawn Perfect All Summer
+                                        Fertilize & Aerate Now Before the Ground Freezes
                                     </h2>
                                     <p className="text-gray-50 text-[19.5px] lg:text-[23px] font-light mb-8 opacity-95 leading-relaxed">
-                                        Regular summer lawn care prevents weeds and keeps your grass thick, green, and resilient through the heat.
+                                        Fall is the most important lawn care window of the year. What you do now determines how your lawn looks all of next season.
                                     </p>
                                     <div className="space-y-4 text-lg lg:text-xl">
                                         <div className="flex items-center gap-4">
                                             <Calendar className="h-6 w-6" />
-                                            <span>Book now for summer lawn care</span>
+                                            <span>Book now — fall spots fill fast</span>
                                         </div>
                                         <div className="flex items-center gap-4">
                                             <Clock className="h-6 w-6" />
-                                            <span>Early bookings get priority scheduling</span>
+                                            <span>Same-day free lawn analysis available</span>
                                         </div>
                                         <div className="flex items-center gap-4">
                                             <Shield className="h-6 w-6" />
-                                            <span>Guaranteed weed-free lawn</span>
+                                            <span>Guaranteed weed-free lawn next spring</span>
                                         </div>
                                     </div>
                                 </div>
