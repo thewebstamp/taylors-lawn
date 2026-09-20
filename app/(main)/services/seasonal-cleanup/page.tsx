@@ -23,39 +23,39 @@ export default function SeasonalCleanupPage() {
     const services = [
         {
             title: 'Fall Leaf Cleanup',
-            description: 'Complete leaf removal to prepare your lawn for winter health.',
+            description: 'Thorough leaf removal to keep your lawn clean, healthy, and ready for the changing season.',
             icon: Leaf,
-            features: ['Thorough raking', 'Bag removal', 'Compost disposal', 'Lawn protection'],
+            features: ['Thorough leaf removal', 'Bag removal', 'Debris disposal', 'Lawn protection'],
         },
         {
-            title: 'Spring Yard Cleanup',
-            description: 'Post-winter cleanup to prepare your lawn for spring growth.',
+            title: 'Fall Yard Cleanup',
+            description: 'Seasonal yard cleanup to remove leaves, debris, and buildup from your property before winter.',
             icon: Sprout,
-            features: ['Debris removal', 'Thatch cleanup', 'Gutter cleaning', 'Bed preparation'],
+            features: ['Debris removal', 'Leaf cleanup', 'Garden bed cleanup', 'Property refresh'],
         },
         {
             title: 'Gutter Cleaning',
-            description: 'Complete gutter cleaning to prevent water damage and ice dams.',
+            description: 'Remove leaves and debris from gutters and downspouts to help keep Fall rainwater flowing properly.',
             icon: CloudRain,
-            features: ['Debris removal', 'Downspout clearing', 'Flow testing', 'Safety inspection'],
+            features: ['Leaf removal', 'Downspout clearing', 'Flow testing', 'Safety inspection'],
         },
         {
             title: 'Property Debris Removal',
-            description: 'Removal of fallen branches, sticks, and seasonal debris.',
+            description: 'Remove fallen branches, sticks, leaves, and other seasonal debris from around your property.',
             icon: Wind,
-            features: ['Complete cleanup', 'Haul away service', 'Property inspection', 'Recycling'],
+            features: ['Complete cleanup', 'Haul away service', 'Property inspection', 'Debris removal'],
         },
         {
             title: 'Winter Preparation',
-            description: 'Prepare your property for harsh winter conditions.',
+            description: 'Get your property organized and prepared for the colder weather ahead after Fall cleanup.',
             icon: CloudSun,
-            features: ['Plant protection', 'Irrigation winterization', 'Tool storage prep', 'Snow plan setup'],
+            features: ['Plant protection', 'Irrigation winterization', 'Tool storage prep', 'Winter preparation'],
         },
         {
             title: 'Complete Seasonal Package',
-            description: 'Year-round seasonal maintenance for continuous property care.',
+            description: 'Comprehensive seasonal property care to help keep your outdoor space clean and maintained throughout the year.',
             icon: Calendar,
-            features: ['All seasons covered', 'Priority scheduling', 'Custom plan', 'Best value'],
+            features: ['Seasonal care', 'Priority scheduling', 'Custom plan', 'Complete property care'],
         }
     ];
 
@@ -75,7 +75,7 @@ export default function SeasonalCleanupPage() {
                         "@type": "Service",
                         "name": "Seasonal Cleanup Services",
                         "url": "https://taylorslawncare21.com/services/seasonal-cleanup",
-                        "description": "Professional seasonal cleanup services in Northeast Arkansas including fall leaf cleanup, spring yard cleanup, gutter cleaning, property debris removal, winter preparation, and complete year-round seasonal packages.",
+                        "description": "Professional seasonal cleanup services in Northeast Arkansas including Fall leaf cleanup, yard cleanup, gutter cleaning, property debris removal, winter preparation, and complete seasonal property care.",
                         "provider": {
                             "@type": "LocalBusiness",
                             "name": "Taylor's Lawn Care & Landscaping, LLC",
@@ -125,7 +125,7 @@ export default function SeasonalCleanupPage() {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.4, duration: 0.8 }}
                                 >
-                                    <span className="text-yellow-400 block mb-2">Year-Round Property Care</span>
+                                    <span className="text-yellow-400 block mb-2">🍂 Get Your Property Fall-Ready</span>
                                     <span className="text-white block">Professional Seasonal Cleanup</span>
                                 </motion.h1>
 
@@ -136,7 +136,7 @@ export default function SeasonalCleanupPage() {
                                     animate={{ opacity: 1 }}
                                     transition={{ delay: 0.6, duration: 0.7 }}
                                 >
-                                    <p>Keep your property beautiful and healthy through every season.</p>
+                                    <p>Keep your property clean, healthy, and ready for the changing Fall weather.</p>
                                     <p><span className='text-[22px] md:text-[26px] font-extrabold text-yellow-400'>10% OFF</span> for Veterans, Military & First Responders <span className='text-[22px] md:text-[26px] font-extrabold text-yellow-400'>15% OFF</span> for Widows.</p>
                                 </motion.div>
 
@@ -172,7 +172,7 @@ export default function SeasonalCleanupPage() {
                                     >
                                         <Calendar className="h-5 w-5" />
                                         <span className="text-center">
-                                            <span className="block text-lg">FREE PROPERTY ASSESSMENT</span>
+                                            <span className="block text-lg">FREE FALL PROPERTY ASSESSMENT</span>
                                             <span className="block text-sm opacity-90">Schedule Online</span>
                                         </span>
                                         <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -192,7 +192,7 @@ export default function SeasonalCleanupPage() {
                                     </div>
                                     <div className="flex items-center gap-2">
                                         <div className="w-2 h-2 bg-amber-400 rounded-full animate-pulse" style={{ animationDelay: '0.6s' }}></div>
-                                        <span>Thorough Service</span>
+                                        <span>Thorough Fall Cleanup</span>
                                     </div>
                                     <div className="flex items-center gap-2">
                                         <div className="w-2 h-2 bg-amber-400 rounded-full animate-pulse" style={{ animationDelay: '0.9s' }}></div>
@@ -218,7 +218,7 @@ export default function SeasonalCleanupPage() {
                                     >
                                         <Image
                                             src="/clean.jpg"
-                                            alt="Professional cleanup"
+                                            alt="Professional Fall cleanup"
                                             fill
                                             className="object-cover"
                                             priority
@@ -271,10 +271,10 @@ export default function SeasonalCleanupPage() {
                             transition={{ duration: 0.6 }}
                         >
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                                Common Seasonal Cleanup Problems
+                                Common Fall Cleanup Problems
                             </h2>
                             <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                                Neglected seasonal cleanup leads to property damage and extra work
+                                Fall leaves, rain, and seasonal debris can quickly create extra work and property maintenance problems
                             </p>
                         </motion.div>
 
@@ -282,44 +282,44 @@ export default function SeasonalCleanupPage() {
                             {[
                                 {
                                     problem: 'Leaf Matting & Lawn Damage',
-                                    description: 'Thick leaf layers suffocating grass and promoting disease.',
+                                    description: 'Heavy layers of leaves can block sunlight and airflow, leaving your lawn looking stressed and unkempt.',
                                     icon: '🍂',
                                     urgency: 'LAWN HEALTH',
                                     color: 'bg-amber-100 text-amber-800'
                                 },
                                 {
                                     problem: 'Clogged Gutters',
-                                    description: 'Leaves blocking gutters causing water damage and ice dams.',
+                                    description: 'Fallen leaves and debris can block gutters and downspouts, preventing Fall rainwater from flowing properly.',
                                     icon: '🌧️',
-                                    urgency: 'STRUCTURAL',
+                                    urgency: 'WATER FLOW',
                                     color: 'bg-blue-100 text-blue-800'
                                 },
                                 {
-                                    problem: 'Winter Damage',
-                                    description: 'Unprepared plants and systems suffering from freeze damage.',
-                                    icon: '❄️',
-                                    urgency: 'PREVENTION',
+                                    problem: 'Fall Storm Debris',
+                                    description: 'Wind and seasonal weather can leave branches, sticks, and other debris scattered across your property.',
+                                    icon: '🍃',
+                                    urgency: 'CLEANUP',
                                     color: 'bg-cyan-100 text-cyan-800'
                                 },
                                 {
-                                    problem: 'Spring Overgrowth',
-                                    description: 'Uncontrolled weeds and overgrowth after winter neglect.',
+                                    problem: 'Overgrown Areas',
+                                    description: 'Unmaintained beds, edges, and outdoor areas can quickly look neglected as the season changes.',
                                     icon: '🌿',
-                                    urgency: 'CONTROL',
+                                    urgency: 'PROPERTY CARE',
                                     color: 'bg-green-100 text-green-800'
                                 },
                                 {
                                     problem: 'Debris Accumulation',
-                                    description: 'Seasonal debris creating messy, unkempt appearance.',
+                                    description: 'Leaves, branches, and seasonal debris can build up around your lawn, beds, walkways, and outdoor spaces.',
                                     icon: '🗑️',
                                     urgency: 'CURB APPEAL',
                                     color: 'bg-gray-100 text-gray-800'
                                 },
                                 {
-                                    problem: 'Pest Habitats',
-                                    description: 'Debris piles attracting rodents and insects.',
+                                    problem: 'Pest-Friendly Debris',
+                                    description: 'Unmanaged piles of leaves and organic debris can create areas where unwanted pests may gather.',
                                     icon: '🐭',
-                                    urgency: 'SANITATION',
+                                    urgency: 'PROPERTY CARE',
                                     color: 'bg-brown-100 text-brown-800'
                                 }
                             ].map((problem, index) => (
@@ -371,10 +371,10 @@ export default function SeasonalCleanupPage() {
                             transition={{ duration: 0.6 }}
                         >
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                                Professional Seasonal Services
+                                Professional Fall Cleanup Services
                             </h2>
                             <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                                Complete seasonal care for your property
+                                Complete seasonal cleanup solutions to refresh and prepare your property for the months ahead
                             </p>
                         </motion.div>
 
@@ -438,7 +438,7 @@ export default function SeasonalCleanupPage() {
                 <section className="py-20 bg-linear-to-br from-amber-50/50 to-orange-50/50">
                     <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                            Our Cleanup Excellence
+                            Our Fall Cleanup Excellence
                         </h2>
 
                         {/* Stats Card */}
@@ -503,19 +503,19 @@ export default function SeasonalCleanupPage() {
                                         <span className="text-xl font-bold uppercase tracking-widest">FALL CLEANUP SPECIAL</span>
                                     </div>
                                     <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                                        Don&apos;t Let Leaves Damage Your Lawn
+                                        Don&apos;t Let Fall Leaves Take Over Your Lawn
                                     </h2>
                                     <p className="text-gray-50 text-[19.5px] lg:text-[23px] font-light mb-8 opacity-95 leading-relaxed">
-                                        Fall leaves left on your lawn can cause winter kill and spring problems.
+                                        Stay ahead of leaf buildup and seasonal debris with a thorough Fall cleanup that leaves your property looking clean and cared for.
                                     </p>
                                     <div className="space-y-4 text-lg lg:text-xl">
                                         <div className="flex items-center gap-4">
                                             <Calendar className="h-6 w-6" />
-                                            <span>Schedule fall cleanup now</span>
+                                            <span>Schedule your Fall cleanup now</span>
                                         </div>
                                         <div className="flex items-center gap-4">
                                             <Clock className="h-6 w-6" />
-                                            <span>Limited fall appointments available</span>
+                                            <span>Get ahead of seasonal buildup</span>
                                         </div>
                                         <div className="flex items-center gap-4">
                                             <Shield className="h-6 w-6" />
@@ -525,7 +525,7 @@ export default function SeasonalCleanupPage() {
                                 </div>
 
                                 <div className="p-12 bg-white flex flex-col justify-center">
-                                    <h3 className="text-[27px] font-bold text-gray-900 mb-8 text-center">Schedule Your Cleanup Today</h3>
+                                    <h3 className="text-[27px] font-bold text-gray-900 mb-8 text-center">Schedule Your Fall Cleanup Today</h3>
 
                                     <div className="space-y-6">
                                         <motion.a
