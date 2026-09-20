@@ -141,8 +141,7 @@ export default function DirtWorkGradingPage() {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 1, duration: 0.6 }}
                                 >
-                                    {/* Call Now Button */}
-                                    <a
+                                    
                                         href="tel:870-530-4289"
                                         onClick={trackPhoneCall}
                                         className="group bg-linear-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-bold py-4 px-6 rounded-xl text-lg transition-all duration-300 flex items-center justify-center gap-3 shadow-2xl hover:shadow-3xl w-full md:w-auto relative overflow-hidden"
@@ -156,10 +155,8 @@ export default function DirtWorkGradingPage() {
                                         <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/20 to-transparent -skew-x-12 transform -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
                                     </a>
 
-                                    {/* Or Divider */}
                                     <div className="text-white/70 font-semibold">OR</div>
 
-                                    {/* Free Evaluation Button */}
                                     <Link
                                         href="/contact#form"
                                         className="group bg-linear-to-r from-yellow-600 to-yellow-700 hover:from-yellow-700 hover:to-yellow-800 text-white font-bold py-4 px-6 rounded-xl text-lg transition-all duration-300 flex items-center justify-center gap-3 shadow-2xl hover:shadow-3xl w-full md:w-auto"
@@ -202,7 +199,6 @@ export default function DirtWorkGradingPage() {
                                 animate={{ opacity: 1, scale: 1 }}
                                 transition={{ delay: 0.5, duration: 0.8 }}
                             >
-                                {/* Image Carousel */}
                                 <div className="relative h-[300px] md:h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                                     <motion.div
                                         className="absolute inset-0"
@@ -225,7 +221,6 @@ export default function DirtWorkGradingPage() {
                     </div>
                 </section>
 
-
                 <AffirmFinancingBanner />
 
                 {/* Common Grading Problems Section */}
@@ -242,7 +237,7 @@ export default function DirtWorkGradingPage() {
                                 Common Grading & Drainage Problems
                             </h2>
                             <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                                Poor grading leads to costly water damage and property issues
+                                Poor grading leads to costly water damage — fall rains make it worse fast
                             </p>
                         </motion.div>
 
@@ -250,42 +245,42 @@ export default function DirtWorkGradingPage() {
                             {[
                                 {
                                     problem: 'Water Pooling',
-                                    description: 'Low spots in your yard collecting water after every summer storm.',
+                                    description: 'Low spots in your yard collecting water after every fall rain — a problem that only gets worse heading into winter.',
                                     icon: '💧',
                                     urgency: 'DRAINAGE',
                                     color: 'bg-blue-100 text-blue-800'
                                 },
                                 {
                                     problem: 'Foundation Water',
-                                    description: 'Water flowing toward your home instead of away from it.',
+                                    description: 'Water flowing toward your home instead of away from it — fall and winter rains make this an emergency.',
                                     icon: '🏠',
                                     urgency: 'EMERGENCY',
                                     color: 'bg-red-100 text-red-800'
                                 },
                                 {
                                     problem: 'Erosion Issues',
-                                    description: 'Soil washing away from summer downpours, creating gullies and unstable ground.',
+                                    description: 'Soil washing away from fall downpours, creating gullies and unstable ground that freeze and crack in winter.',
                                     icon: '🌊',
                                     urgency: 'URGENT',
                                     color: 'bg-amber-100 text-amber-900'
                                 },
                                 {
                                     problem: 'Uneven Ground',
-                                    description: 'Bumpy, uneven surfaces making mowing and walking difficult.',
+                                    description: 'Bumpy, uneven surfaces become more hazardous in wet fall and icy winter conditions.',
                                     icon: '🏞️',
                                     urgency: 'SAFETY',
                                     color: 'bg-amber-100 text-amber-800'
                                 },
                                 {
                                     problem: 'Construction Prep Needed',
-                                    description: 'Rough terrain needing grading for new construction.',
+                                    description: 'Fall is ideal for site prep — get your terrain graded now so you are ready to build come spring.',
                                     icon: '🏗️',
                                     urgency: 'PREPARATION',
                                     color: 'bg-gray-100 text-gray-800'
                                 },
                                 {
                                     problem: 'Poor Lawn Drainage',
-                                    description: 'Waterlogged soil killing grass and creating mud pits.',
+                                    description: 'Waterlogged soil kills grass going into winter and makes spring recovery much harder.',
                                     icon: '🌱',
                                     urgency: 'LAWN HEALTH',
                                     color: 'bg-green-100 text-green-800'
@@ -313,7 +308,7 @@ export default function DirtWorkGradingPage() {
                                         {problem.description}
                                     </p>
                                     <div className="pt-6 border-t border-gray-100">
-                                        <a
+                                        
                                             href="tel:870-530-4289"
                                             onClick={trackPhoneCall}
                                             className="text-amber-600 hover:text-amber-700 font-bold text-lg lg:text-xl flex items-center gap-3"
@@ -360,7 +355,6 @@ export default function DirtWorkGradingPage() {
                                         transition: { type: "spring", stiffness: 300 }
                                     }}
                                 >
-                                    {/* Header */}
                                     <div className="p-8 pb-4 border-b border-gray-100">
                                         <div className="flex items-center justify-between mb-6">
                                             <div className="p-4 bg-amber-100 rounded-2xl">
@@ -371,7 +365,6 @@ export default function DirtWorkGradingPage() {
                                         <p className="text-black text-[19.5px] lg:text-[23px] font-light leading-relaxed">{service.description}</p>
                                     </div>
 
-                                    {/* Features */}
                                     <div className="p-8 py-4">
                                         <div className="space-y-4 mb-6">
                                             {service.features.map((feature, featureIndex) => (
@@ -382,7 +375,6 @@ export default function DirtWorkGradingPage() {
                                             ))}
                                         </div>
 
-                                        {/* CTA */}
                                         <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-6 border-t border-gray-100">
                                             <motion.a
                                                 href="tel:870-530-4289"
@@ -409,7 +401,6 @@ export default function DirtWorkGradingPage() {
                             Our Earthmoving Excellence
                         </h2>
 
-                        {/* Stats Card */}
                         <motion.div
                             className="bg-white rounded-2xl shadow-2xl p-8 lg:px-12 border max-w-4xl mx-auto border-gray-100"
                             initial={{ opacity: 0, x: 30 }}
@@ -468,26 +459,26 @@ export default function DirtWorkGradingPage() {
                                         <div className="p-3 bg-white/20 rounded-2xl">
                                             <Tractor className="h-8 w-8" />
                                         </div>
-                                        <span className="text-xl font-bold uppercase tracking-widest">SUMMER GRADING SPECIAL</span>
+                                        <span className="text-xl font-bold uppercase tracking-widest">FALL GRADING SPECIAL</span>
                                     </div>
                                     <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                                        Get Your Property Graded Right This Summer
+                                        Fix Your Drainage & Grading Before Winter Sets In
                                     </h2>
                                     <p className="text-gray-50 text-[19.5px] lg:text-[23px] font-light mb-8 opacity-95 leading-relaxed">
-                                        Summer is the perfect time for grading projects — dry soil makes for easier, more precise work and faster results.
+                                        Fall is the last window to correct grading issues before frozen ground and winter water damage make repairs harder and more expensive.
                                     </p>
                                     <div className="space-y-4 text-lg lg:text-xl">
                                         <div className="flex items-center gap-4">
                                             <Calendar className="h-6 w-6" />
-                                            <span>Book now for summer grading projects</span>
+                                            <span>Book now — fall spots fill fast</span>
                                         </div>
                                         <div className="flex items-center gap-4">
                                             <Clock className="h-6 w-6" />
-                                            <span>Priority scheduling for summer work</span>
+                                            <span>Same-day free site evaluation available</span>
                                         </div>
                                         <div className="flex items-center gap-4">
                                             <Shield className="h-6 w-6" />
-                                            <span>Protect your property investment</span>
+                                            <span>Protect your foundation before the first freeze</span>
                                         </div>
                                     </div>
                                 </div>
