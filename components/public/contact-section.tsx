@@ -85,7 +85,7 @@ export function ContactSection() {
             whileHover={{ scale: 1.05 }}
           >
             <Calendar className="h-4 w-4" />
-            <span className="text-sm font-semibold">SUMMER BOOKING OPEN</span>
+            <span className="text-sm font-semibold">FALL PROJECTS BOOKING OPEN</span>
           </motion.div>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
