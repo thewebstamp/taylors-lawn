@@ -38,7 +38,7 @@ export default function ServicesPage() {
       img: "/tree.jpg",
       icon: '🌲',
       title: 'Tree & Brush Cleanup',
-      description: 'Dead limbs and overgrowth become hazards in fall storms. We handle small tree trimming, brush removal, and lot clearing before winter weather sets in.',
+      description: 'Dead limbs and overgrowth become hazards in fall storms. We handle tree trimming, tree/brush removal, and lot clearing before winter weather sets in.',
       features: ['Storm Hazard Removal', 'Thorough Cleanup', 'Debris Removal', 'Professional Equipment'],
       slug: "tree-brush-cleanup"
     },
