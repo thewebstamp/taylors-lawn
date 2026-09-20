@@ -10,86 +10,94 @@ import React from 'react';
 export default function ServicesPage() {
   const services = [
     {
+      img: "/clean.jpg",
+      icon: '🍂',
+      title: 'Yard & Leaf Cleanup',
+      description: 'Leaves piling up fast? We handle full yard cleanup — leaf removal, brush hauling, and bed clearing — so your property stays clean and protected heading into winter.',
+      features: ['Leaf & Debris Removal', 'Haul-Away Included', 'Bed Clearing', 'Quick Response'],
+      slug: "seasonal-cleanup"
+    },
+    {
       img: "/drainage.jpg",
       icon: '💧',
       title: 'Drainage Solutions',
-      description: 'French drains, surface drainage, downspout drainage — built to handle Arkansas summer storms. Over 3,000 feet installed this season!',
+      description: 'Fall rains expose every drainage problem your yard has. French drains, catch basins, and downspout systems installed before winter makes it worse. Over 3,000 feet installed!',
       features: ['Emergency Service', 'Free Inspection', 'Expert Installation', '25+ Years Experience'],
       highlight: true,
       slug: "drainage-solution"
     },
     {
+      img: "/1781740860830_1.jpg",
+      icon: '🟤',
+      title: 'Mulch & Decorative Rock',
+      description: 'Fresh mulch before winter insulates plant roots, locks in moisture, and keeps your beds looking sharp through the cold months. Best time to refresh is right now.',
+      features: ['Root Protection', 'Weed Suppression', 'Premium Materials', 'Expert Installation'],
+      slug: "mulch-decorative-rock"
+    },
+    {
+      img: "/tree.jpg",
+      icon: '🌲',
+      title: 'Tree & Brush Cleanup',
+      description: 'Dead limbs and overgrowth become hazards in fall storms. We handle small tree trimming, brush removal, and lot clearing before winter weather sets in.',
+      features: ['Storm Hazard Removal', 'Thorough Cleanup', 'Debris Removal', 'Professional Equipment'],
+      slug: "tree-brush-cleanup"
+    },
+    {
+      img: "/1781740335628.jpg",
+      icon: '✨',
+      title: 'Pressure Washing & Sealing',
+      description: 'Seal your driveway before winter freeze-thaw cycles crack it. We pressure wash first, then apply a protective sealant that lasts through the cold months.',
+      features: ['Freeze Protection', 'Driveways & Patios', 'Siding & Walkways', 'Quick Turnaround'],
+      slug: "pressure-washing-sealing"
+    },
+    {
       img: "/sod.jpg",
       icon: '🌿',
       title: 'Landscaping & Sod',
-      description: 'Complete landscape design, sod installation, garden beds, and outdoor living spaces — get your yard ready before the summer heat sets in.',
-      features: ['Custom Designs', 'Premium Materials', '25+ Years Experience', 'Heavy Equipment Operation'],
+      description: 'Fall is one of the best times for sod installation — cooler temps mean faster root establishment. Complete landscape design and garden bed work also available.',
+      features: ['Fall Sod Installation', 'Custom Designs', '25+ Years Experience', 'Heavy Equipment Operation'],
       slug: "landscaping-sod"
     },
     {
       img: "/hero.jpg",
       icon: '🌱',
       title: 'Lawn Care',
-      description: 'Mowing, weed eating, edging, blowing, fertilization, and weed control to keep your lawn thick and green all summer.',
-      features: ['Mowing & Edging', 'Weed Eating', 'Blowing Surfaces'],
+      description: 'Keep your lawn healthy through fall with mowing, edging, fertilization, and weed control. A well-maintained lawn going into winter bounces back stronger in spring.',
+      features: ['Mowing & Edging', 'Fall Fertilization', 'Weed Eating', 'Blowing Surfaces'],
       slug: "lawn-care"
-    },
-    {
-      img: "/sprinkler.jpg",
-      icon: '🚿',
-      title: 'Sprinkler Systems',
-      description: 'Professional irrigation system installation and repair to keep your lawn healthy through the hottest summer days',
-      features: ['Smart Systems', 'Maintenance Plans', 'Expert Installation', 'Water Efficiency'],
-      slug: "sprinkler-systems"
-    },
-    {
-      img: "/dirt.jpg",
-      icon: '🚜',
-      title: 'Dirt Work & Grading',
-      description: '25+ years heavy equipment experience for precise grading and site preparation',
-      features: ['Commercial Grade', 'Proper Drainage', 'Heavy Equipment', 'Quick Turnaround'],
-      slug: "dirt-work-grading"
-    },
-    {
-      img: "/tree.jpg",
-      icon: '🌲',
-      title: 'Tree & Brush Cleanup',
-      description: 'Small tree trimming, brush removal, and professional lot clearing services',
-      features: ['Safety First', 'Thorough Cleanup', 'Debris Removal', 'Professional Equipment'],
-      slug: "tree-brush-cleanup"
-    },
-    {
-      img: "/fence.jpg",
-      icon: '🏠',
-      title: 'Privacy Fencing',
-      description: 'Quality fencing installation with 1-year guarantee on workmanship',
-      features: ['Quality Materials', 'Expert Installation', '1-Year Guarantee', 'Custom Options'],
-      slug: "privacy-fencing"
     },
     {
       img: "/stone.jpg",
       icon: '🧱',
       title: 'Rock Work & Hardscaping',
-      description: 'Retaining walls, flagstone patios, stone features, and hardscape to boost curb appeal and your outdoor living space',
+      description: 'Retaining walls, flagstone patios, and stone features — fall is ideal for hardscaping. Ground conditions are perfect and your outdoor space will be ready for spring.',
       features: ['Quality Craftsmanship', 'Durable Materials', 'Expert Installation', '25+ Years Experience'],
       slug: "rock-work-hardscaping"
     },
     {
-      img: "/1781740335628.jpg",
-      icon: '✨',
-      title: 'Pressure Washing & Sealing',
-      description: 'Restore your driveway, patio, and siding with professional pressure washing, then seal your driveway to protect it from Arkansas summer heat and storms.',
-      features: ['Driveways & Patios', 'Siding & Walkways', 'Professional Equipment', 'Quick Turnaround'],
-      slug: "pressure-washing-sealing"
+      img: "/dirt.jpg",
+      icon: '🚜',
+      title: 'Dirt Work & Grading',
+      description: 'Poor grading sends fall and winter water straight toward your foundation. Fix it now before frozen ground makes repairs harder and more expensive.',
+      features: ['Foundation Protection', 'Proper Drainage', 'Heavy Equipment', 'Quick Turnaround'],
+      slug: "dirt-work-grading"
     },
     {
-      img: "/1781740860830_1.jpg",
-      icon: '🟤',
-      title: 'Mulch & Decorative Rock',
-      description: 'Fresh mulch and decorative rock installation to lock in moisture, suppress weeds, and keep your beds looking sharp all summer long',
-      features: ['Moisture Retention', 'Weed Suppression', 'Premium Materials', 'Expert Installation'],
-      slug: "mulch-decorative-rock"
-    }
+      img: "/sprinkler.jpg",
+      icon: '🚿',
+      title: 'Sprinkler Systems',
+      description: 'Get your irrigation system winterized before the first freeze damages your lines and heads. We also install and repair systems for next season.',
+      features: ['Winterization Service', 'Maintenance Plans', 'Expert Installation', 'Water Efficiency'],
+      slug: "sprinkler-systems"
+    },
+    {
+      img: "/fence.jpg",
+      icon: '🏠',
+      title: 'Privacy Fencing',
+      description: 'Quality fencing installation with a 1-year workmanship guarantee. Fall is a great time to get your fence project done before the holiday season.',
+      features: ['Quality Materials', 'Expert Installation', '1-Year Guarantee', 'Custom Options'],
+      slug: "privacy-fencing"
+    },
   ];
 
   const trackPhoneCall = () => {
@@ -128,7 +136,7 @@ export default function ServicesPage() {
 
   return (
     <div className="min-h-screen bg-linear-to-br from-white to-green-50/30">
-      {/* Hero Section - Adjusted to start from top */}
+      {/* Hero Section */}
       <section className="relative pt-25 lg:pt-30 pb-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
@@ -138,8 +146,7 @@ export default function ServicesPage() {
             className="object-cover opacity-10"
             priority
           />
-          {/* Added darker overlay for better text visibility */}
-          <div className="absolute inset-0 bg-linear-to-b from-amber-600/50 to-green-600/70" />
+          <div className="absolute inset-0 bg-linear-to-b from-orange-900/50 to-green-900/60" />
         </div>
 
         <div className="container mx-auto px-4 md:px-6 lg:px-22 relative z-10">
@@ -150,19 +157,19 @@ export default function ServicesPage() {
             transition={{ duration: 0.6 }}
           >
             <motion.div
-              className="inline-flex items-center gap-2 bg-linear-to-r from-amber-500/90 to-amber-600/90 text-white px-4 py-2 rounded-full mb-3"
+              className="inline-flex items-center gap-2 bg-linear-to-r from-orange-600/90 to-amber-600/90 text-white px-4 py-2 rounded-full mb-3"
               whileHover={{ scale: 1.05 }}
             >
               <Calendar className="h-4 w-4" />
-              <span className="text-sm font-semibold">SUMMER PROJECTS BOOKING OPEN</span>
+              <span className="text-sm font-semibold">FALL PROJECTS BOOKING OPEN</span>
             </motion.div>
 
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Professional&nbsp; Services
+              Professional Fall Services
             </h1>
-            <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-700 max-w-5xl mx-auto"> {/* Changed to gray-700 for better contrast */}
-              Complete outdoor solutions for residential and commercial properties across Northeast Arkansas.
-              25+ years of trusted service.
+            <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-700 max-w-5xl mx-auto">
+              Protect your property before winter — cleanup, drainage, mulch & more.
+              Serving Northeast Arkansas for 25+ years. Call today for a free estimate.
             </p>
           </motion.div>
         </div>
@@ -235,7 +242,7 @@ export default function ServicesPage() {
                       whileTap={{ scale: 0.98 }}
                     >
                       <Phone className="h-4 w-4" />
-                      <span className='text-lg lg:text-xl'>Get Free Quote</span>
+                      <span className='text-lg lg:text-xl'>Get Free Estimate</span>
                       <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
                     </motion.a>
 
@@ -255,9 +262,7 @@ export default function ServicesPage() {
 
       {/* Guarantees Section */}
       <section className="py-20 bg-linear-to-br from-gray-50 to-white relative overflow-hidden">
-        {/* Sophisticated Background Elements */}
         <div className="absolute inset-0">
-          {/* Geometric Pattern */}
           <div className="absolute inset-0 opacity-5">
             <div className="absolute top-0 left-0 w-full h-full"
               style={{
@@ -267,8 +272,6 @@ export default function ServicesPage() {
               }}>
             </div>
           </div>
-
-          {/* Accent Lines */}
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-px h-32 bg-linear-to-b from-green-500 to-transparent"></div>
           <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-px h-32 bg-linear-to-t from-amber-500 to-transparent"></div>
         </div>
@@ -295,13 +298,13 @@ export default function ServicesPage() {
             </motion.div>
 
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Your&nbsp; Satisfaction,&nbsp;
+              Your&nbsp;Satisfaction,&nbsp;
               <span className="block bg-linear-to-r from-green-600 to-green-600 bg-clip-text text-transparent">
                 Guaranteed
               </span>
             </h2>
             <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-4xl mx-auto">
-              Our promises aren&apos;t just words - they&apos;re the foundation of everything we do
+              Our promises aren&apos;t just words — they&apos;re the foundation of everything we do
             </p>
           </motion.div>
 
@@ -324,15 +327,10 @@ export default function ServicesPage() {
                   transition: { type: "spring", stiffness: 400 }
                 }}
               >
-                {/* Card */}
                 <div className="relative bg-white rounded-2xl p-8 shadow-lg border border-gray-100 group-hover:shadow-2xl transition-all duration-500 overflow-hidden">
-                  {/* Background Gradient on Hover */}
                   <div className="absolute inset-0 bg-linear-to-br from-green-50 to-amber-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-                  {/* Top Accent Bar */}
                   <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-green-500 to-amber-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
 
-                  {/* Icon Container */}
                   <motion.div
                     className="relative mb-6"
                     whileHover={{
@@ -342,10 +340,7 @@ export default function ServicesPage() {
                     }}
                   >
                     <div className="relative inline-flex">
-                      {/* Icon Background */}
                       <div className="absolute inset-0 bg-linear-to-br from-green-500 to-amber-500 rounded-2xl transform rotate-6 opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
-
-                      {/* Icon */}
                       <div className="relative bg-white rounded-xl p-3 shadow-md border border-gray-100">
                         <div className="h-8 w-8">
                           {React.createElement(guarantee.icon, {
@@ -368,7 +363,6 @@ export default function ServicesPage() {
                     </div>
                   </motion.div>
 
-                  {/* Content */}
                   <div className="relative">
                     <h3 className="text-xl lg:text-[22px] font-bold text-gray-900 mb-3 group-hover:text-gray-800 transition-colors">
                       {guarantee.title}
@@ -378,7 +372,6 @@ export default function ServicesPage() {
                     </p>
                   </div>
 
-                  {/* Bottom Indicator */}
                   <motion.div
                     className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                     whileHover={{ x: 2 }}
@@ -391,30 +384,15 @@ export default function ServicesPage() {
                   </motion.div>
                 </div>
 
-                {/* Floating Elements */}
                 <motion.div
                   className="absolute -top-2 -right-2 w-4 h-4 bg-green-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                  animate={{
-                    scale: [1, 1.2, 1],
-                    opacity: [0, 0.5, 0]
-                  }}
-                  transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                    delay: index * 0.5
-                  }}
+                  animate={{ scale: [1, 1.2, 1], opacity: [0, 0.5, 0] }}
+                  transition={{ duration: 2, repeat: Infinity, delay: index * 0.5 }}
                 />
                 <motion.div
                   className="absolute -bottom-2 -left-2 w-3 h-3 bg-amber-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                  animate={{
-                    scale: [1, 1.3, 1],
-                    opacity: [0, 0.4, 0]
-                  }}
-                  transition={{
-                    duration: 2.5,
-                    repeat: Infinity,
-                    delay: index * 0.5 + 0.3
-                  }}
+                  animate={{ scale: [1, 1.3, 1], opacity: [0, 0.4, 0] }}
+                  transition={{ duration: 2.5, repeat: Infinity, delay: index * 0.5 + 0.3 }}
                 />
               </motion.div>
             ))}
@@ -428,9 +406,22 @@ export default function ServicesPage() {
             viewport={{ once: true }}
             transition={{ delay: 0.6, duration: 0.6 }}
           >
-            <p className="text-gray-600 mb-3 text-base lg:text-[18px]">Experience the Taylor&apos;s Lawn Care difference</p>
+            <p className="text-gray-600 mb-5 text-base lg:text-[18px]">
+              Don&apos;t wait until winter damage sets in — call today for your free estimate
+            </p>
+            <motion.a
+              href="tel:870-530-4289"
+              onClick={trackPhoneCall}
+              className="inline-flex items-center gap-3 bg-linear-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-semibold text-lg lg:text-xl px-8 py-3.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Phone className="h-5 w-5" />
+              <span>Call (870) 530-4289</span>
+              <div className="w-2 h-2 bg-white/70 rounded-full animate-pulse"></div>
+            </motion.a>
             <motion.div
-              className="inline-flex items-center gap-6 text-sm md:text-base text-gray-500"
+              className="inline-flex items-center gap-6 text-sm md:text-base text-gray-500 mt-6 flex"
               whileHover={{ gap: 8 }}
               transition={{ type: "spring", stiffness: 400 }}
             >
