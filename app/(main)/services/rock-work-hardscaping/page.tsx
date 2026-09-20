@@ -22,37 +22,37 @@ export default function RockWorkHardscapingPage() {
     const services = [
         {
             title: 'Retaining Walls',
-            description: 'Functional and decorative retaining walls for sloped properties.',
+            description: 'Functional and decorative retaining walls designed to improve your landscape and manage sloped areas this Fall.',
             icon: SquareStack,
             features: ['Proper drainage', 'Solid foundation', 'Various materials', 'Engineered design'],
         },
         {
             title: 'Stone Pathways & Walkways',
-            description: 'Beautiful natural stone pathways for your garden and yard.',
+            description: 'Beautiful natural stone pathways that create inviting, durable routes through your garden and yard.',
             icon: MountainIcon,
             features: ['Natural stone selection', 'Proper base preparation', 'Secure installation', 'Drainage consideration'],
         },
         {
             title: 'Rock Gardens & Features',
-            description: 'Create stunning rock gardens and decorative stone features.',
+            description: 'Create a beautiful Fall landscape with stunning rock gardens and decorative stone features.',
             icon: Flower2,
             features: ['Design consultation', 'Rock selection', 'Plant integration', 'Visual balance'],
         },
         {
             title: 'Stone Borders & Edging',
-            description: 'Define garden beds and lawn areas with natural stone borders.',
+            description: 'Define garden beds and lawn areas with natural stone borders for a clean, finished seasonal look.',
             icon: Layers,
             features: ['Clean lines', 'Durable materials', 'Weed barrier', 'Aesthetic appeal'],
         },
         {
             title: 'Boulder Placement',
-            description: 'Strategic placement of large boulders for landscape interest.',
+            description: 'Strategic placement of large boulders to add natural character, structure, and visual interest to your landscape.',
             icon: MountainIcon,
             features: ['Equipment handling', 'Proper placement', 'Safety considerations', 'Visual impact'],
         },
         {
             title: 'Complete Hardscape Design',
-            description: 'Integrated hardscape plans combining all stone elements.',
+            description: 'Integrated hardscape plans combining stone elements to create a cohesive outdoor space you can enjoy through Fall and beyond.',
             icon: Layers,
             features: ['Complete design', 'Material coordination', 'Project management', 'Final walkthrough'],
         }
@@ -74,7 +74,7 @@ export default function RockWorkHardscapingPage() {
                         "@type": "Service",
                         "name": "Rock Work & Hardscaping Services",
                         "url": "https://taylorslawncare21.com/services/rock-work-hardscaping",
-                        "description": "Professional hardscaping and rock work services in Northeast Arkansas including retaining walls, stone pathways, rock gardens, stone borders, boulder placement, and complete hardscape design.",
+                        "description": "Professional hardscaping and rock work services in Northeast Arkansas including retaining walls, stone pathways, rock gardens, stone borders, boulder placement, and complete hardscape design for Fall landscape projects.",
                         "provider": {
                             "@type": "LocalBusiness",
                             "name": "Taylor's Lawn Care & Landscaping, LLC",
@@ -124,7 +124,7 @@ export default function RockWorkHardscapingPage() {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.4, duration: 0.8 }}
                                 >
-                                    <span className="text-yellow-400 block mb-2">Stone Beauty That Lasts</span>
+                                    <span className="text-yellow-400 block mb-2">🍂 Stone Beauty for Fall</span>
                                     <span className="text-white block">Professional Rock Work & Hardscaping</span>
                                 </motion.h1>
 
@@ -135,7 +135,7 @@ export default function RockWorkHardscapingPage() {
                                     animate={{ opacity: 1 }}
                                     transition={{ delay: 0.6, duration: 0.7 }}
                                 >
-                                    <p>Transform your landscape with beautiful, durable stone features.</p>
+                                    <p>Refresh your landscape this Fall with beautiful, durable stone features designed to add function and lasting curb appeal.</p>
                                     <p><span className='text-[22px] md:text-[26px] font-extrabold text-yellow-400'>10% OFF</span> for Veterans, Military & First Responders <span className='text-[22px] md:text-[26px] font-extrabold text-yellow-400'>15% OFF</span> for Widows.</p>
                                 </motion.div>
 
@@ -178,7 +178,7 @@ export default function RockWorkHardscapingPage() {
                                     </Link>
                                 </motion.div>
 
-                                {/* Trust Indicators - Updated with summer amber accent */}
+                                {/* Trust Indicators - Updated with Fall amber accent */}
                                 <motion.div
                                     className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mt-8 text-white/80 text-sm"
                                     initial={{ opacity: 0 }}
@@ -244,10 +244,10 @@ export default function RockWorkHardscapingPage() {
                             transition={{ duration: 0.6 }}
                         >
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                                Common Hardscape Problems
+                                Common Fall Hardscape Problems
                             </h2>
                             <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                                Poor stone work diminishes your property&apos;s beauty and value
+                                Seasonal weather can expose drainage, erosion, and stone work issues around your property
                             </p>
                         </motion.div>
 
@@ -255,42 +255,42 @@ export default function RockWorkHardscapingPage() {
                             {[
                                 {
                                     problem: 'Collapsing Retaining Walls',
-                                    description: 'Improperly built walls failing under pressure.',
+                                    description: 'Improperly built or aging walls can become unstable and require attention to protect your landscape.',
                                     icon: '🧱',
                                     urgency: 'SAFETY',
                                     color: 'bg-red-100 text-red-800'
                                 },
                                 {
                                     problem: 'Uneven Stone Work',
-                                    description: 'Settling or poor installation creating tripping hazards.',
+                                    description: 'Settling or poor installation can create uneven surfaces and potential tripping hazards around your property.',
                                     icon: '⚖️',
                                     urgency: 'REPAIR',
                                     color: 'bg-orange-100 text-orange-800'
                                 },
                                 {
                                     problem: 'Weed Growth in Stone',
-                                    description: 'Lack of proper barriers allowing weed invasion.',
+                                    description: 'Seasonal growth can spread through stone features and make pathways, borders, and rock gardens look neglected.',
                                     icon: '🌿',
                                     urgency: 'MAINTENANCE',
                                     color: 'bg-green-100 text-green-800'
                                 },
                                 {
                                     problem: 'Poor Drainage Behind Walls',
-                                    description: 'Water buildup causing hydrostatic pressure and failure.',
+                                    description: 'Water buildup behind retaining walls can create pressure and contribute to drainage and structural concerns.',
                                     icon: '💧',
                                     urgency: 'STRUCTURAL',
                                     color: 'bg-blue-100 text-blue-800'
                                 },
                                 {
                                     problem: 'Outdated Stone Features',
-                                    description: 'Dated or worn stone work reducing curb appeal.',
+                                    description: 'Worn or outdated stone work can make your landscape feel tired when you want a fresh look for Fall.',
                                     icon: '🏡',
                                     urgency: 'UPGRADE',
                                     color: 'bg-amber-100 text-amber-900'
                                 },
                                 {
                                     problem: 'Inadequate Erosion Control',
-                                    description: 'Soil washing away from summer storms around stone installations.',
+                                    description: 'Fall rain and runoff can wash soil away from stone installations and expose areas that need better landscape protection.',
                                     icon: '🌊',
                                     urgency: 'PROTECTION',
                                     color: 'bg-amber-100 text-amber-800'
@@ -344,10 +344,10 @@ export default function RockWorkHardscapingPage() {
                             transition={{ duration: 0.6 }}
                         >
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                                Professional Hardscape Services
+                                Professional Fall Hardscape Services
                             </h2>
                             <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                                Quality stone work for lasting beauty and function
+                                Quality stone work to refresh, improve, and prepare your outdoor space for the season ahead
                             </p>
                         </motion.div>
 
@@ -457,7 +457,7 @@ export default function RockWorkHardscapingPage() {
                     </div>
                 </section>
 
-                {/* CTA Banner - Updated for Summer */}
+                {/* CTA Banner - Updated for Fall */}
                 <section className="py-20 bg-linear-to-r from-orange-600/10 to-amber-600/10">
                     <div className="container mx-auto px-4 md:px-6 lg:px-22">
                         <motion.div
@@ -473,18 +473,18 @@ export default function RockWorkHardscapingPage() {
                                         <div className="p-3 bg-white/20 rounded-2xl">
                                             <MountainIcon className="h-8 w-8" />
                                         </div>
-                                        <span className="text-xl font-bold uppercase tracking-widest">SUMMER HARDSCAPE SPECIAL</span>
+                                        <span className="text-xl font-bold uppercase tracking-widest">FALL HARDSCAPE SPECIAL</span>
                                     </div>
                                     <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                                        Enhance Your Outdoor Living This Summer
+                                        Refresh Your Outdoor Space This Fall
                                     </h2>
                                     <p className="text-gray-50 text-[19.5px] lg:text-[23px] font-light mb-8 opacity-95 leading-relaxed">
-                                        Summer is the perfect time to add stone features that you'll enjoy for years. Create the outdoor space you've always wanted.
+                                        Fall is a great time to improve your landscape with beautiful stone features. Refresh tired areas, improve your outdoor space, and create a landscape you can enjoy through the season ahead.
                                     </p>
                                     <div className="space-y-4 text-lg lg:text-xl">
                                         <div className="flex items-center gap-4">
                                             <Calendar className="h-6 w-6" />
-                                            <span>Book now for summer installation</span>
+                                            <span>Book now for Fall installation</span>
                                         </div>
                                         <div className="flex items-center gap-4">
                                             <Clock className="h-6 w-6" />
@@ -492,13 +492,13 @@ export default function RockWorkHardscapingPage() {
                                         </div>
                                         <div className="flex items-center gap-4">
                                             <Shield className="h-6 w-6" />
-                                            <span>Increase property value with quality hardscaping</span>
+                                            <span>Improve your landscape with quality hardscaping</span>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="p-12 bg-white flex flex-col justify-center">
-                                    <h3 className="text-[27px] font-bold text-gray-900 mb-8 text-center">Get Your Free Hardscape Design</h3>
+                                    <h3 className="text-[27px] font-bold text-gray-900 mb-8 text-center">Get Your Free Fall Hardscape Design</h3>
 
                                     <div className="space-y-6">
                                         <motion.a
