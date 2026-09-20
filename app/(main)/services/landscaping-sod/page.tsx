@@ -22,37 +22,37 @@ export default function LandscapingSodPage() {
     const services = [
         {
             title: 'Sod Installation',
-            description: 'Professional sod installation for instant green lawn transformation with proper soil preparation.',
+            description: 'Professional sod installation to refresh your lawn and create a healthy, beautiful foundation heading into the cooler Fall season.',
             icon: Sprout,
             features: ['Soil testing & preparation', 'Premium sod varieties', 'Proper watering setup', 'Establishment care'],
         },
         {
             title: 'Landscape Design',
-            description: 'Custom landscape design plans tailored to your property and personal style preferences.',
+            description: 'Custom landscape design plans tailored to your property, creating an inviting outdoor space that looks beautiful through Fall and beyond.',
             icon: Layers,
             features: ['Site analysis', '3D design concepts', 'Plant selection', 'Hardscape integration'],
         },
         {
             title: 'Garden Beds & Planting',
-            description: 'Beautiful garden beds with proper planting techniques for long-term plant health.',
+            description: 'Beautiful garden beds and thoughtful plant selections designed to add seasonal color, texture, and curb appeal throughout Fall.',
             icon: Flower2,
             features: ['Soil amendment', 'Proper plant spacing', 'Mulch installation', 'Watering systems'],
         },
         {
             title: 'Outdoor Living Spaces',
-            description: 'Create functional outdoor areas with patios, walkways, and entertainment spaces.',
+            description: 'Create comfortable outdoor areas where you can enjoy the cooler Fall weather with patios, walkways, and functional gathering spaces.',
             icon: Trees,
             features: ['Patio design', 'Walkway installation', 'Lighting planning', 'Seating areas'],
         },
         {
             title: 'Seasonal Color Installations',
-            description: 'Annual and perennial color installations to keep your landscape vibrant year-round.',
+            description: 'Bring Fall color to your landscape with carefully selected annuals and perennials that complement the changing season.',
             icon: Flower2,
             features: ['Seasonal plant selection', 'Color coordination', 'Proper installation', 'Maintenance guidance'],
         },
         {
             title: 'Complete Landscape Renovation',
-            description: 'Total outdoor space transformation from concept to completion.',
+            description: 'Transform your outdoor space this Fall with a complete landscape renovation designed around your property and long-term goals.',
             icon: Layers,
             features: ['Full design service', 'Project management', 'Quality materials', 'Final walkthrough'],
         }
@@ -135,7 +135,7 @@ export default function LandscapingSodPage() {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.4, duration: 0.8 }}
                                 >
-                                    <span className="text-yellow-400 block mb-2">Transform Your Outdoor Space</span>
+                                    <span className="text-yellow-400 block mb-2">🍂 Refresh Your Landscape This Fall</span>
                                     <span className="text-white block">Professional Landscaping & Sod Installation</span>
                                 </motion.h1>
 
@@ -146,7 +146,7 @@ export default function LandscapingSodPage() {
                                     animate={{ opacity: 1 }}
                                     transition={{ delay: 0.6, duration: 0.7 }}
                                 >
-                                    <p>From bare dirt to beautiful landscape — create outdoor spaces you&apos;ll love all summer and beyond.</p>
+                                    <p>Make the most of the cooler season with a beautiful, well-designed outdoor space you&apos;ll enjoy through Fall and beyond.</p>
                                     <p className="mt-2"><span className='text-[22px] md:text-[26px] font-extrabold text-yellow-400'>10% OFF</span> for Veterans, Military & First Responders <span className='text-[22px] md:text-[26px] font-extrabold text-yellow-400'>15% OFF</span> for Widows.</p>
                                 </motion.div>
 
@@ -281,7 +281,7 @@ export default function LandscapingSodPage() {
                                 <span className="block text-green-600">Real Results</span>
                             </h2>
                             <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-3xl mx-auto">
-                                Every yard we touch gets the same care and attention to detail — take a look
+                                See how we create beautiful, functional outdoor spaces that homeowners can enjoy through every season
                             </p>
                         </motion.div>
 
@@ -350,7 +350,7 @@ export default function LandscapingSodPage() {
                                 className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-full text-lg transition-all duration-300 shadow-lg hover:shadow-xl"
                             >
                                 <Phone className="h-5 w-5" />
-                                <span>Get a Free Quote for Your Project</span>
+                                <span>Get a Free Quote for Your Fall Project</span>
                                 <ArrowRight className="h-4 w-4" />
                             </a>
                         </motion.div>
@@ -368,10 +368,10 @@ export default function LandscapingSodPage() {
                             transition={{ duration: 0.6 }}
                         >
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                                Common Landscape Challenges We Solve
+                                Common Fall Landscape Challenges We Solve
                             </h2>
                             <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                                From patchy lawns to uninspired outdoor spaces — we have the solutions
+                                From tired lawns and overgrown beds to outdoor spaces that need a seasonal refresh — we have the solutions
                             </p>
                         </motion.div>
 
@@ -379,42 +379,42 @@ export default function LandscapingSodPage() {
                             {[
                                 {
                                     problem: 'Patchy or Bare Lawn',
-                                    description: 'Thin grass, bare spots, and uneven growth ruining your curb appeal.',
+                                    description: 'Thin grass, bare spots, and uneven growth can make your property look tired. Fall is a great time to improve your lawn before winter.',
                                     icon: '🌱',
-                                    urgency: 'COMMON',
+                                    urgency: 'FALL READY',
                                     color: 'bg-green-100 text-green-800'
                                 },
                                 {
                                     problem: 'Poor Yard Drainage',
-                                    description: 'Water pooling in your lawn after summer storms, killing grass and plants.',
+                                    description: 'Fall rainfall and saturated soil can expose drainage problems, leaving water pooling around your lawn and landscape.',
                                     icon: '💧',
-                                    urgency: 'URGENT',
+                                    urgency: 'IMPORTANT',
                                     color: 'bg-blue-100 text-blue-800'
                                 },
                                 {
                                     problem: 'Outdated Landscape',
-                                    description: 'Overgrown plants and dated designs that detract from your home.',
+                                    description: 'Overgrown plants and dated designs can take away from your home. Refresh your outdoor space before the season changes.',
                                     icon: '🏡',
-                                    urgency: 'UPGRADE',
+                                    urgency: 'REFRESH',
                                     color: 'bg-amber-100 text-amber-900'
                                 },
                                 {
                                     problem: 'Soil Quality Issues',
-                                    description: 'Compacted or poor soil preventing healthy plant growth.',
+                                    description: 'Compacted or poor soil can make it difficult for grass and plants to establish and stay healthy.',
                                     icon: '🌍',
                                     urgency: 'FOUNDATIONAL',
                                     color: 'bg-amber-100 text-amber-800'
                                 },
                                 {
                                     problem: 'Lack of Curb Appeal',
-                                    description: 'Your home lacks the "wow factor" from the street view.',
+                                    description: 'A refreshed landscape can give your home a welcoming appearance throughout Fall and set the stage for the seasons ahead.',
                                     icon: '👀',
-                                    urgency: 'VALUE ADD',
+                                    urgency: 'REFRESH',
                                     color: 'bg-yellow-100 text-yellow-800'
                                 },
                                 {
                                     problem: 'Unusable Yard Space',
-                                    description: 'Wasted outdoor area that could be functional living space.',
+                                    description: 'Turn neglected outdoor areas into comfortable, functional spaces you can enjoy during the cooler Fall weather.',
                                     icon: '🪑',
                                     urgency: 'TRANSFORM',
                                     color: 'bg-teal-100 text-teal-800'
@@ -448,7 +448,7 @@ export default function LandscapingSodPage() {
                                             className="text-green-600 hover:text-green-700 font-bold text-lg lg:text-xl flex items-center gap-3"
                                         >
                                             <Phone className="h-5 w-5" />
-                                            <span>Transform Your Space →</span>
+                                            <span>Refresh Your Space →</span>
                                         </a>
                                     </div>
                                 </motion.div>
@@ -471,7 +471,7 @@ export default function LandscapingSodPage() {
                                 Professional Landscaping Services
                             </h2>
                             <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                                Comprehensive solutions for your outdoor transformation
+                                Fall landscaping solutions to refresh, improve, and prepare your outdoor space for the season ahead
                             </p>
                         </motion.div>
 
@@ -590,7 +590,7 @@ export default function LandscapingSodPage() {
                                 className="inline-flex items-center gap-3 bg-white hover:bg-gray-100 text-gray-900 font-semibold py-3 px-8 rounded-full text-lg transition-all duration-300 shadow-lg"
                             >
                                 <Phone className="h-5 w-5 text-green-600" />
-                                <span>Start Your Project — Free Estimate</span>
+                                <span>Start Your Fall Project — Free Estimate</span>
                             </a>
                         </motion.div>
                     </div>
@@ -672,18 +672,18 @@ export default function LandscapingSodPage() {
                                         <div className="p-3 bg-white/20 rounded-2xl">
                                             <Sprout className="h-8 w-8" />
                                         </div>
-                                        <span className="text-xl font-bold uppercase tracking-widest">SUMMER LANDSCAPING</span>
+                                        <span className="text-xl font-bold uppercase tracking-widest">FALL LANDSCAPING</span>
                                     </div>
                                     <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                                        Perfect Time for Summer Landscaping
+                                        Refresh Your Outdoor Space This Fall
                                     </h2>
                                     <p className="text-gray-50 text-[19.5px] lg:text-[23px] font-light mb-8 opacity-95 leading-relaxed">
-                                        Summer is the ideal season for landscaping projects. Get your outdoor space transformed now for immediate enjoyment and lasting beauty.
+                                        Fall is a great time to improve your landscape, refresh tired areas, and prepare your outdoor space for the seasons ahead. Start your project now and enjoy a more beautiful property.
                                     </p>
                                     <div className="space-y-4 text-lg lg:text-xl">
                                         <div className="flex items-center gap-4">
                                             <Calendar className="h-6 w-6" />
-                                            <span>Book now for summer installation</span>
+                                            <span>Book now for Fall installation</span>
                                         </div>
                                         <div className="flex items-center gap-4">
                                             <Clock className="h-6 w-6" />
@@ -691,13 +691,13 @@ export default function LandscapingSodPage() {
                                         </div>
                                         <div className="flex items-center gap-4">
                                             <Shield className="h-6 w-6" />
-                                            <span>Increase your home value with professional landscaping</span>
+                                            <span>Invest in a landscape built for lasting beauty</span>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="p-12 bg-white flex flex-col justify-center">
-                                    <h3 className="text-[27px] font-bold text-gray-900 mb-8 text-center">Start Your Transformation Today</h3>
+                                    <h3 className="text-[27px] font-bold text-gray-900 mb-8 text-center">Start Your Fall Transformation Today</h3>
 
                                     <div className="space-y-6">
                                         <motion.a
