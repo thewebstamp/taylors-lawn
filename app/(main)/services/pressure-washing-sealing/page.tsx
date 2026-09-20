@@ -23,37 +23,37 @@ export default function PressureWashingSealingPage() {
     const services = [
         {
             title: 'Driveway Pressure Washing',
-            description: 'Remove dirt, oil stains, and grime from concrete and asphalt driveways for an instant refresh.',
+            description: 'Remove dirt, stains, leaves, and seasonal grime from concrete and asphalt driveways for a clean Fall refresh.',
             icon: Sparkles,
-            features: ['Concrete & Asphalt', 'Oil Stain Treatment', 'Professional Equipment', 'Same-Day Results'],
+            features: ['Concrete & Asphalt', 'Stain Treatment', 'Professional Equipment', 'Deep Surface Cleaning'],
         },
         {
             title: 'Driveway Sealing',
-            description: 'Protect your driveway from Arkansas summer heat, UV rays, and storm damage with quality sealant.',
+            description: 'Protect your driveway from changing Fall weather, moisture, and everyday wear with quality sealant.',
             icon: Shield,
-            features: ['UV & Weather Protection', 'Crack Prevention', 'Long-Lasting Finish', 'Enhanced Curb Appeal'],
+            features: ['Weather Protection', 'Crack Prevention', 'Long-Lasting Finish', 'Enhanced Curb Appeal'],
         },
         {
             title: 'Patio & Walkway Cleaning',
-            description: 'Remove algae, mildew, and slip hazards from patios, flagstone, and walkways.',
+            description: 'Remove algae, mildew, dirt, and slippery buildup from patios, flagstone, and walkways before Fall weather sets in.',
             icon: Square,
             features: ['Slip-Hazard Removal', 'Algae & Mold Treatment', 'Surface-Safe Cleaning', 'Restores Original Color'],
         },
         {
             title: 'House & Siding Washing',
-            description: 'Safe, low-pressure soft-washing for vinyl, brick, and wood siding that lifts dirt without damage.',
+            description: 'Safe, low-pressure soft-washing for vinyl, brick, and wood siding that lifts dirt and seasonal buildup without damage.',
             icon: Home,
             features: ['Soft-Wash Technology', 'Mold & Mildew Removal', 'Safe for All Siding', 'Boosts Curb Appeal'],
         },
         {
             title: 'Deck & Fence Cleaning',
-            description: 'Remove dirt, mildew, and graying from wood or composite decks and fences.',
+            description: 'Remove dirt, mildew, and weather buildup from wood or composite decks and fences to keep outdoor spaces looking fresh through Fall.',
             icon: Layers,
             features: ['Wood & Composite Safe', 'Mildew Removal', 'Restores Natural Color', 'Prep for Staining'],
         },
         {
             title: 'Complete Property Wash Package',
-            description: 'Driveway, patio, siding, and deck washing bundled together for a full property refresh.',
+            description: 'Driveway, patio, siding, and deck washing bundled together for a complete Fall property refresh.',
             icon: Wind,
             features: ['All Services Included', 'Priority Scheduling', 'Best Value', 'Complete Transformation'],
         }
@@ -124,7 +124,7 @@ export default function PressureWashingSealingPage() {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.4, duration: 0.8 }}
                                 >
-                                    <span className="text-yellow-400 block mb-2">Restore the Shine</span>
+                                    <span className="text-yellow-400 block mb-2">🍂 Refresh Your Property This Fall</span>
                                     <span className="text-white block">Professional Pressure Washing & Driveway Sealing</span>
                                 </motion.h1>
 
@@ -135,7 +135,7 @@ export default function PressureWashingSealingPage() {
                                     animate={{ opacity: 1 }}
                                     transition={{ delay: 0.6, duration: 0.7 }}
                                 >
-                                    <p>Wash away dirt, mold, and grime, then seal your driveway to protect it from Arkansas summer heat and storms.</p>
+                                    <p>Wash away dirt, mold, leaves, and seasonal grime to give your home and outdoor surfaces a clean, refreshed appearance this Fall.</p>
                                     <p><span className='text-[22px] md:text-[26px] font-extrabold text-yellow-400'>10% OFF</span> for Veterans, Military & First Responders <span className='text-[22px] md:text-[26px] font-extrabold text-yellow-400'>15% OFF</span> for Widows.</p>
                                 </motion.div>
 
@@ -195,7 +195,7 @@ export default function PressureWashingSealingPage() {
                                     </div>
                                     <div className="flex items-center gap-2">
                                         <div className="w-2 h-2 bg-sky-400 rounded-full animate-pulse" style={{ animationDelay: '0.9s' }}></div>
-                                        <span>Guaranteed Results</span>
+                                        <span>Professional Results</span>
                                     </div>
                                 </motion.div>
                             </motion.div>
@@ -269,10 +269,10 @@ export default function PressureWashingSealingPage() {
                             transition={{ duration: 0.6 }}
                         >
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                                Common Surface Problems We Solve
+                                Common Fall Surface Problems We Solve
                             </h2>
                             <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                                Arkansas heat and humidity take a toll on exterior surfaces fast
+                                Fall weather brings moisture, leaves, and seasonal buildup that can leave exterior surfaces looking dirty and neglected
                             </p>
                         </motion.div>
 
@@ -280,42 +280,42 @@ export default function PressureWashingSealingPage() {
                             {[
                                 {
                                     problem: 'Dirty, Stained Driveways',
-                                    description: 'Built-up dirt, tire marks, and grime make driveways look neglected.',
+                                    description: 'Built-up dirt, tire marks, leaves, and grime can make driveways look neglected. Fall is a great time for a deep clean.',
                                     icon: '🚗',
-                                    urgency: 'COMMON',
+                                    urgency: 'FALL REFRESH',
                                     color: 'bg-gray-100 text-gray-800'
                                 },
                                 {
                                     problem: 'Mold & Mildew Growth',
-                                    description: 'Humid summer conditions encourage mold and mildew on shaded surfaces.',
+                                    description: 'Cooler, damp Fall conditions can contribute to mold and mildew buildup on shaded exterior surfaces.',
                                     icon: '🦠',
-                                    urgency: 'HEALTH',
+                                    urgency: 'IMPORTANT',
                                     color: 'bg-green-100 text-green-800'
                                 },
                                 {
-                                    problem: 'Faded, Cracked Sealant',
-                                    description: 'UV rays and summer heat break down old driveway sealant over time.',
-                                    icon: '☀️',
-                                    urgency: 'URGENT',
+                                    problem: 'Worn Driveway Sealant',
+                                    description: 'Changing weather and everyday traffic can leave older driveway sealant worn and ready for a protective refresh.',
+                                    icon: '🍂',
+                                    urgency: 'PROTECTION',
                                     color: 'bg-amber-100 text-amber-800'
                                 },
                                 {
                                     problem: 'Algae-Covered Walkways',
-                                    description: 'Slick, slippery algae buildup on patios and walkways creates a fall hazard.',
+                                    description: 'Moisture and organic buildup can make patios and walkways slippery, creating an avoidable Fall safety concern.',
                                     icon: '🌿',
                                     urgency: 'SLIP HAZARD',
                                     color: 'bg-teal-100 text-teal-800'
                                 },
                                 {
                                     problem: 'Grimy Siding & Walls',
-                                    description: 'Dirt and pollen film build up on siding, dulling your home\u2019s curb appeal.',
+                                    description: 'Dirt, pollen, leaves, and seasonal buildup can dull your home’s exterior and reduce its curb appeal.',
                                     icon: '🏠',
                                     urgency: 'CURB APPEAL',
                                     color: 'bg-slate-100 text-slate-800'
                                 },
                                 {
                                     problem: 'Oil Stains & Rust Marks',
-                                    description: 'Stubborn stains from vehicles and equipment that regular cleaning won\u2019t remove.',
+                                    description: 'Stubborn stains from vehicles and equipment can remain visible long after the rest of your property has been cleaned.',
                                     icon: '🛢️',
                                     urgency: 'STUBBORN',
                                     color: 'bg-orange-100 text-orange-800'
@@ -372,7 +372,7 @@ export default function PressureWashingSealingPage() {
                                 Professional Pressure Washing & Sealing Services
                             </h2>
                             <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                                Complete exterior cleaning and protection for your property
+                                Fall exterior cleaning and protection to refresh your property and keep your outdoor surfaces looking their best
                             </p>
                         </motion.div>
 
@@ -498,32 +498,32 @@ export default function PressureWashingSealingPage() {
                                         <div className="p-3 bg-white/20 rounded-2xl">
                                             <Sparkles className="h-8 w-8" />
                                         </div>
-                                        <span className="text-xl font-bold uppercase tracking-widest">SUMMER SHINE SPECIAL</span>
+                                        <span className="text-xl font-bold uppercase tracking-widest">FALL CLEANING SPECIAL</span>
                                     </div>
                                     <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                                        <span className="text-green-200">Get Your Property Summer-Ready</span>
+                                        <span className="text-green-200">Refresh Your Property This Fall</span>
                                     </h2>
                                     <p className="text-gray-50 text-[19.5px] lg:text-[23px] font-light mb-8 opacity-95 leading-relaxed">
-                                        Wash away winter and spring grime before your summer entertaining season, then seal your driveway to protect it from the heat.
+                                        Wash away seasonal dirt, leaves, mildew, and grime before they leave your exterior surfaces looking neglected. Give your property a clean, refreshed appearance this Fall.
                                     </p>
                                     <div className="space-y-4 text-lg lg:text-xl">
                                         <div className="flex items-center gap-4">
                                             <Calendar className="h-6 w-6" />
-                                            <span>Schedule your wash now</span>
+                                            <span>Schedule your Fall wash now</span>
                                         </div>
                                         <div className="flex items-center gap-4">
                                             <Clock className="h-6 w-6" />
-                                            <span>Limited summer appointments available</span>
+                                            <span>Early Fall appointments get priority scheduling</span>
                                         </div>
                                         <div className="flex items-center gap-4">
                                             <Shield className="h-6 w-6" />
-                                            <span>Protect your property investment</span>
+                                            <span>Protect and maintain your property investment</span>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="p-12 bg-white flex flex-col justify-center">
-                                    <h3 className="text-[27px] font-bold text-gray-900 mb-8 text-center">Schedule Your Wash Today</h3>
+                                    <h3 className="text-[27px] font-bold text-gray-900 mb-8 text-center">Schedule Your Fall Wash Today</h3>
 
                                     <div className="space-y-6">
                                         <motion.a
