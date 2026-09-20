@@ -23,37 +23,37 @@ export default function SprinklerSystemsPage() {
     const services = [
         {
             title: 'New Sprinkler System Installation',
-            description: 'Complete irrigation system installation designed for your specific lawn needs.',
+            description: 'Complete irrigation system installation designed around your lawn and landscape needs through every season.',
             icon: DropletsIcon,
             features: ['Custom zone design', 'Proper head placement', 'Efficient coverage', 'Professional trenching'],
         },
         {
             title: 'Smart Irrigation Systems',
-            description: 'Wi-Fi enabled controllers with weather-based watering for maximum efficiency.',
+            description: 'Smart controllers and weather-based watering solutions that help adjust irrigation as Fall weather changes.',
             icon: CloudRainIcon,
             features: ['Weather monitoring', 'Mobile app control', 'Water usage reports', 'Rain delay automation'],
         },
         {
             title: 'Sprinkler System Repair',
-            description: 'Fast, reliable repair service for broken heads, valves, and pipes.',
+            description: 'Reliable repair service for broken heads, valves, leaks, and other irrigation problems affecting your property.',
             icon: Gauge,
             features: ['Leak detection', 'Head replacement', 'Valve repair', 'Controller troubleshooting'],
         },
         {
             title: 'System Maintenance & Winterization',
-            description: 'Seasonal maintenance to protect your investment and ensure proper operation.',
+            description: 'Seasonal irrigation maintenance and winterization to help protect your system as colder weather approaches.',
             icon: Shield,
             features: ['Spring start-up', 'Fall winterization', 'Head adjustment', 'Pressure testing'],
         },
         {
             title: 'Zone Additions & Upgrades',
-            description: 'Expand or upgrade existing systems to cover new areas or improve efficiency.',
+            description: 'Expand or upgrade your existing irrigation system to improve coverage and efficiency where needed.',
             icon: Zap,
             features: ['Additional zones', 'Drip irrigation', 'Rotator head upgrades', 'Controller updates'],
         },
         {
             title: 'Drip Irrigation Systems',
-            description: 'Water-efficient drip systems for gardens, flower beds, and shrubs.',
+            description: 'Water-efficient drip systems for gardens, flower beds, shrubs, and other landscape areas.',
             icon: Eye,
             features: ['Water conservation', 'Root zone watering', 'Custom layouts', 'Low pressure operation'],
         }
@@ -75,7 +75,7 @@ export default function SprinklerSystemsPage() {
                         "@type": "Service",
                         "name": "Sprinkler Systems & Irrigation Services",
                         "url": "https://taylorslawncare21.com/services/sprinkler-systems",
-                        "description": "Professional sprinkler system services in Northeast Arkansas including new system installation, smart irrigation, system repair, maintenance and winterization, zone upgrades, and drip irrigation solutions.",
+                        "description": "Professional sprinkler system services in Northeast Arkansas including Fall irrigation maintenance, system repair, winterization, new system installation, smart irrigation, zone upgrades, and drip irrigation solutions.",
                         "provider": {
                             "@type": "LocalBusiness",
                             "name": "Taylor's Lawn Care & Landscaping, LLC",
@@ -125,7 +125,7 @@ export default function SprinklerSystemsPage() {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.4, duration: 0.8 }}
                                 >
-                                    <span className="text-yellow-400 block mb-2">Water Smart, Not Hard</span>
+                                    <span className="text-yellow-400 block mb-2">🍂 Prepare Your Irrigation for Fall</span>
                                     <span className="text-white block">Professional Sprinkler Systems</span>
                                 </motion.h1>
 
@@ -136,7 +136,7 @@ export default function SprinklerSystemsPage() {
                                     animate={{ opacity: 1 }}
                                     transition={{ delay: 0.6, duration: 0.7 }}
                                 >
-                                    <p>Save time, water, and money with a professionally installed irrigation system.</p>
+                                    <p>Keep your irrigation system working properly through Fall while preparing it for the colder months ahead.</p>
                                     <p><span className='text-[22px] md:text-[26px] font-extrabold text-yellow-400'>10% OFF</span> for Veterans, Military & First Responders <span className='text-[22px] md:text-[26px] font-extrabold text-yellow-400'>15% OFF</span> for Widows.</p>
                                 </motion.div>
 
@@ -172,14 +172,14 @@ export default function SprinklerSystemsPage() {
                                     >
                                         <Calendar className="h-5 w-5" />
                                         <span className="text-center">
-                                            <span className="block text-lg">FREE SYSTEM DESIGN</span>
+                                            <span className="block text-lg">FREE IRRIGATION ASSESSMENT</span>
                                             <span className="block text-sm opacity-90">Schedule Online</span>
                                         </span>
                                         <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                                     </Link>
                                 </motion.div>
 
-                                {/* Trust Indicators - Updated with summer amber accent */}
+                                {/* Trust Indicators */}
                                 <motion.div
                                     className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mt-8 text-white/80 text-sm"
                                     initial={{ opacity: 0 }}
@@ -192,11 +192,11 @@ export default function SprinklerSystemsPage() {
                                     </div>
                                     <div className="flex items-center gap-2">
                                         <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse" style={{ animationDelay: '0.6s' }}></div>
-                                        <span>Smart System Installation</span>
+                                        <span>Fall System Maintenance</span>
                                     </div>
                                     <div className="flex items-center gap-2">
                                         <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse" style={{ animationDelay: '0.9s' }}></div>
-                                        <span>Water Conservation Experts</span>
+                                        <span>Irrigation Experts</span>
                                     </div>
                                 </motion.div>
                             </motion.div>
@@ -218,7 +218,7 @@ export default function SprinklerSystemsPage() {
                                     >
                                         <Image
                                             src="/sprinkler.jpg"
-                                            alt="Professional sprinkler system"
+                                            alt="Professional sprinkler system maintenance"
                                             fill
                                             className="object-cover"
                                             priority
@@ -226,7 +226,7 @@ export default function SprinklerSystemsPage() {
                                         <div className="absolute inset-0 bg-linear-to-t from-blue-900/20 to-transparent" />
                                     </motion.div>
 
-                                    {/* Animated Water Drops - Keeping for summer watering visual */}
+                                    {/* Animated Water Drops */}
                                     <div className="absolute inset-0 pointer-events-none overflow-hidden">
                                         {Array.from({ length: 10 }, (_, i) => (
                                             <motion.div
@@ -267,10 +267,10 @@ export default function SprinklerSystemsPage() {
                             transition={{ duration: 0.6 }}
                         >
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                                Common Sprinkler System Problems
+                                Common Fall Irrigation Problems
                             </h2>
                             <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                                Don&apos;t let irrigation issues waste water and damage your lawn this summer
+                                Fall weather and changing watering needs can expose irrigation problems before winter arrives
                             </p>
                         </motion.div>
 
@@ -278,42 +278,42 @@ export default function SprinklerSystemsPage() {
                             {[
                                 {
                                     problem: 'Broken Sprinkler Heads',
-                                    description: 'Damaged heads wasting water and creating dry spots in your lawn.',
+                                    description: 'Damaged heads can waste water, create uneven coverage, and leave parts of your lawn or landscape without proper watering.',
                                     icon: '💦',
                                     urgency: 'COMMON',
                                     color: 'bg-blue-100 text-blue-800'
                                 },
                                 {
                                     problem: 'Uneven Water Coverage',
-                                    description: 'Some areas get flooded while others stay dry and brown.',
+                                    description: 'Some areas receive too much water while others remain dry because of clogged, damaged, or poorly positioned sprinkler heads.',
                                     icon: '🌊',
-                                    urgency: 'URGENT',
+                                    urgency: 'IMPORTANT',
                                     color: 'bg-cyan-100 text-cyan-800'
                                 },
                                 {
-                                    problem: 'High Water Bills',
-                                    description: 'Undetected leaks and inefficient watering wasting money.',
-                                    icon: '💰',
+                                    problem: 'Hidden Irrigation Leaks',
+                                    description: 'Undetected leaks can waste water and create wet areas around your lawn, landscape, or irrigation system.',
+                                    icon: '💧',
                                     urgency: 'COSTLY',
                                     color: 'bg-red-100 text-red-800'
                                 },
                                 {
-                                    problem: 'Manual Watering Hassle',
-                                    description: 'Dragging hoses and forgetting to water damaging your lawn.',
-                                    icon: '💧',
-                                    urgency: 'INCONVENIENT',
+                                    problem: 'Changing Fall Water Needs',
+                                    description: 'Cooler temperatures and seasonal rainfall can change how often your lawn and landscape need supplemental irrigation.',
+                                    icon: '🍂',
+                                    urgency: 'SEASONAL',
                                     color: 'bg-amber-100 text-amber-900'
                                 },
                                 {
                                     problem: 'Outdated Controller',
-                                    description: 'Old timer wasting water with no smart features or weather adjustment.',
+                                    description: 'Older controllers may make it harder to adjust watering schedules as Fall weather and rainfall patterns change.',
                                     icon: '⏰',
                                     urgency: 'UPGRADE',
                                     color: 'bg-amber-100 text-amber-800'
                                 },
                                 {
                                     problem: 'System Not Winterized',
-                                    description: 'Frozen pipes causing expensive damage and spring repairs.',
+                                    description: 'Leaving an irrigation system unprepared for freezing temperatures can put pipes and components at risk of damage.',
                                     icon: '❄️',
                                     urgency: 'PREVENTION',
                                     color: 'bg-teal-100 text-teal-800'
@@ -367,10 +367,10 @@ export default function SprinklerSystemsPage() {
                             transition={{ duration: 0.6 }}
                         >
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                                Professional Sprinkler Services
+                                Professional Fall Irrigation Services
                             </h2>
                             <p className="text-xl md:text-[22px] lg:text-[25px] text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                                Complete irrigation solutions for a perfectly watered lawn
+                                Complete irrigation solutions to maintain your system now and prepare it for the colder season ahead
                             </p>
                         </motion.div>
 
@@ -430,7 +430,7 @@ export default function SprinklerSystemsPage() {
                     </div>
                 </section>
 
-                {/* Why Choose Us Section - Updated with amber accent replacing stray green */}
+                {/* Why Choose Us Section */}
                 <section className="py-20 bg-linear-to-br from-blue-50/50 to-amber-50/50">
                     <div className="container mx-auto px-4 md:px-8 lg:px-22">
                         <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
@@ -480,7 +480,7 @@ export default function SprinklerSystemsPage() {
                     </div>
                 </section>
 
-                {/* CTA Banner - Updated for Summer */}
+                {/* CTA Banner */}
                 <section className="py-20 bg-linear-to-r from-blue-600/10 to-amber-600/10">
                     <div className="container mx-auto px-4 md:px-6 lg:px-22">
                         <motion.div
@@ -496,32 +496,32 @@ export default function SprinklerSystemsPage() {
                                         <div className="p-3 bg-white/20 rounded-2xl">
                                             <DropletsIcon className="h-8 w-8" />
                                         </div>
-                                        <span className="text-xl font-bold uppercase tracking-widest">SUMMER INSTALLATION SPECIAL</span>
+                                        <span className="text-xl font-bold uppercase tracking-widest">FALL IRRIGATION SPECIAL</span>
                                     </div>
                                     <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                                        <span className="text-green-200">Get Your System Ready for Summer Heat</span>
+                                        Get Your Irrigation System Ready for Fall
                                     </h2>
                                     <p className="text-gray-50 text-[19.5px] lg:text-[23px] font-light mb-8 opacity-95 leading-relaxed">
-                                        Summer installation ensures your lawn stays green and healthy through the hottest months. Beat the heat with a professionally installed irrigation system.
+                                        Cooler temperatures and seasonal rainfall mean your irrigation needs can change. Have your system checked, maintained, or winterized before freezing weather arrives.
                                     </p>
                                     <div className="space-y-4 text-lg lg:text-xl">
                                         <div className="flex items-center gap-4">
                                             <Calendar className="h-6 w-6" />
-                                            <span>Book now for summer installation</span>
+                                            <span>Schedule your Fall irrigation service</span>
                                         </div>
                                         <div className="flex items-center gap-4">
                                             <Clock className="h-6 w-6" />
-                                            <span>Early bookings get priority scheduling</span>
+                                            <span>Get ahead of winter preparation</span>
                                         </div>
                                         <div className="flex items-center gap-4">
                                             <Shield className="h-6 w-6" />
-                                            <span>Save 30-50% on water bills</span>
+                                            <span>Protect your irrigation investment</span>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="p-12 bg-white flex flex-col justify-center">
-                                    <h3 className="text-[27px] font-bold text-gray-900 mb-8 text-center">Get Your Free System Design</h3>
+                                    <h3 className="text-[27px] font-bold text-gray-900 mb-8 text-center">Schedule Your Fall Irrigation Service</h3>
 
                                     <div className="space-y-6">
                                         <motion.a
